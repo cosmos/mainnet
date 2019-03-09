@@ -7,8 +7,7 @@ signed `gentx` transactions with non-zero ATOMs submitted during this genesis ce
 
 Genesis transactions will be collected on Github in this repository and checked for validity by an automated script.
 
-This repository contains a work-in-progress recommendation for the genesis file
-- [`penultimate_genesis.json`](./penultimate_genesis.json)
+This repository contains a work-in-progress recommendation for the genesis file called [`penultimate_genesis.json`](./penultimate_genesis.json).
 It **IS NOT** the final recommended genesis file. 
 If you find an error in this genesis file, please contact us
 immediately at "genesis at interchain dot io".
@@ -24,13 +23,15 @@ Please keep the following things in mind.
 2. ATOMs staked during genesis will be at risk of 5% slashing if your validator double signs. If you accidentally misconfigure your validator setup, this can easily happen, and we do not expect ATOMs so slashed to be recoverable by any means. 
 3. ATOMs staked during genesis or after will be locked up as part of the defense against long range attacks for 3 weeks. They can be re-delegated or undelegated, but will not be transferrable until a hard-fork enables transfers.
 
-Generally the steps to create a validator are as follows.
+Generally the steps to create a validator are as follows:
 
-[Install Gaiad and Gaiacli](https://github.com/cosmos/cosmos-sdk/blob/master/docs/gaia/installation.md)
+1. [Install Gaiad and Gaiacli](https://github.com/cosmos/cosmos-sdk/blob/master/docs/gaia/installation.md)
 
-[Setup your fundraiser keys](https://github.com/cosmos/cosmos-sdk/blob/master/docs/gaia/delegator-guide-cli.md#restoring-an-account-from-the-fundraiser)
+2. [Setup your fundraiser keys](https://github.com/cosmos/cosmos-sdk/blob/master/docs/gaia/delegator-guide-cli.md#restoring-an-account-from-the-fundraiser)
 
-Download the [genesis file](https://raw.githubusercontent.com/cosmos/launch/master/penultimate_genesis.json) to `~/.gaiad/config/genesis.json`
+3. Download the [genesis file](https://raw.githubusercontent.com/cosmos/launch/master/penultimate_genesis.json) to `~/.gaiad/config/genesis.json`
+
+4. Sign a genesis transaction:
 
 ```bash
 gaiad gentx \
@@ -92,7 +93,8 @@ This will produce a file in the ~/.gaiad/config/gentx/ folder that has a name wi
 }
 ```
 
-To participate in the genesis ceremony, copy this file to the `gentx` folder in this repo and submit a pull request:
+To participate in this ceremony, Copy this file to the `gentx` folder in this repo 
+and submit a pull request:
 
 ```
 cp ~/.gaiad/config/gentx/gentx-<node_id>.json ./gentx/<moniker>.json
