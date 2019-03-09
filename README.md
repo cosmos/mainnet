@@ -73,7 +73,7 @@ Note that all durations are specified in nanoseconds.
 
 ### Governance Module
 
-- `"min_deposit": 512atom`. The minimum deposit to bring a proposal up for a vote is 512 Atoms. Because the price of Atoms is uncertain at launch we tried to pick a value that was high enough to prevent spam proposals, while not being too expensive. As a note, the proposer doesn't have to provide the deposit. It can be crowd-funded. Also successful proposals refund the deposit.
+- `"min_deposit": 512atom`. The minimum deposit to bring a proposal up for a vote is 512 Atoms. Because the price of Atoms is uncertain at launch we tried to pick a value that was high enough to prevent spam proposals, while not being too expensive. As a note, the proposer doesn't have to provide the deposit. It can be crowd-funded. Proposals which pass refund all deposits.
 - `"max_deposit_period": "1209600000000000"`. The duration in which a proposal can collect deposits is 14 days. We tried to choose this value to be long enough for a proposal to have time to gain support from the community.
 - `"voting_period": "1209600000000000"`. The duration in which a proposal can be voted upon is 14 days. We wanted a voting period long enough that all staked Atom holders had time to participate.
 - `"quorum": "0.4"`. A minimum quorum of 40% of bonded stake must vote on a proposal in order for it to be considered for passage. This is to ensure that proposals don't pass that have support from only a small segment of the community.
