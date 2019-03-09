@@ -10,12 +10,12 @@ signed `gentx` transactions with non-zero ATOMs submitted during this genesis ce
 Genesis transactions will be collected on Github in this repository and checked for validity by an automated script.
 
 By participating in this ceremony and submitting a gen-tx, you are making a commitment to your fellow Cosmonauts
-that you will be around to bring your validator online at the recommended genesis time of 13 March 2019 23:00 GMT to launch the network.
+that you will be around to bring your validator online by the recommended genesis time of 13 March 2019 23:00 GMT to launch the network. Note that you can start `gaiad` before that time and, assuming you configure it successfully, it will automatically start the peer-to-peer and consensus processes once the genesis timestamp is reached.
 
 Please keep the following things in mind.
 
 1. This process is intended for technically inclined people who have participated in our testnets and Game of Stakes. If you aren't already familiar with this process, we advise against participating due to the risks involved.
-2. ATOMs staked during genesis will be at risk of 5% slashing if your validator double signs. If you accidentally misconfigure your validator setup, this can easily happen, and we do not expect ATOMs so slashed to be recoverable by any means.
+2. ATOMs staked during genesis will be at risk of 5% slashing if your validator double signs. If you accidentally misconfigure your validator setup, this can easily happen, and we do not expect ATOMs so slashed to be recoverable by any means. Additionally, if you double-sign, your validator will be tombstoned and you will be required to change operator and signing keys.
 3. ATOMs staked during genesis or after will be locked up as part of the defense against long range attacks for 3 weeks. They can be re-delegated or undelegated, but will not be transferrable until a hard-fork enables transfers.
 
 ## Genesis File
@@ -73,7 +73,7 @@ Note that all durations are specified in nanoseconds.
 
 ### Governance Module
 
-- `"min_deposit": 512atom`. The minimum deposit to bring a proposal up for a vote is 512 Atoms. Because the price of Atoms is uncertain at launch we tried to pick a value that was high enough to prevent spam proposals, while not being too expensive. As a note, the proposer doesn't have to provide the deposit. It can be crowd-funded. Also successful proposals refund the deposit.
+- `"min_deposit": 512atom`. The minimum deposit to bring a proposal up for a vote is 512 Atoms. Because the price of Atoms is uncertain at launch we tried to pick a value that was high enough to prevent spam proposals, while not being too expensive. As a note, the proposer doesn't have to provide the deposit. It can be crowd-funded. Proposals which pass refund all deposits.
 - `"max_deposit_period": "1209600000000000"`. The duration in which a proposal can collect deposits is 14 days. We tried to choose this value to be long enough for a proposal to have time to gain support from the community.
 - `"voting_period": "1209600000000000"`. The duration in which a proposal can be voted upon is 14 days. We wanted a voting period long enough that all staked Atom holders had time to participate.
 - `"quorum": "0.4"`. A minimum quorum of 40% of bonded stake must vote on a proposal in order for it to be considered for passage. This is to ensure that proposals don't pass that have support from only a small segment of the community.
@@ -87,7 +87,7 @@ Note that all durations are specified in nanoseconds.
   (it must be the same as the unbonding period).
 - `"signed_blocks_window": "10000"`. The rolling window for uptime measurement is 10,000 blocks.
 - `"min_signed_per_window": "0.05"`. A minimum of 5% of the blocks in the last window must have been signed or
-  else a validator will be slashed for downtime. During network launch we decided on a lenient downtime window that can later be increased by governance.
+  else a validator will be slashed for downtime. During network launch we decided on a lenient uptime requirement that can later be increased by governance.
 - `"downtime_jail_duration": "600000000000"`. Validators slashed for downtime are jailed for ten minutes. This provides a disincentive for validator downtime.
 - `"slash_fraction_double_sign": "0.05"`. Validators who equivocate (double-sign a block, and thereby compromise safety)
   and are caught are slashed by 5% of their bonded stake.
@@ -179,7 +179,7 @@ be staked via genesis transactions.
 ## A Note about your Validator Signing Key
 
 Your validator signing private key lives at `~/.gaiad/config/priv_validator_key.json`. If this key is stolen, an attacker would be able to make
-your validator double sign, causing a slash of 5% of your atoms. If you are interested in how to better protect this key please see the [`tendermint/kms`](https://github.com/tendermint/kms) repo. We will have a complete guide for how to secure this file soon after launch.
+your validator double sign, causing a slash of 5% of your atoms and the tombstoning of your validator. If you are interested in how to better protect this key please see the [`tendermint/kms`](https://github.com/tendermint/kms) repo. We will have a complete guide for how to secure this file soon after launch.
 
 ## Next Steps
 
