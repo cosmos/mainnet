@@ -87,7 +87,7 @@ Note that all durations are specified in nanoseconds.
   (it must be the same as the unbonding period).
 - `"signed_blocks_window": "10000"`. The rolling window for uptime measurement is 10,000 blocks.
 - `"min_signed_per_window": "0.05"`. A minimum of 5% of the blocks in the last window must have been signed or
-  else a validator will be slashed for downtime. During network launch we decided on a lenient downtime window that can later be increased by governance.
+  else a validator will be slashed for downtime. During network launch we decided on a lenient uptime requirement that can later be increased by governance.
 - `"downtime_jail_duration": "600000000000"`. Validators slashed for downtime are jailed for ten minutes. This provides a disincentive for validator downtime.
 - `"slash_fraction_double_sign": "0.05"`. Validators who equivocate (double-sign a block, and thereby compromise safety)
   and are caught are slashed by 5% of their bonded stake.
