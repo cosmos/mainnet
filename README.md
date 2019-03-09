@@ -8,6 +8,7 @@ The recommended initial validator set for the Genesis State of the Cosmos Networ
 signed `gentx` transactions with non-zero ATOMs submitted during this genesis ceremony.
 
 Genesis transactions will be collected on Github in this repository and checked for validity by an automated script.
+We will suspend genesis file collection on 12 March 2019 23:00 GMT and publish the final genesis as soon as possible after that time.
 
 By participating in this ceremony and submitting a gen-tx, you are making a commitment to your fellow Cosmonauts
 that you will be around to bring your validator online by the recommended genesis time of 13 March 2019 23:00 GMT to launch the network. Note that you can start `gaiad` before that time and, assuming you configure it successfully, it will automatically start the peer-to-peer and consensus processes once the genesis timestamp is reached.
