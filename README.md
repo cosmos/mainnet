@@ -15,15 +15,16 @@ that you will be around to bring your validator online at the recommended genesi
 Please keep the following things in mind.
 
 1. This process is intended for technically inclined people who have participated in our testnets and Game of Stakes. If you aren't already familiar with this process, we advise against participating due to the risks involved.
-2. ATOMs staked during genesis will be at risk of 5% slashing if your validator double signs. If you accidentally misconfigure your validator setup, this can easily happen, and we do not expect ATOMs so slashed to be recoverable by any means. 
+2. ATOMs staked during genesis will be at risk of 5% slashing if your validator double signs. If you accidentally misconfigure your validator setup, this can easily happen, and we do not expect ATOMs so slashed to be recoverable by any means.
 3. ATOMs staked during genesis or after will be locked up as part of the defense against long range attacks for 3 weeks. They can be re-delegated or undelegated, but will not be transferrable until a hard-fork enables transfers.
+4. Please be sure to be available to bring your validator online at genesis time: 13 March 2019 23:00 GMT
 
 ## Genesis File
 
 **WARNING: THIS IS NOT THE FINAL RECOMMENDATION FOR THE GENESIS FILE**
 
 This repository contains a work-in-progress recommendation for the genesis file called [`penultimate_genesis.json`](./penultimate_genesis.json).
-It **IS NOT** the final recommended genesis file. 
+It **IS NOT** the final recommended genesis file.
 If you find an error in this genesis file, please contact us
 immediately at "genesis at interchain dot io".
 
@@ -105,30 +106,35 @@ This will produce a file in the ~/.gaiad/config/gentx/ folder that has a name wi
 }
 ```
 
-Finally, to participate in this ceremony, Copy this file to the `gentx` folder in this repo 
+Finally, to participate in this ceremony, Copy this file to the `gentx` folder in this repo
 and submit a pull request:
 
 ```
 cp ~/.gaiad/config/gentx/gentx-<node_id>.json ./gentx/<moniker>.json
 ```
 
-We will only accept self delegation transactions up to 100,000 atoms for genesis. We expect 1-5% of the ATOM allocation to 
+We will only accept self delegation transactions up to 100,000 atoms for genesis. We expect 1-5% of the ATOM allocation to
 be staked via genesis transactions.
+
+## A Note about your Validator Signing Key
+
+Your validator signing private key lives at `~/.gaiad/config/priv_validator.json`. If this key is lost, an attacker would be able to make
+your validator double sign, causing a slash of 5% of your atoms. If you are interested in how to better protect this key please see the [`tendermint/kms`](https://github.com/tendermint/kms) repo. We will have a complete guide for how to secure this file soon after launch.
 
 ## Next Steps
 
-Wait for the Interchain Foundation to publish a final recommendation for the 
+Wait for the Interchain Foundation to publish a final recommendation for the
 Genesis Block Release Software and be ready to come online at the recommended
 time.
 
-On initialization of the software, the Cosmos Hub Bonded Proof-of-Stake system will kick in to 
+On initialization of the software, the Cosmos Hub Bonded Proof-of-Stake system will kick in to
 determine the initial validator set (max 100 validators) from the set of `gentx` transactions.
 More than 2/3 of the voting power of this set must be online and participating in consensus
 in order to create the first block and start the Cosmos Hub.
 
 We expect and hope that ATOM holders will exercise discretion in initial staking to ensure the network
-does not ever become excessively centralized as we move steadily to the target of 66% ATOMs staked. This is 
-a first of its kind experiment in bootstrapping a decentralized network. Other proof of stake networks have 
+does not ever become excessively centralized as we move steadily to the target of 66% ATOMs staked. This is
+a first of its kind experiment in bootstrapping a decentralized network. Other proof of stake networks have
 bootstrapped with the aid of a foundation or other administrator. We hope to bootstrap as a decentralized community, building on the shared experiences of many many testnets.
 
 
