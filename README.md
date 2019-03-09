@@ -121,7 +121,7 @@ be staked via genesis transactions.
 ## A Note about your Validator Signing Key
 
 Your validator signing private key lives at `~/.gaiad/config/priv_validator_key.json`. If this key is stolen, an attacker would be able to make
-your validator double sign, causing a slash of 5% of your atoms and the tombstoning of your validator. If you are interested in how to better protect this key please see the [`tendermint/kms`](https://github.com/tendermint/kms) repo. We will have a complete guide for how to secure this file soon after launch.
+your validator double sign, causing a slash of 5% of your atoms and the tombstoning of your validator. If you are interested in how to better protect this key please see the [`tendermint/kms`](https://github.com/tendermint/kms) (_*use at your own risk*_) repo. We will have a complete guide for how to secure this file soon after launch.
 
 ## Next Steps
 
