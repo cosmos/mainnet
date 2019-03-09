@@ -15,7 +15,7 @@ that you will be around to bring your validator online by the recommended genesi
 Please keep the following things in mind.
 
 1. This process is intended for technically inclined people who have participated in our testnets and Game of Stakes. If you aren't already familiar with this process, we advise against participating due to the risks involved.
-2. ATOMs staked during genesis will be at risk of 5% slashing if your validator double signs. If you accidentally misconfigure your validator setup, this can easily happen, and we do not expect ATOMs so slashed to be recoverable by any means.
+2. ATOMs staked during genesis will be at risk of 5% slashing if your validator double signs. If you accidentally misconfigure your validator setup, this can easily happen, and we do not expect ATOMs so slashed to be recoverable by any means. Additionally, if you double-sign, your validator will be tombstoned and you will be required to change operator and signing keys.
 3. ATOMs staked during genesis or after will be locked up as part of the defense against long range attacks for 3 weeks. They can be re-delegated or undelegated, but will not be transferrable until a hard-fork enables transfers.
 
 ## Genesis File
