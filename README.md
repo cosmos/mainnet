@@ -10,14 +10,13 @@ signed `gentx` transactions with non-zero ATOMs submitted during this genesis ce
 Genesis transactions will be collected on Github in this repository and checked for validity by an automated script.
 
 By participating in this ceremony and submitting a gen-tx, you are making a commitment to your fellow Cosmonauts
-that you will be around to bring your validator online at the recommended genesis time of XXX to launch the network.
+that you will be around to bring your validator online at the recommended genesis time of 13 March 2019 23:00 GMT to launch the network.
 
 Please keep the following things in mind.
 
 1. This process is intended for technically inclined people who have participated in our testnets and Game of Stakes. If you aren't already familiar with this process, we advise against participating due to the risks involved.
 2. ATOMs staked during genesis will be at risk of 5% slashing if your validator double signs. If you accidentally misconfigure your validator setup, this can easily happen, and we do not expect ATOMs so slashed to be recoverable by any means.
 3. ATOMs staked during genesis or after will be locked up as part of the defense against long range attacks for 3 weeks. They can be re-delegated or undelegated, but will not be transferrable until a hard-fork enables transfers.
-4. Please be sure to be available to bring your validator online at genesis time: 13 March 2019 23:00 GMT
 
 ## Genesis File
 
@@ -179,7 +178,7 @@ be staked via genesis transactions.
 
 ## A Note about your Validator Signing Key
 
-Your validator signing private key lives at `~/.gaiad/config/priv_validator.json`. If this key is stolen, an attacker would be able to make
+Your validator signing private key lives at `~/.gaiad/config/priv_validator_key.json`. If this key is stolen, an attacker would be able to make
 your validator double sign, causing a slash of 5% of your atoms. If you are interested in how to better protect this key please see the [`tendermint/kms`](https://github.com/tendermint/kms) repo. We will have a complete guide for how to secure this file soon after launch.
 
 ## Next Steps
