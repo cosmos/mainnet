@@ -1,27 +1,39 @@
 # Genesis Validator Ceremony
 
-Welcome to the Cosmos Hub Genesis Validator Ceremony.
+Welcome to the Cosmos Hub Genesis Validator Ceremony!
+
+## What is it?
 
 The recommended initial validator set for the Genesis State of the Cosmos Network is computed from the set of
 signed `gentx` transactions with non-zero ATOMs submitted during this genesis ceremony.
 
 Genesis transactions will be collected on Github in this repository and checked for validity by an automated script.
 
-This repository contains a work-in-progress recommendation for the genesis file called [`penultimate_genesis.json`](./penultimate_genesis.json).
-It **IS NOT** the final recommended genesis file. 
-If you find an error in this genesis file, please contact us
-immediately at "genesis at interchain dot io".
-A final recommendation will be available shortly, including a justification for
-all components of the genesis file and scripts to recompute it.
-
-Anyone with an ATOM allocation in the [`penultimate_genesis.json`](./penultimate_genesis.json) who intends to participate in the genesis ceremony must submit a pull request
-containing a valid `gen-tx` to this repository in the `/gentx` folder with a file name like `<moniker>.json`.
+By participating in this ceremony and submitting a gen-tx, you are making a commitment to your fellow Cosmonauts
+that you will be around to bring your validator online at the recommended genesis time of XXX to launch the network.
 
 Please keep the following things in mind.
 
 1. This process is intended for technically inclined people who have participated in our testnets and Game of Stakes. If you aren't already familiar with this process, we advise against participating due to the risks involved.
 2. ATOMs staked during genesis will be at risk of 5% slashing if your validator double signs. If you accidentally misconfigure your validator setup, this can easily happen, and we do not expect ATOMs so slashed to be recoverable by any means. 
 3. ATOMs staked during genesis or after will be locked up as part of the defense against long range attacks for 3 weeks. They can be re-delegated or undelegated, but will not be transferrable until a hard-fork enables transfers.
+
+## Genesis File
+
+**WARNING: THIS IS NOT THE FINAL RECOMMENDATION FOR THE GENESIS FILE**
+
+This repository contains a work-in-progress recommendation for the genesis file called [`penultimate_genesis.json`](./penultimate_genesis.json).
+It **IS NOT** the final recommended genesis file. 
+If you find an error in this genesis file, please contact us
+immediately at "genesis at interchain dot io".
+
+A final recommendation will be available shortly, including a justification for
+all components of the genesis file and scripts to recompute it.
+
+Anyone with an ATOM allocation in the [`penultimate_genesis.json`](./penultimate_genesis.json) who intends to participate in the genesis ceremony must submit a pull request
+containing a valid `gen-tx` to this repository in the `/gentx` folder with a file name like `<moniker>.json`.
+
+## Instructions
 
 Generally the steps to create a validator are as follows:
 
@@ -103,7 +115,13 @@ cp ~/.gaiad/config/gentx/gentx-<node_id>.json ./gentx/<moniker>.json
 We will only accept self delegation transactions up to 100,000 atoms for genesis. We expect 1-5% of the ATOM allocation to 
 be staked via genesis transactions.
 
-On initialization, the Cosmos Hub Bonded Proof-of-Stake system will kick in to 
+## Next Steps
+
+Wait for the Interchain Foundation to publish a final recommendation for the 
+Genesis Block Release Software and be ready to come online at the recommended
+time.
+
+On initialization of the software, the Cosmos Hub Bonded Proof-of-Stake system will kick in to 
 determine the initial validator set (max 100 validators) from the set of `gentx` transactions.
 More than 2/3 of the voting power of this set must be online and participating in consensus
 in order to create the first block and start the Cosmos Hub.
