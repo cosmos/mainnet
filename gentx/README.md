@@ -57,9 +57,11 @@ This will produce a file in the `~/.gaiad/config/gentx/` folder that has a name 
         "signature": "ZgoOHWB90GIh++kZKWDv8mZok2nQnVcEyEWM6paafFs2ieu4GfAwdjnxsx608LD6+i63kRPRFJv8E81bSSL92A=="
       }
     ],
-    "memo": "01cbbd3506b422d782e5472e1e1b4aca8f8eaec0@10.138.0.3:26656"
+    "memo": "<node_id>@<ip>:26656"
   }
 }
 ```
 
 To submit your `gentx` for inclusion in genesis, open a pull request against this repository and place the contents in a file `/gentx/<moniker>.json`.
+
+__**NOTE**__: If you would like to override the memo field use the `--ip` and `--node-id` flags for the `gaiad gentx` command above.
