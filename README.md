@@ -93,7 +93,7 @@ This will produce a file in the ~/.gaiad/config/gentx/ folder that has a name wi
 }
 ```
 
-To participate in this ceremony, Copy this file to the `gentx` folder in this repo 
+Finally, to participate in this ceremony, Copy this file to the `gentx` folder in this repo 
 and submit a pull request:
 
 ```
