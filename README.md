@@ -4,20 +4,27 @@ Welcome to the Cosmos Hub Genesis Validator Ceremony!
 
 ## What is it?
 
-The recommended initial validator set for the Genesis State of the Cosmos Network is computed from the set of
-signed `gentx` transactions with non-zero ATOMs submitted during this genesis ceremony.
+This *is not* the launch of the Cosmos Hub. Before a blockchain like the
+Cosmos Hub can launch, it needs to determine an initial validator set.
+
+This is a ceremony to establish a decentralized initial validator set
+that can be recommended for the Genesis State of the Cosmos Network.
+This validator set is computed from the set of signed `gentx` transactions with non-zero ATOMs submitted during this genesis ceremony.
 
 Genesis transactions will be collected on Github in this repository and checked for validity by an automated script.
-We will suspend genesis file collection on 12 March 2019 23:00 GMT and publish the final genesis as soon as possible after that time.
+Genesis file collection will terminate on 12 March 2019 23:00 GMT. The final recommended genesis file will be published shortly after that time.
 
 By participating in this ceremony and submitting a gen-tx, you are making a commitment to your fellow Cosmonauts
-that you will be around to bring your validator online by the recommended genesis time of 13 March 2019 23:00 GMT to launch the network. Note that you can start `gaiad` before that time and, assuming you configure it successfully, it will automatically start the peer-to-peer and consensus processes once the genesis timestamp is reached.
+that you will be around to bring your validator online by the recommended genesis time of 13 March 2019 23:00 GMT to launch the network. Note that you can start `gaiad` 
+with the recommended genesis file before that time and, assuming you configure it successfully, it will automatically start the peer-to-peer and consensus processes once the genesis timestamp is reached.
 
 Please keep the following things in mind.
 
-1. This process is intended for technically inclined people who have participated in our testnets and Game of Stakes. If you aren't already familiar with this process, we advise against participating due to the risks involved.
-2. ATOMs staked during genesis will be at risk of 5% slashing if your validator double signs. If you accidentally misconfigure your validator setup, this can easily happen, and we do not expect ATOMs so slashed to be recoverable by any means. Additionally, if you double-sign, your validator will be tombstoned and you will be required to change operator and signing keys.
+1. This process is intended for technically inclined people who have participated in Cosmos testnets and Game of Stakes. If you aren't already familiar with this process, you are advised against participating due to the risks involved. There is no need for you to participate if you feel unprepared - 
+ you can create a validator or stake ATOMs any time after launch.
+2. ATOMs staked during genesis will be at risk of 5% slashing if your validator double signs. If you accidentally misconfigure your validator setup, this can easily happen, and slashed ATOMs are not expected to be recoverable by any means. Additionally, if you double-sign, your validator will be tombstoned and you will be required to change operator and signing keys.
 3. ATOMs staked during genesis or after will be locked up as part of the defense against long range attacks for 3 weeks. They can be re-delegated or undelegated, but will not be transferrable until a hard-fork enables transfers.
+   
 
 ## Genesis File
 
@@ -108,7 +115,7 @@ This will produce a file in the ~/.gaiad/config/gentx/ folder that has a name wi
 
 __**NOTE**__: If you would like to override the memo field use the `--ip` and `--node-id` flags for the `gaiad gentx` command above.
 
-Finally, to participate in this ceremony, Copy this file to the `gentx` folder in this repo
+Finally, to participate in this ceremony, copy this file to the `gentx` folder in this repo
 and submit a pull request:
 
 ```
