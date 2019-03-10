@@ -5,6 +5,7 @@ To generate your `gentx` run the following command with the launch genesis file 
 ```
 $ gaiad gentx \
   --amount <amount_of_delegation> \
+  --min-self-delegation <min_self_delegation> \
   --commission-rate <commission_rate> \
   --commission-max-rate <commission_max_rate> \
   --commission-max-change-rate <commission_max_change_rate> \

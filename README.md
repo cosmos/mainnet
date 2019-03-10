@@ -22,7 +22,7 @@ Please keep the following things in mind.
 
 1. This process is intended for technically inclined people who have participated in Cosmos testnets and Game of Stakes. If you aren't already familiar with this process, you are advised against participating due to the risks involved. There is no need for you to participate if you feel unprepared - 
  you can create a validator or stake ATOMs any time after launch.
-2. ATOMs staked during genesis will be at risk of 5% slashing if your validator double signs. If you accidentally misconfigure your validator setup, this can easily happen, and slashed ATOMs are not expected to be recoverable by any means. Additionally, if you double-sign, your validator will be tombstoned and you will be required to change operator and signing keys.
+2. ATOMs staked during genesis will be at risk of 5% slashing if your validator double signs. If you accidentally misconfigure your validator setup, this can easily happen, and slashed ATOMs are not expected to be recoverable by any means. Additionally, if you double-sign, your validator will be [tombstoned](https://github.com/cosmos/cosmos-sdk/blob/master/docs/spec/slashing/07_tombstone.md) and you will be required to change operator and signing keys.
 3. ATOMs staked during genesis or after will be locked up as part of the defense against long range attacks for 3 weeks. They can be re-delegated or undelegated, but will not be transferrable until a hard-fork enables transfers.
    
 
@@ -128,7 +128,7 @@ be staked via genesis transactions.
 ## A Note about your Validator Signing Key
 
 Your validator signing private key lives at `~/.gaiad/config/priv_validator_key.json`. If this key is stolen, an attacker would be able to make
-your validator double sign, causing a slash of 5% of your atoms and the tombstoning of your validator. If you are interested in how to better protect this key please see the [`tendermint/kms`](https://github.com/tendermint/kms) (_*use at your own risk*_) repo. We will have a complete guide for how to secure this file soon after launch.
+your validator double sign, causing a slash of 5% of your atoms and the [tombstoning](https://github.com/cosmos/cosmos-sdk/blob/master/docs/spec/slashing/07_tombstone.md) of your validator. If you are interested in how to better protect this key please see the [`tendermint/kms`](https://github.com/tendermint/kms) (_*use at your own risk*_) repo. We will have a complete guide for how to secure this file soon after launch.
 
 ## Next Steps
 
