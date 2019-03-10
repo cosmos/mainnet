@@ -35,9 +35,9 @@
       {
         "pub_key": {
           "type": "tendermint/PubKeySecp256k1",
-          "value": "AvJCGcP6w2g7pV2ZSVPKFa56h1yMLsnDeVtjb+pHemdC"
+          "value": "ArSpHTTpHAZ17Co4dsgfY0fuF5RAA5OZtxnmZLA2Z6vI"
         },
-        "signature": "RBxMFdkf+W7mENFhPMagMlTqxgEVJSe2e3zXoyHKEHVC/fTbrlCxipFJftojE8/lbbZq2TG4a0yv0neoEU8PwA=="
+        "signature": "ujZakKBUNg3w3OmaUSD4usC3evYt3LK4ZgBlrgOEIqU+/65UF56nuxzkLCv6tPO+dK+atrJLUX5OlH/LbbLdUw=="
       }
     ],
     "memo": "51da73aaf1280016998efada239b2fd59ccc4116@--node-id:26656"
