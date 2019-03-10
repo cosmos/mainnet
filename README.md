@@ -56,6 +56,7 @@ Generally the steps to create a validator are as follows:
 ```bash
 gaiad gentx \
   --amount <amount_of_delegation_uatom> \
+  --min-self-delegation <min_self_delegation> \
   --commission-rate <commission_rate> \
   --commission-max-rate <commission_max_rate> \
   --commission-max-change-rate <commission_max_change_rate> \
