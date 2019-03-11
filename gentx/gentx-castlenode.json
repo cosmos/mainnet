@@ -31,7 +31,15 @@
          "amount":null,
          "gas":"200000"
       },
-      "signatures":null,
+    "signatures": [
+      {
+        "pub_key": {
+          "type": "tendermint/PubKeySecp256k1",
+          "value": "A6YjD9RkuLPQ1tCzRVQoWEG1FmyNgPoVTAN1HrCkHoI9"
+        },
+        "signature": "8TD4j8FewRFIPMnlSCziIQBXphe/xpj7hsRTHZYjgCVZDLwollQmdlYB/2z6CLpxWnYaCpn5/y6u1wWdzpKA+A=="
+      }
+    ],
       "memo":""
    }
 }
