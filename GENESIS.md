@@ -68,7 +68,7 @@ website](https://fundraiser.cosmos.network).
 Of the recommended 236,198,958.12 ATOMs, and as described in much more detail
 below:
 
-- 1,777,707 ATOMs are vesting with a 1 year cliff to founders, employees, and contractors of All in Bits Inc
+- 1,777,707 ATOMs are locked until August 29, 2019 in accounts controlled by current and former employees, contractors, and founders of All in Bits Inc
 - 21,842,188.81 ATOMs are vesting monthly for 22 months starting 2 months after launch to All in Bits Inc
 - 20,277,188.49 ATOMs are allocated to the ICF 
 
@@ -131,12 +131,12 @@ their transferability "vests" over time.
 AiBs ATOMs are split into two sets, each subject to a different form of vesting.
 
 The first set consists of 1,777,707 ATOMs allocated to 44 addresses owned by AiB founders, contractors, and employees.
-These atoms are non-transferable for 12 months, but can be used for staking and
-governance. After 12 months, if the transferability of the ATOM is activated, they become fully transferable. See
+These atoms are non-transferable for 12 months from the date of their granting, which was August 29, 2018, 
+but they can be used for staking and governance. After 12 months, if the transferability of the ATOM is activated, they become fully transferable. See
 [JSON](accounts/aib/employees.json).
 
 The remaining set of AiBs atoms are held in an AiB multisig and vest
-continuously starting 2 months after genesis.
+continuously and uniformly starting 2 months after genesis.
 This is a total of 21,842,188.81 ATOMs.
 See [JSON](accounts/aib/multisig.json).
 
