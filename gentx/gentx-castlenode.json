@@ -1,0 +1,37 @@
+{  
+   "type":"auth/StdTx",
+   "value":{  
+      "msg":[  
+         {  
+            "type":"cosmos-sdk/MsgCreateValidator",
+            "value":{  
+               "description":{  
+                  "moniker":"Castlenode",
+                  "identity":"",
+                  "website":"https://www.castlenode.com/cosmos",
+                  "details":"Castlenode is a validator operator focused on security and run by experienced professionals. Please read our Terms and Conditions on our website before delegating"
+               },
+               "commission":{  
+                  "rate":"0.090000000000000000",
+                  "max_rate":"0.500000000000000000",
+                  "max_change_rate":"0.050000000000000000"
+               },
+               "min_self_delegation":"1",
+               "delegator_address":"cosmos1qs8tnw2t8l6amtzvdemnnsq9dzk0ag0z37gh3h",
+               "validator_address":"cosmosvaloper1qs8tnw2t8l6amtzvdemnnsq9dzk0ag0z52uzay",
+               "pubkey":"cosmosvalconspub1addwnpepqwnzxr75vjut85xk6ze524pgtpqm29nv3kq0592vqd63av9yr6pr6mp329t",
+               "value":{  
+                  "denom":"uatom",
+                  "amount":"14740000000"
+               }
+            }
+         }
+      ],
+      "fee":{  
+         "amount":null,
+         "gas":"200000"
+      },
+      "signatures":null,
+      "memo":""
+   }
+}
