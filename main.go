@@ -20,7 +20,7 @@ import (
 )
 
 const (
-	// processed/final contributors files
+	// processed contributors files
 	icfJSON     = "accounts/icf/contributors.json"
 	privateJSON = "accounts/private/contributors.json"
 	publicJSON  = "accounts/public/contributors.json"

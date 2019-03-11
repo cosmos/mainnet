@@ -40,7 +40,7 @@ go run eth_main.go atoms
 
 ## Combine
 
-Combine them into `atoms.json`:
+Combine them into `contributors.json`:
 
 ```
 go run main.go
