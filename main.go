@@ -36,7 +36,8 @@ const (
 	atomGenesisTotal    = 236198958.12
 	addressGenesisTotal = 984
 
-	timeGenesisString = "2019-03-15 00:04:00 -0000 UTC"
+	timeGenesisString       = "2019-03-14 23:00:00 -0000 UTC"
+	timeEmployeeGrantString = "2018-08-30 00:00:00 -0000 UTC"
 )
 
 // constants but can't use `const`
@@ -44,9 +45,9 @@ var (
 	timeGenesis time.Time
 
 	// vesting times
-	timeGenesisTwoMonths time.Time
-	timeGenesisOneYear   time.Time
-	timeGenesisTwoYears  time.Time
+	timeAiBVestingStart    time.Time
+	timeAiBVestingEnd      time.Time
+	timeEmployeeVestingEnd time.Time
 )
 
 // initialize the times!
@@ -57,9 +58,18 @@ func init() {
 	if err != nil {
 		panic(err)
 	}
-	timeGenesisTwoMonths = timeGenesis.AddDate(0, 2, 0)
-	timeGenesisOneYear = timeGenesis.AddDate(1, 0, 0)
-	timeGenesisTwoYears = timeGenesis.AddDate(2, 0, 0)
+
+	timeEmployeeGrant, err := time.Parse(timeLayoutString, timeEmployeeGrantString)
+	if err != nil {
+		panic(err)
+	}
+
+	// employees vest for 1 year from their grant date
+	timeEmployeeVestingEnd = timeEmployeeGrant.AddDate(1, 0, 0)
+
+	// aib vests for 2 years from genesis starting 2 months after genesis
+	timeAiBVestingStart = timeGenesis.AddDate(0, 2, 0)
+	timeAiBVestingEnd = timeGenesis.AddDate(2, 0, 0)
 }
 
 // max precision on amt is two decimals ("centi-atoms")
@@ -118,7 +128,7 @@ func main() {
 				Address:         fromBech32(aibAcc.Address),
 				Coins:           coins,
 				OriginalVesting: coins,
-				EndTime:         timeGenesisOneYear.Unix(),
+				EndTime:         timeEmployeeVestingEnd.Unix(),
 			}
 			genesisAccounts = append(genesisAccounts, genAcc)
 		}
@@ -130,8 +140,8 @@ func main() {
 			Address:         fromBech32(multisig.Address),
 			Coins:           multisigCoins,
 			OriginalVesting: multisigCoins,
-			StartTime:       timeGenesisTwoMonths.Unix(),
-			EndTime:         timeGenesisTwoYears.Unix(),
+			StartTime:       timeAiBVestingStart.Unix(),
+			EndTime:         timeAiBVestingEnd.Unix(),
 		}
 		genesisAccounts = append(genesisAccounts, genAcc)
 	}
