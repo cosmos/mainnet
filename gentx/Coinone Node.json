@@ -1,0 +1,44 @@
+{
+  "type":"auth/StdTx",
+  "value":{
+    "msg":[
+      {
+        "type":"cosmos-sdk/MsgCreateValidator",
+        "value":{
+          "description":{
+            "moniker":"Coinone Node",
+            "identity":"",
+            "website":"https://node.coinone.co.kr",
+            "details":""
+          },
+          "commission":{
+            "rate":"0.100000000000000000",
+            "max_rate":"0.200000000000000000",
+            "max_change_rate":"0.010000000000000000"
+          },
+          "min_self_delegation":"1",
+          "delegator_address":"cosmos1pz6yu5vdxfzw85cn6d7rp52me4lu8khx7lpkzd",
+          "validator_address":"cosmosvaloper1pz6yu5vdxfzw85cn6d7rp52me4lu8khxmt4rw7",
+          "pubkey":"cosmosvalconspub1zcjduepqqxwe92mdwtg9l6flwytd3yptsaadtwr5gs07azlae7zcemlsxeqqtghcxt",
+          "value":{
+            "denom":"uatom",
+            "amount":"5000000000"
+          }
+        }
+      }
+    ],
+    "fee":{
+      "amount":null,
+      "gas":"200000"
+    },
+    "signatures":[
+      {"pub_key":{
+        "type":"tendermint/PubKeySecp256k1",
+        "value":"AwTiHwim/dD3CZzUodiZ70trDOLbrKlNuCs8st5jItBK"
+      },
+      "signature":"+VPACliwgyE9WsiizvpXfHQ4qcRSdYR2FSr8GfyDMqIbcsuuAoUraYNhFSk2A/tp3Ae3KeW5yrs+xRhS3r2Ygw=="
+      }
+    ],
+    "memo":"1f8dcbc3d7799a31a01d65d87b0d27ae1e2dde32@10.17.128.84:26656"
+  }
+}
