@@ -36,7 +36,7 @@ const (
 	atomGenesisTotal    = 236198958.12
 	addressGenesisTotal = 984
 
-	timeGenesisString = "2019-03-14 23:00:00 -0000 UTC"
+	timeGenesisString = "2019-03-13 23:00:00 -0000 UTC"
 )
 
 // constants but can't use `const`
