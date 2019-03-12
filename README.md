@@ -11,6 +11,9 @@ This is a ceremony to establish a decentralized initial validator set
 that can be recommended for the Genesis State of the Cosmos Network.
 This validator set is computed from the set of signed `gentx` transactions with non-zero ATOMs submitted during this genesis ceremony.
 
+Before you consider participating in this ceremony, please read the entire
+document.
+
 Genesis transactions will be collected on Github in this repository and checked for validity by an automated script.
 Genesis file collection will terminate on 12 March 2019 23:00 GMT. The final recommended genesis file will be published shortly after that time.
 
@@ -34,6 +37,8 @@ This repository contains a work-in-progress recommendation for the genesis file 
 It **IS NOT** the final recommended genesis file.
 If you find an error in this genesis file, please contact us
 immediately at "genesis at interchain dot io".
+
+To understand how this file was compiled, please see [GENESIS.md](GENESIS.md).
 
 A final recommendation will be available shortly, including a justification for
 all components of the genesis file and scripts to recompute it.
