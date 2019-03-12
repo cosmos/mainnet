@@ -100,10 +100,12 @@ func main() {
 		os.Exit(1)
 	}
 
-	bz := getURL(listPullsURL + "?" + accessToken + "&per_page=100")
+	url := listPullsURL + "?" + accessToken + "&per_page=100"
+	bz := getURL(url)
 	var pulls []pullsResponse
 	err := json.Unmarshal(bz, &pulls)
 	if err != nil {
+		fmt.Println(url)
 		fmt.Println(string(bz))
 		panic(err)
 	}
@@ -113,22 +115,25 @@ func main() {
 	var total float64
 
 	for _, thisPull := range pulls {
-		bz := getURL(thisPull.URL + "?" + accessToken)
+		url := thisPull.URL + "?" + accessToken
+		bz := getURL(url)
 		var pull pullResponse
 		err = json.Unmarshal(bz, &pull)
 		if err != nil {
+			fmt.Println(url)
 			fmt.Println(string(bz))
 			panic(err)
 		}
 		repoName := pull.Head.Repo.Name
-		fmt.Println("REPO NAME", repoName, thisPull.URL)
+		fmt.Println(repoName)
 		branch := pull.Head.Ref
 
-		url := fmt.Sprintf(contentPathURLFmt+"?ref=%s&%s", repoName, branch, accessToken)
+		url = fmt.Sprintf(contentPathURLFmt+"?ref=%s&%s", repoName, branch, accessToken)
 		bz = getURL(url)
 		var files []contentsResponse
 		err = json.Unmarshal(bz, &files)
 		if err != nil {
+			fmt.Println(url)
 			fmt.Println(string(bz))
 			panic(err)
 		}
@@ -150,6 +155,7 @@ func main() {
 		var content contentResponse
 		err = json.Unmarshal(bz, &content)
 		if err != nil {
+			fmt.Println(url)
 			fmt.Println(string(bz))
 			panic(err)
 		}
@@ -180,7 +186,7 @@ func main() {
 			fmt.Printf("INVALID GENTX %s, %s", repoName, name)
 			continue
 		}
-		fmt.Println(name, atoms)
+		fmt.Println("...", name, atoms)
 		validators[name] = atoms
 		total += atoms
 	}
