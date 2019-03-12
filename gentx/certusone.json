@@ -12,7 +12,7 @@
             "details": "Stake and earn rewards with the most secure and stable validator. Winner of the Game of Stakes. Operated by Certus One Inc. By delegating, you confirm that you are aware of the risk of slashing and that Certus One Inc is not liable for any potential damages to your investment."
           },
           "commission": {
-            "rate": "0.150000000000000000",
+            "rate": "0.125000000000000000",
             "max_rate": "0.300000000000000000",
             "max_change_rate": "0.010000000000000000"
           },
@@ -37,7 +37,7 @@
           "type": "tendermint/PubKeySecp256k1",
           "value": "A0hW8ESfYxhZt8Jxix/qgLOIl3TjnOrpTDSEGzo0qRm0"
         },
-        "signature": "/E0G+EmBac1BS2q1zfoJJWWTVLCOeeqMa5cHHOknpGYmUaoxDKbr+vlOG+T/b3rnTfvXxfeI+QtdyBC+YF7T9A=="
+        "signature": "FxQ3VLXQeaRbeSQoumEvr52mcZC6ej1WAGH1papeukN5EkUGpY5NicoHMFNIRV4BGRKgSNoiFIwvVCfTHIWXhQ=="
       }
     ],
     "memo": ""
