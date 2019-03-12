@@ -198,6 +198,8 @@ func main() {
 		if err != nil {
 			panic(err)
 		}
+		// set genesis time
+		genesisDoc.GenesisTime = timeGenesis
 
 		// read the gaia state from the generic tendermint app state bytes
 		// and populate with the accounts.
