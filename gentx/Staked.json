@@ -21,7 +21,7 @@
           "validator_address": "cosmosvaloper1we6knm8qartmmh2r0qfpsz6pq0s7emv3e0meuw",
           "pubkey": "cosmosvalconspub1zcjduepq6adydsk7nw3d63qtn30t5rexhfg56pq44sw4l9ld0tcj6jvnx30s5xw9ar",
           "value": {
-            "denom": "muon",
+            "denom": "uatom",
             "amount": "4500000000"
           }
         }
@@ -37,7 +37,7 @@
           "type": "tendermint/PubKeySecp256k1",
           "value": "A4ox0f6xVNCbdP6xlzk2zkvoyTryEmaQp+vc+nWfUd2o"
         },
-        "signature": "pGhKR+5hKO84l8m0wJ4jICTh60YZx26wXAqnjakn9SI75SA95Kl3V8wwLjIQTiYSqqFOelbVE/qF6q/sU9WcwA=="
+        "signature": "3xACydJ2/vq/aNQ4HH2oU2wVDn4zoPqJUvpzPXrSoj5T461QggzXi4aKKpqBupOcpYcCMvqjm63K5glucn0E/g=="
       }
     ],
     "memo": "71f9ed4d7a7adc737914c901396a7ba3aef22c37@100.97.62.209:26656"
