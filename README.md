@@ -137,9 +137,16 @@ your validator double sign, causing a slash of 5% of your atoms and the [tombsto
 
 ## Next Steps
 
-Wait for the Interchain Foundation to publish a final recommendation for the
+Wait for the Interchain Foundation (ICF) to publish a final recommendation for the
 Genesis Block Release Software and be ready to come online at the recommended
 time.
+
+The ICF will recommend a particular genesis file and software version, but there
+is no guarantee a network will ever start from it - nodes and validators may
+never come online, the community may disregard the recommendation and choose
+different genesis files, and/or they may modify the software in arbitrary ways. Such
+outcomes and many more are outside the ICF's control and completely in the hands
+of the community
 
 On initialization of the software, the Cosmos Hub Bonded Proof-of-Stake system will kick in to
 determine the initial validator set (max 100 validators) from the set of `gentx` transactions.
@@ -151,8 +158,13 @@ does not ever become excessively centralized as we move steadily to the target o
 a first of its kind experiment in bootstrapping a decentralized network. Other proof of stake networks have
 bootstrapped with the aid of a foundation or other administrator. We hope to bootstrap as a decentralized community, building on the shared experiences of many many testnets.
 
+See the [blog
+post](https://blog.cosmos.network/the-3-phases-of-the-cosmos-hub-mainnet-fdff3a68c4c0) 
+for more details on the three phases of launch.
+
 
 # Disclaimer
+
 
 The Cosmos Hub is *highly* experimental software. In these early days, we can
 expect to have issues, updates, and bugs. The existing tools require advanced
@@ -163,3 +175,8 @@ the Interchain Cosmos Contribution Terms). Any use of this open source Apache
 warranties or conditions of any kind*, and any and all liability of the
 Interchain Foundation and/or the Tendermint team for damages arising in
 connection to the software is excluded. **Please exercise extreme caution!**
+
+Furthermore, it must be noted that it remains in the community's discretion to adopt or not
+to adopt the Genesis State that Interchain Foundation (ICF) recommends within the Genesis Block
+Software. Therefore, ICF *cannot* guarantee that (i) ATOMs will be created and
+(ii) the recommended allocation as set forth herein will actually take place.
