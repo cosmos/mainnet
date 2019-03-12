@@ -12,7 +12,7 @@
             "details": ""
           },
           "commission": {
-            "rate": "0.250000000000000000",
+            "rate": "0.200000000000000000",
             "max_rate": "1.000000000000000000",
             "max_change_rate": "0.010000000000000000"
           },
@@ -37,7 +37,7 @@
           "type": "tendermint/PubKeySecp256k1",
           "value": "Ag+I0OzjX2AHatgaW1kJjNRs+Ck/2UQe8t0eDr5Av3/6"
         },
-        "signature": "t3/lKu9GUzR0dymEYrEoxrAmVF5hSKCdw1iDrLfWlaIjlsDxDb9RhiMl9fkC0yfwDtuYguaDl3hBdDEiNkT0Tg=="
+        "signature": "pFmZrSFtfH/LrHnLAyWvs9o/YJJDb9TA5RbnKxmLua1rNlOv3x+zHgelJeFCsy8n4qedMqZ9QZbxJ7snUZacQA=="
       }
     ],
     "memo": ""
