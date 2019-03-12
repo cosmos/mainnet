@@ -6,6 +6,9 @@ Welcome to the Cosmos Hub Genesis Validator Ceremony!
 
 This *is not* the launch of the Cosmos Hub. Before a blockchain like the
 Cosmos Hub can launch, it needs to determine an initial validator set.
+See the [blog
+post](https://blog.cosmos.network/the-3-phases-of-the-cosmos-hub-mainnet-fdff3a68c4c0) 
+for more details on the three phases of launch.
 
 This is a ceremony to establish a decentralized initial validator set
 that can be recommended for the Genesis State of the Cosmos Network.
@@ -33,6 +36,13 @@ Please keep the following things in mind.
 
 **WARNING: THIS IS NOT THE FINAL RECOMMENDATION FOR THE GENESIS FILE**
 
+The Interchain Foundation (ICF) will recommend a particular genesis file and software version, but there
+is no guarantee a network will ever start from it - nodes and validators may
+never come online, the community may disregard the recommendation and choose
+different genesis files, and/or they may modify the software in arbitrary ways. Such
+outcomes and many more are outside the ICF's control and completely in the hands
+of the community.
+
 This repository contains a work-in-progress recommendation for the genesis file called [`penultimate_genesis.json`](./penultimate_genesis.json).
 It **IS NOT** the final recommended genesis file.
 If you find an error in this genesis file, please contact us
@@ -45,6 +55,11 @@ all components of the genesis file and scripts to recompute it.
 
 Anyone with an ATOM allocation in the [`penultimate_genesis.json`](./penultimate_genesis.json) who intends to participate in the genesis ceremony must submit a pull request
 containing a valid `gen-tx` to this repository in the `/gentx` folder with a file name like `<moniker>.json`.
+
+It must be noted that it remains in the community's discretion to adopt or not
+to adopt the Genesis State that the ICF recommends within the Genesis Block
+Software. Therefore, the ICF cannot guarantee that (i) ATOMs will be created and
+(ii) the recommended allocation as set forth herein will actually take place
 
 ## Instructions
 
@@ -154,6 +169,7 @@ bootstrapped with the aid of a foundation or other administrator. We hope to boo
 
 # Disclaimer
 
+
 The Cosmos Hub is *highly* experimental software. In these early days, we can
 expect to have issues, updates, and bugs. The existing tools require advanced
 technical skills and involve risks which are outside of the control of the
@@ -163,3 +179,8 @@ the Interchain Cosmos Contribution Terms). Any use of this open source Apache
 warranties or conditions of any kind*, and any and all liability of the
 Interchain Foundation and/or the Tendermint team for damages arising in
 connection to the software is excluded. **Please exercise extreme caution!**
+
+Furthermore, it must be noted that it remains in the community's discretion to adopt or not
+to adopt the Genesis State that Interchain Foundation (ICF) recommends within the Genesis Block
+Software. Therefore, ICF *cannot* guarantee that (i) ATOMs will be created and
+(ii) the recommended allocation as set forth herein will actually take place.
