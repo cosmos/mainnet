@@ -1,0 +1,45 @@
+{
+  "type": "auth/StdTx",
+  "value": {
+    "msg": [
+      {
+        "type": "cosmos-sdk/MsgCreateValidator",
+        "value": {
+          "description": {
+            "moniker": "lunamint",
+            "identity": "4F26823468DD7518",
+            "website": "https://lunamint.com",
+            "details": "A messenger, and so much more Decentralized finance at your fingertips."
+          },
+          "commission": {
+            "rate": "0.150000000000000000",
+            "max_rate": "1.000000000000000000",
+            "max_change_rate": "1.000000000000000000"
+          },
+          "min_self_delegation": "1",
+          "delegator_address": "cosmos1ec3p6a75mqwkv33zt543n6cnxqwun37rxqj2vl",
+          "validator_address": "cosmosvaloper1ec3p6a75mqwkv33zt543n6cnxqwun37rr5xlqv",
+          "pubkey": "cosmosvalconspub1zcjduepqd85nu5nelvcyyzcsrr0yaglh8rfvn6cv9pp3p0hgmwtk8hf3cazqc7vz5c",
+          "value": {
+            "denom": "uatom",
+            "amount": "6500000000"
+          }
+        }
+      }
+    ],
+    "fee": {
+      "amount": null,
+      "gas": "200000"
+    },
+    "signatures": [
+      {
+        "pub_key": {
+          "type": "tendermint/PubKeySecp256k1",
+          "value": "A5jDkVzd9IL+B6ZPeFIWW8VkZuTGQ8lOKtduG0Z37GkB"
+        },
+        "signature": "k3wrbzHvnszs5jyK7qvMBhvMaznBooNsuG4KQyYhMbpnlF1CkvM9RZtVIq7c2Fe+3fqDopwqSbrfb6mUFrxvIA=="
+      }
+    ],
+    "memo": ""
+  }
+}
