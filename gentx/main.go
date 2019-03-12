@@ -100,13 +100,14 @@ func main() {
 		os.Exit(1)
 	}
 
-	bz := getURL(listPullsURL + "?" + accessToken)
+	bz := getURL(listPullsURL + "?" + accessToken + "&per_page=100")
 	var pulls []pullsResponse
 	err := json.Unmarshal(bz, &pulls)
 	if err != nil {
 		fmt.Println(string(bz))
 		panic(err)
 	}
+	fmt.Println("PULLS", len(pulls))
 
 	validators := make(map[string]float64)
 	var total float64
@@ -124,7 +125,6 @@ func main() {
 		branch := pull.Head.Ref
 
 		url := fmt.Sprintf(contentPathURLFmt+"?ref=%s&%s", repoName, branch, accessToken)
-		fmt.Println("URL", url)
 		bz = getURL(url)
 		var files []contentsResponse
 		err = json.Unmarshal(bz, &files)
@@ -147,7 +147,6 @@ func main() {
 		}
 		url = fmt.Sprintf(contentPathURLFmt+"/"+name+"?ref=%s&%s", repoName, branch, accessToken)
 		bz = getURL(url)
-		fmt.Println("URL", url)
 		var content contentResponse
 		err = json.Unmarshal(bz, &content)
 		if err != nil {
@@ -192,6 +191,7 @@ func main() {
 		panic(err)
 	}
 	fmt.Println(string(bz))
+	fmt.Println("Validators", len(validators))
 	fmt.Println("TOTAL", total)
 
 }
