@@ -6,9 +6,6 @@ Welcome to the Cosmos Hub Genesis Validator Ceremony!
 
 This *is not* the launch of the Cosmos Hub. Before a blockchain like the
 Cosmos Hub can launch, it needs to determine an initial validator set.
-See the [blog
-post](https://blog.cosmos.network/the-3-phases-of-the-cosmos-hub-mainnet-fdff3a68c4c0) 
-for more details on the three phases of launch.
 
 This is a ceremony to establish a decentralized initial validator set
 that can be recommended for the Genesis State of the Cosmos Network.
