@@ -9,7 +9,7 @@
             "moniker": "stake.fish",
             "identity": "",
             "website": "stake.fish",
-            "details": "Winner of the Game of Stakes. Brought to you by stake.fish and bitfish"
+            "details": "Winner of the Game of Stakes. Brought to you by stake.fish and bitfish."
           },
           "commission": {
             "rate": "0.040000000000000000",
@@ -37,7 +37,7 @@
           "type": "tendermint/PubKeySecp256k1",
           "value": "A2/+IgTx8HlG4xa68Nkw6dXOWobR+PFOKDhMTrYS5q0r"
         },
-        "signature": "CS+DvI+s8yU99Gzb/HimWiX5ojNQnJZ4MLO0+y5+cll6YTHu1UAM2X3nmYwe+1Xmx4kyglKFMygTvKLDhHNu5w=="
+        "signature": "gOrq4fFvvAB9fCh561hK8lzKPklftQoowQ7u52gkk1Zk13i0bYa3V/aFCZWXIaxlBs74Z2jlxXHGg64TYorrYw=="
       }
     ],
     "memo": ""
