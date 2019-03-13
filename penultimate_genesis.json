@@ -17317,7 +17317,7 @@
           ],
           "memo": "659787510cdb818ad1a3a2eed3ce68a6827354e2@cosmos.bity.com:26656"
         }
-      },	
+      },
       {
         "type": "auth/StdTx",
         "value": {

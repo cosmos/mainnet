@@ -42,7 +42,7 @@ validator set. The ceremony was conducted in [this very GitHub
 repository](https://github.com/cosmos/launch). 
 Details about the ceremony can be found [here](GENESIS-CEREMONY.md).
 
-A total of 66 valid gentx submissions were merged into the `gentx` directory and are
+A total of 67 valid gentx submissions were merged into the `gentx` directory and are
 included in the recommended genesis state.
 
 # Fundraiser Details
