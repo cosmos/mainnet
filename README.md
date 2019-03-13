@@ -62,4 +62,5 @@ Seed nodes
 - `ba3bacc714817218562f743178228f23678b2873@public-seed-node.cosmoshub.certus.one:26656` - Certus One
 - `2626942148fd39830cb7a3acccb235fab0332d86@173.212.199.36:26656` - syncnode
 - `3028c6ee9be21f0d34be3e97a59b093e15ec0658@91.205.173.168:26656` - syncnode
+- `89e4b72625c0a13d6f62e3cd9d40bfc444cbfa77@34.65.6.52:26656` - Cryptium Labs (@adrianbrink, @awasunyin, @cwgoes)
 ```
