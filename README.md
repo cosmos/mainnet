@@ -15,7 +15,8 @@ See the [installation
 instructions](https://cosmos.network/docs/gaia/installation.html)
 and the [guide to joining mainnet](https://cosmos.network/docs/gaia/join-mainnet.html).
 
-Users wishing to interact with the network should carefully review the security
+Users wishing to interact with the network should carefully review [how to
+protect themselves](https://cosmos.network/atom-protection) and the security
 advisories in the recent blog post on 
 [preparing for main net
 launch](https://blog.cosmos.network/cosmos-hub-to-launch-mainnet-a453d2247a34).
