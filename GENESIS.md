@@ -30,13 +30,19 @@ go run main.go
 
 A few lines of text should be printed, followed by two lines listing the total address count and total ATOM supply, and `genesis.json` should be written.
 
+Each subcomponent can be verified according to the `README.md` and `main.go` files
+in the respective directory under `accounts`.
+
 ## Genesis Validator Ceremony
 
 A ceremony was held to determine an initial validator set for the recommended
-genesis state. Details about the ceremony can be found
-[here](README-CEREMONY.md).
+genesis state. The ceremony allowed anyone with a recommended allocation of ATOMs 
+to submit a signed "genesis transaction" declaring their intention to be in the initial
+validator set. The ceremony was conducted in [this very GitHub
+repository](https://github.com/cosmos/launch). 
+Details about the ceremony can be found [here](GENESIS-CEREMONY.md).
 
-All valid gentx submissions were merged into the `gentx` directory and are
+A total of 66 valid gentx submissions were merged into the `gentx` directory and are
 included in the recommended genesis state.
 
 # Fundraiser Details
@@ -68,7 +74,7 @@ website](https://fundraiser.cosmos.network).
 Of the recommended 236,198,958.12 ATOMs, and as described in much more detail
 below:
 
-- 1,777,707 ATOMs are vesting with a 1 year cliff to founders, employees, and contractors of All in Bits Inc
+- 1,777,707 ATOMs are locked for 1 year to current and former employees, contractors, and founders of All in Bits Inc
 - 21,842,188.81 ATOMs are vesting monthly for 22 months starting 2 months after launch to All in Bits Inc
 - 20,277,188.49 ATOMs are allocated to the ICF 
 
@@ -124,7 +130,8 @@ governance, but cannot be transferred, even if the transferability of ATOM is ac
 their transferability "vests" over time. 
 AiBs ATOMs are split into two sets, each subject to a different form of vesting.
 
-The first set consists of 1,777,707 ATOMs allocated to 44 addresses owned by AiB founders, contractors, and employees.
+The first set consists of 1,777,707 ATOMs allocated to 44 addresses owned by AiB founders, contractors, and employees,
+current and past.
 These atoms are non-transferable for 12 months, but can be used for staking and
 governance. After 12 months, if the transferability of the ATOM is activated, they become fully transferable. See
 [JSON](accounts/aib/employees.json).
@@ -151,7 +158,7 @@ criteria set out by AiB. This is a total of 288,500 ATOMs allocated to 53
 addresses. Congrats to the Game-of-Stakes participants! 
 See [JSON](accounts/icf/gos.json).
 
-The final set of ICF atoms are held in an ICF multisig. This is a total of
+The third set of ICF atoms are held in ICF multisigs. This is a total of
 20,277,188.49 ATOMs split between two distinct multisig addresses controlled by
 the ICF. See [JSON](accounts/icf/multisig.json).
 
@@ -166,7 +173,3 @@ the Interchain Cosmos Contribution Terms). Any use of this open source Apache
 warranties or conditions of any kind*, and any and all liability of the
 Interchain Foundation and/or the Tendermint team for damages arising in
 connection to the software is excluded. **Please exercise extreme caution!**
-
-This genesis file is not the final genesis file. Validators still need to 
-append their `gentx` transactions and additional modifications may be made to the 
-file.

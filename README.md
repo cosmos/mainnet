@@ -23,6 +23,5 @@ connection to the software is excluded. **Please exercise extreme caution!**
 
 Furthermore, it must be noted that it remains in the community's discretion to adopt or not
 to adopt the recommended Genesis Block Release Software.
-Therefore, ICF *cannot* guarantee that (i) ATOMs will be created and
+Therefore, Interchain Foundation *cannot* guarantee that (i) ATOMs will be created and
 (ii) the recommended allocation as set forth herein will actually take place.
-

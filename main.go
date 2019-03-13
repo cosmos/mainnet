@@ -130,6 +130,9 @@ func main() {
 		genTxs = append(genTxs, json.RawMessage(bz))
 	}
 
+	fmt.Println("-----------")
+	fmt.Println("TOTAL gen txs", len(genTxs))
+
 	// XXX: the app state is decoded using amino JSON (eg. ints are strings)
 	// doesn't seem like we need to register anything though
 	cdc := amino.NewCodec()
