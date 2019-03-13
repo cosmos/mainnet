@@ -16185,51 +16185,6 @@
               "type": "cosmos-sdk/MsgCreateValidator",
               "value": {
                 "description": {
-                  "moniker": "BFS",
-                  "identity": "",
-                  "website": "https://www.bochslerfinance.com/",
-                  "details": "Bochsler Finance Solutions SA is an independent Swiss based firm specialising in the Fintech and Blockchain ecosystem."
-                },
-                "commission": {
-                  "rate": "0.250000000000000000",
-                  "max_rate": "1.000000000000000000",
-                  "max_change_rate": "0.010000000000000000"
-                },
-                "min_self_delegation": "1",
-                "delegator_address": "cosmos1qfeq0du5mul8xeru8kzrsr9k3dhdcaw5cruy7a",
-                "validator_address": "cosmosvaloper1qfeq0du5mul8xeru8kzrsr9k3dhdcaw5ahg3jw",
-                "pubkey": "cosmosvalconspub1addwnpepqggtjuae2pvtugfef6n67fksak3ws8kvw5kwmre7frylcadh75g56unk38x",
-                "value": {
-                  "denom": "uatom",
-                  "amount": "9000000000"
-                }
-              }
-            }
-          ],
-          "fee": {
-            "amount": null,
-            "gas": "200000"
-          },
-          "signatures": [
-            {
-              "pub_key": {
-                "type": "tendermint/PubKeySecp256k1",
-                "value": "AhC5c7lQWL4hOU6nrybQ7aLoHsx1LO2PPkjJ/HW39RFN"
-              },
-              "signature": "jJUO9sYkxt1WwCyMnADCaoyjNHYMduU5LVMtgummIwsWaZOUBGNocYnJIiarUmhVEePYvEvDH6UWHlpE8rTyfg=="
-            }
-          ],
-          "memo": "5ed8ab30ea8981751a6af5a6c7d958ce53ef4d9c@cosmos.shambala.com:26656"
-        }
-      },
-      {
-        "type": "auth/StdTx",
-        "value": {
-          "msg": [
-            {
-              "type": "cosmos-sdk/MsgCreateValidator",
-              "value": {
-                "description": {
                   "moniker": "Bianjie",
                   "identity": "A6DFF8A48236A5C7",
                   "website": "https://www.bianjie.ai/cosmos",
@@ -17326,51 +17281,6 @@
               "type": "cosmos-sdk/MsgCreateValidator",
               "value": {
                 "description": {
-                  "moniker": "bity.com",
-                  "identity": "",
-                  "website": "https://bity.com",
-                  "details": "We offer professional, secure, and reliable crypto staking services for investors looking to stake their coins with trusted third parties, such as the Cosmos Network."
-                },
-                "commission": {
-                  "rate": "0.200000000000000000",
-                  "max_rate": "1.000000000000000000",
-                  "max_change_rate": "0.010000000000000000"
-                },
-                "min_self_delegation": "1",
-                "delegator_address": "cosmos1uv26ytrnmydyctq0s58ve2k6wn2p653m9yn69g",
-                "validator_address": "cosmosvaloper1uv26ytrnmydyctq0s58ve2k6wn2p653mqs80fm",
-                "pubkey": "cosmosvalconspub1addwnpepq0e329vf34zl0qfxk6zn3yexw4da6egjekjljy5rqee0y0m5puaqct8p3x9",
-                "value": {
-                  "denom": "uatom",
-                  "amount": "20000000000"
-                }
-              }
-            }
-          ],
-          "fee": {
-            "amount": null,
-            "gas": "200000"
-          },
-          "signatures": [
-            {
-              "pub_key": {
-                "type": "tendermint/PubKeySecp256k1",
-                "value": "A/MVFYmNRfeBJraFOJMmdVvdZRLNpfkSgwZy8j90DzoM"
-              },
-              "signature": "OcWmREOQvUIXFsY/QH1aeOQVw+7jDfH1C1u/UyWBCbZ8bNQErTwMbYqElIYupcouLazGq6MLhyVEQGL2ZMZlhQ=="
-            }
-          ],
-          "memo": "659787510cdb818ad1a3a2eed3ce68a6827354e2@cosmos.bity.com:26656"
-        }
-      },
-      {
-        "type": "auth/StdTx",
-        "value": {
-          "msg": [
-            {
-              "type": "cosmos-sdk/MsgCreateValidator",
-              "value": {
-                "description": {
                   "moniker": "blockmatrix",
                   "identity": "",
                   "website": "",
@@ -17538,51 +17448,6 @@
                 "value": "A7s/Wt/O0q/TXK1wm/AC/iYkHAUlTnT2csEcB6hTOoVE"
               },
               "signature": "y+kaSKQwdN0VMPLUhZUpoVv4W16SoHLmlBDre6cwG59IAkvuQyW8CxILF9/TpaFb0TObVBxDZT1WnLScgcIMdQ=="
-            }
-          ],
-          "memo": ""
-        }
-      },
-      {
-        "type": "auth/StdTx",
-        "value": {
-          "msg": [
-            {
-              "type": "cosmos-sdk/MsgCreateValidator",
-              "value": {
-                "description": {
-                  "moniker": "Chorus One",
-                  "identity": "00B79D689B7DC1CE",
-                  "website": "https://chorus.one/",
-                  "details": "Secure Cosmos and shape its future by delegating to Chorus One, the most secure and stable validator. Visit our website for details, tutorials and research around staking and Cosmos. By delegating to the Chorus One validator, you agree to the terms of service at: https://chorus.one/cosmos/tos"
-                },
-                "commission": {
-                  "rate": "0.150000000000000000",
-                  "max_rate": "0.250000000000000000",
-                  "max_change_rate": "0.020000000000000000"
-                },
-                "min_self_delegation": "10",
-                "delegator_address": "cosmos15urq2dtp9qce4fyc85m6upwm9xul3049um7trd",
-                "validator_address": "cosmosvaloper15urq2dtp9qce4fyc85m6upwm9xul3049e02707",
-                "pubkey": "cosmosvalconspub1zcjduepqjc07nu2ya8tyzl8m385rnc382pkulwt2gh8yary73f3a96jak7pqsf63xf",
-                "value": {
-                  "denom": "uatom",
-                  "amount": "4500000000"
-                }
-              }
-            }
-          ],
-          "fee": {
-            "amount": null,
-            "gas": "200000"
-          },
-          "signatures": [
-            {
-              "pub_key": {
-                "type": "tendermint/PubKeySecp256k1",
-                "value": "AoUAnGnBsT7xGv2PTnIQbfK4t4oNyimGk2AhPwfgxq3T"
-              },
-              "signature": "/c3dRyOsGVJl8DDm3oCmve1QbtR4A0l////i0TRKWZstDg/Z5C88nBdxXK8PKfsD/QsbtOc7YfNLk+rGZUpV7Q=="
             }
           ],
           "memo": ""
@@ -18136,51 +18001,6 @@
               "type": "cosmos-sdk/MsgCreateValidator",
               "value": {
                 "description": {
-                  "moniker": "jec2",
-                  "identity": "",
-                  "website": "",
-                  "details": ""
-                },
-                "commission": {
-                  "rate": "0.100000000000000000",
-                  "max_rate": "0.200000000000000000",
-                  "max_change_rate": "0.010000000000000000"
-                },
-                "min_self_delegation": "1",
-                "delegator_address": "cosmos1fuddt2w9ch0p427epexfv6zf2lel8h66gwl20r",
-                "validator_address": "cosmosvaloper1fuddt2w9ch0p427epexfv6zf2lel8h66d6tlrs",
-                "pubkey": "cosmosvalconspub1zcjduepq045zt92ukwt4pjfxdtyytm32ku9ptx29hykzk3mcmw3aax463mpq9u2qc4",
-                "value": {
-                  "denom": "uatom",
-                  "amount": "1000000"
-                }
-              }
-            }
-          ],
-          "fee": {
-            "amount": null,
-            "gas": "200000"
-          },
-          "signatures": [
-            {
-              "pub_key": {
-                "type": "tendermint/PubKeySecp256k1",
-                "value": "AsagivlkQjbEBk+bZjhMU4gvcUbfRpePu0z2C7w13Qvf"
-              },
-              "signature": "D/0WINmqSRvtGzQ0oJl9LX2F7wBd5UJWGtB3HWR85FlknOJufDLR85lpw3F2kB0fOQ2YhekS9WQBw/7k1qfTxA=="
-            }
-          ],
-          "memo": "527ad9264858ec8fe1be2c8b16ec0184f1155bfe@172.30.0.222:26656"
-        }
-      },
-      {
-        "type": "auth/StdTx",
-        "value": {
-          "msg": [
-            {
-              "type": "cosmos-sdk/MsgCreateValidator",
-              "value": {
-                "description": {
                   "moniker": "cosmos-Inspiron-7570",
                   "identity": "",
                   "website": "",
@@ -18319,51 +18139,6 @@
                 "value": "A9IQHKHGskTTRO16DO7H9c325dg5HqcHoj2XTpxLGsIL"
               },
               "signature": "kSGKCs8FujbEEA99OKF71rEy/hnN6U2UYj2N0uoflIN8K0/5JzNh8ziNw+rIBTtoo9zckIAlMByxeeGba7pWFg=="
-            }
-          ],
-          "memo": ""
-        }
-      },
-      {
-        "type": "auth/StdTx",
-        "value": {
-          "msg": [
-            {
-              "type": "cosmos-sdk/MsgCreateValidator",
-              "value": {
-                "description": {
-                  "moniker": "kravidar",
-                  "identity": "",
-                  "website": "",
-                  "details": ""
-                },
-                "commission": {
-                  "rate": "0.200000000000000000",
-                  "max_rate": "0.100000000000000000",
-                  "max_change_rate": "0.100000000000000000"
-                },
-                "min_self_delegation": "1",
-                "delegator_address": "cosmos1s6t3wzx6mcv3pjg5fp2ddzplm3gj4pg6g996zm",
-                "validator_address": "cosmosvaloper1s6t3wzx6mcv3pjg5fp2ddzplm3gj4pg6d330wg",
-                "pubkey": "cosmosvalconspub1zcjduepqrh4qz5gp5nng2h3n5nvgnmavuejfry0p6w6tx08hw0uqymscxq2sjjajg2",
-                "value": {
-                  "denom": "uatom",
-                  "amount": "5000000000"
-                }
-              }
-            }
-          ],
-          "fee": {
-            "amount": null,
-            "gas": "200000"
-          },
-          "signatures": [
-            {
-              "pub_key": {
-                "type": "tendermint/PubKeySecp256k1",
-                "value": "AxhBj0kektBswe4+2UA9BpJK5s5NEWlnpNfBKK1cCJIU"
-              },
-              "signature": "GHLEk6SY5vOpJkwODikTX2jYZr0SZEXJ3ncAl+K044QjYmgDP9yh/I/Qnkb7JH3SPin/4ZXuAudzVwHcKwCOnQ=="
             }
           ],
           "memo": ""
@@ -18634,51 +18409,6 @@
                 "value": "A8mJRMqtUZDBLPHWEZXaPeMW7ieIyCn/7CjQaB/gojGT"
               },
               "signature": "I8K3bM4gER/ONfqOdNvdvWyLALoxh7xh9sgpAF92dH1PQyFeivtGAxbDo3lqWuLerZ5q6vWEEXoA3YaGNX1wfA=="
-            }
-          ],
-          "memo": ""
-        }
-      },
-      {
-        "type": "auth/StdTx",
-        "value": {
-          "msg": [
-            {
-              "type": "cosmos-sdk/MsgCreateValidator",
-              "value": {
-                "description": {
-                  "moniker": "repokrvd",
-                  "identity": "",
-                  "website": "",
-                  "details": ""
-                },
-                "commission": {
-                  "rate": "0.200000000000000000",
-                  "max_rate": "1.000000000000000000",
-                  "max_change_rate": "0.100000000000000000"
-                },
-                "min_self_delegation": "1",
-                "delegator_address": "cosmos1s6t3wzx6mcv3pjg5fp2ddzplm3gj4pg6g996zm",
-                "validator_address": "cosmosvaloper1s6t3wzx6mcv3pjg5fp2ddzplm3gj4pg6d330wg",
-                "pubkey": "cosmosvalconspub1zcjduepqrh4qz5gp5nng2h3n5nvgnmavuejfry0p6w6tx08hw0uqymscxq2sjjajg2",
-                "value": {
-                  "denom": "uatom",
-                  "amount": "5000000000"
-                }
-              }
-            }
-          ],
-          "fee": {
-            "amount": null,
-            "gas": "200000"
-          },
-          "signatures": [
-            {
-              "pub_key": {
-                "type": "tendermint/PubKeySecp256k1",
-                "value": "AxhBj0kektBswe4+2UA9BpJK5s5NEWlnpNfBKK1cCJIU"
-              },
-              "signature": "nZ/n+kMYK8s6c2VRIbvAz0iJCj8zv3ZEzO7rZQvRDo9L8GqC1q+snwXUwTiNgvbNSS950UYdUrQHGCAUqn7R3A=="
             }
           ],
           "memo": ""
