@@ -50,3 +50,14 @@ Foundation cannot guarantee that (i) ATOMs will be created and (ii) the recommen
 allocation as set forth in GENESIS.md will actually take place. The recommended Genesis Block
 Release Software has no support for interoperability (IBC), and the Atoms will not be
 transferable.
+
+
+## Seed Nodes
+
+We request known community members who wish to run public p2p seed nodes make pull requests to add community run seed nodes below.
+
+```
+Seed nodes
+
+```
+
