@@ -31,7 +31,7 @@ const (
 
 	genesisTemplate = "params/genesis_template.json"
 	genTxPath       = "gentx"
-	genesisFile     = "penultimate_genesis.json"
+	genesisFile     = "genesis.json"
 
 	atomDenomination    = "uatom"
 	atomGenesisTotal    = 236198958.12
@@ -129,6 +129,9 @@ func main() {
 		}
 		genTxs = append(genTxs, json.RawMessage(bz))
 	}
+
+	fmt.Println("-----------")
+	fmt.Println("TOTAL gen txs", len(genTxs))
 
 	// XXX: the app state is decoded using amino JSON (eg. ints are strings)
 	// doesn't seem like we need to register anything though
