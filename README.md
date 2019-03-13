@@ -4,7 +4,7 @@ This is the Interchain Foundation's recommendation for the Genesis Block Release
 Software and marks the initiation of [phase
 one](https://blog.cosmos.network/the-3-phases-of-the-cosmos-hub-mainnet-fdff3a68c4c0) of the Cosmos Hub launch.
 
-The recommended genesis file is [this genesis.json](genesis.json).
+The recommended genesis file is [genesis.json](genesis.json).
 It includes a genesis time of `2019-03-13 23:00:00 UTC`.
 Please read [GENESIS.md](GENESIS.md) for details on how it was generated and
 to recompute it for yourself.
