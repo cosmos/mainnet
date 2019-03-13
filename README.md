@@ -45,8 +45,8 @@ Interchain Foundation and/or the Tendermint team for damages arising in
 connection to the software is excluded. **Please exercise extreme caution!**
 
 Further, please note that it remains in the community's sole discretion to
-adopt or not to adopt the recommended Genesis Block Release Software. Therefore, Interchain
+adopt or not to adopt the recommended Genesis Block Release Software. Therefore, the Interchain
 Foundation cannot guarantee that (i) ATOMs will be created and (ii) the recommended
 allocation as set forth in GENESIS.md will actually take place. The recommended Genesis Block
-Release Software has no support for interoperability; the Atoms will not be
+Release Software has no support for interoperability (IBC), and the Atoms will not be
 transferable.

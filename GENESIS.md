@@ -28,7 +28,7 @@ dep ensure
 go run main.go
 ```
 
-A few lines of text should be printed, followed by two lines listing the total address count and total ATOM supply, and `genesis.json` should be written.
+A few lines of text should be printed, followed by three lines listing the total address count, total ATOM supply, and total gentx count, and `genesis.json` should be written.
 
 Each subcomponent can be verified according to the `README.md` and `main.go` files
 in the respective directory under `accounts`.
@@ -43,7 +43,7 @@ repository](https://github.com/cosmos/launch).
 Details about the ceremony can be found [here](GENESIS-CEREMONY.md).
 
 A total of 67 valid gentx submissions were merged into the `gentx` directory and are
-included in the recommended genesis state.
+included in the recommended genesis state. 2/3 of these validators by stake will need to come online in order for the network to start.
 
 # Fundraiser Details
 
