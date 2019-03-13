@@ -56,8 +56,5 @@ transferable.
 
 We request known community members who wish to run public p2p seed nodes make pull requests to add community run seed nodes below.
 
-```
-Seed nodes
-
-```
+* `89e4b72625c0a13d6f62e3cd9d40bfc444cbfa77@34.65.6.52:26656` - Cryptium Labs (@adrianbrink, @awasunyin, @cwgoes)
 
