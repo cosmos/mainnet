@@ -10,7 +10,7 @@ recommendation and choose different genesis files, and/or they may modify the
 software in arbitrary ways. Such outcomes and many more are outside the Interchain
 Foundation's control and completely in the hands of the community.
 
-The recommended genesis file is [genesis.json](genesis.json). It has the
+The recommended genesis file is [genesis.json](https://raw.githubusercontent.com/cosmos/launch/master/genesis.json). It has the
 following SHA256 hash:
 
 ```
@@ -58,7 +58,6 @@ We request known community members who wish to run public p2p seed nodes make pu
 
 ```
 Seed nodes
-- `3e16af0cead27979e1fc3dac57d03df3c7a77acc@3.87.179.235:26656` - Bison Trails
 
 ```
 
