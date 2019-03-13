@@ -11,11 +11,13 @@ software in arbitrary ways. Such outcomes and many more are outside the Intercha
 Foundation's control and completely in the hands of the community.
 
 The recommended genesis file is [genesis.json](genesis.json). It has the
-following SHA256 hash:
+following hashes:
 
 ```
 $ shasum -a 256 genesis.json 
 73a866b21723ecbc28b6d15951b2eb3aa2f2443650ff6df489bf55ac5edceefa  genesis.json
+$ b2sum genesis.json 
+8c90b58efe9e0959953fe27ba431137c24c514e357b8025f5252c85ea7401247a909fac95313b907bb48579c6e389b4bbf06df626bff19aae554028964fa189d  genesis.json
 ```
 
 It includes a genesis time of `2019-03-13 23:00:00 UTC`.
