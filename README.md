@@ -10,8 +10,8 @@ recommendation and choose different genesis files, and/or they may modify the
 software in arbitrary ways. Such outcomes and many more are outside the Interchain
 Foundation's control and completely in the hands of the community.
 
-The recommended genesis file is [genesis.json](genesis.json). It has the
-following hashes:
+The recommended genesis file is [genesis.json](https://raw.githubusercontent.com/cosmos/launch/master/genesis.json). It has the
+following SHA256 hash:
 
 ```
 $ shasum -a 256 genesis.json 
@@ -61,5 +61,9 @@ We request known community members who wish to run public p2p seed nodes make pu
 ```
 Seed nodes
 
+- `3e16af0cead27979e1fc3dac57d03df3c7a77acc@3.87.179.235:26656` - Bison Trails
+- `ba3bacc714817218562f743178228f23678b2873@public-seed-node.cosmoshub.certus.one:26656` - Certus One
+- `2626942148fd39830cb7a3acccb235fab0332d86@173.212.199.36:26656` - syncnode
+- `3028c6ee9be21f0d34be3e97a59b093e15ec0658@91.205.173.168:26656` - syncnode
+- `89e4b72625c0a13d6f62e3cd9d40bfc444cbfa77@34.65.6.52:26656` - Cryptium Labs (@adrianbrink, @awasunyin, @cwgoes)
 ```
-
