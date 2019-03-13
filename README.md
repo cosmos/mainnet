@@ -56,8 +56,4 @@ transferable.
 
 We request known community members who wish to run public p2p seed nodes make pull requests to add community run seed nodes below.
 
-```
-Seed nodes
-
-```
-
+- `ba3bacc714817218562f743178228f23678b2873@public-seed-node.cosmoshub.certus.one:26656` - Certus One
