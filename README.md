@@ -58,6 +58,7 @@ We request known community members who wish to run public p2p seed nodes make pu
 
 ```
 Seed nodes
+- `3e16af0cead27979e1fc3dac57d03df3c7a77acc@3.87.179.235:26656` - Bison Trails
 
 ```
 
