@@ -6,6 +6,7 @@ import (
 	"fmt"
 	"io/ioutil"
 	"math"
+	"path"
 	"sort"
 	"strings"
 	"time"
@@ -110,11 +111,30 @@ func main() {
 	fmt.Println("TOTAL addrs", len(genesisAccounts))
 	fmt.Println("TOTAL uAtoms", atomGenesisTotal)
 
+	// load gentxs
+	fs, err := ioutil.ReadDir(genTxPath)
+	if err != nil {
+		panic(err)
+	}
+
+	var genTxs []json.RawMessage
+	for _, f := range fs {
+		name := f.Name()
+		if name == "README.md" {
+			continue
+		}
+		bz, err := ioutil.ReadFile(path.Join(genTxPath, name))
+		if err != nil {
+			panic(err)
+		}
+		genTxs = append(genTxs, json.RawMessage(bz))
+	}
+
 	// XXX: the app state is decoded using amino JSON (eg. ints are strings)
 	// doesn't seem like we need to register anything though
 	cdc := amino.NewCodec()
 
-	genesisDoc := makeGenesisDoc(cdc, genesisAccounts)
+	genesisDoc := makeGenesisDoc(cdc, genesisAccounts, genTxs)
 
 	// write the genesis file
 	bz, err := cdc.MarshalJSON(genesisDoc)
@@ -307,7 +327,7 @@ func checkTotals(genesisAccounts []gaia.GenesisAccount) {
 }
 
 // json marshal the initial app state (accounts and gentx) and add them to the template
-func makeGenesisDoc(cdc *amino.Codec, genesisAccounts []gaia.GenesisAccount) *tmtypes.GenesisDoc {
+func makeGenesisDoc(cdc *amino.Codec, genesisAccounts []gaia.GenesisAccount, genTxs []json.RawMessage) *tmtypes.GenesisDoc {
 
 	// read the template with the params
 	genesisDoc, err := tmtypes.GenesisDocFromFile(genesisTemplate)
@@ -326,8 +346,7 @@ func makeGenesisDoc(cdc *amino.Codec, genesisAccounts []gaia.GenesisAccount) *tm
 		panic(err)
 	}
 	genesisState.Accounts = genesisAccounts
-
-	// TODO: gentxs
+	genesisState.GenTxs = genTxs
 
 	// marshal the gaia app state back to json and update the genesisDoc
 	genesisStateJSON, err := cdc.MarshalJSON(genesisState)
