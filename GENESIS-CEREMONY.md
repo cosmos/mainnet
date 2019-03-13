@@ -2,6 +2,10 @@
 
 Welcome to the Cosmos Hub Genesis Validator Ceremony!
 
+**NOTE**: The Ceremony has been completed. These instructions are now stale.
+They are left here for archival purposes. The `penultimate_genesis.json` they
+refer to has been updated to match the final recommended genesis.json.
+
 ## What is it?
 
 This *is not* the launch of the Cosmos Hub. Before a blockchain like the
