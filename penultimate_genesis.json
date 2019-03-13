@@ -16003,7 +16003,7 @@
     },
     "staking": {
       "pool": {
-        "not_bonded_tokens": "0",
+        "not_bonded_tokens": "236198958120000",
         "bonded_tokens": "0"
       },
       "params": {
@@ -16086,6 +16086,3078 @@
       "signing_infos": {},
       "missed_blocks": {}
     },
-    "gentxs": null
+    "gentxs": [
+      {
+        "type": "auth/StdTx",
+        "value": {
+          "msg": [
+            {
+              "type": "cosmos-sdk/MsgCreateValidator",
+              "value": {
+                "description": {
+                  "moniker": "ATEAM",
+                  "identity": "0CB9A4E7643FF992",
+                  "website": "nodeateam.com",
+                  "details": "Node A-Team promises to provide validator node operation services at the highest quality."
+                },
+                "commission": {
+                  "rate": "0.200000000000000000",
+                  "max_rate": "1.000000000000000000",
+                  "max_change_rate": "1.000000000000000000"
+                },
+                "min_self_delegation": "5000",
+                "delegator_address": "cosmos14l0fp639yudfl46zauvv8rkzjgd4u0zk0fyvgr",
+                "validator_address": "cosmosvaloper14l0fp639yudfl46zauvv8rkzjgd4u0zk2aseys",
+                "pubkey": "cosmosvalconspub1zcjduepq7jsrkl9fgqk0wj3ahmfr8pgxj6vakj2wzn656s8pehh0zhv2w5as5gd80a",
+                "value": {
+                  "denom": "uatom",
+                  "amount": "5000000000"
+                }
+              }
+            }
+          ],
+          "fee": {
+            "amount": null,
+            "gas": "200000"
+          },
+          "signatures": [
+            {
+              "pub_key": {
+                "type": "tendermint/PubKeySecp256k1",
+                "value": "A6WjB8Rb39iqfkPqTU+2oNa/EFzhzCqo4MPNFiMgNQHQ"
+              },
+              "signature": "pQAaAGR1XjxWsm+jKuKkSDwmjcr2pKKSahxf4sJ48UIDODvQb66bH3+ANa/LibPg7aGjyD4jwNU3xDdWrmMYew=="
+            }
+          ],
+          "memo": ""
+        }
+      },
+      {
+        "type": "auth/StdTx",
+        "value": {
+          "msg": [
+            {
+              "type": "cosmos-sdk/MsgCreateValidator",
+              "value": {
+                "description": {
+                  "moniker": "Auberdine",
+                  "identity": "",
+                  "website": "",
+                  "details": ""
+                },
+                "commission": {
+                  "rate": "0.170000000000000000",
+                  "max_rate": "1.000000000000000000",
+                  "max_change_rate": "0.200000000000000000"
+                },
+                "min_self_delegation": "10",
+                "delegator_address": "cosmos1vzj0lluc43k64gagvy9wsygh33dk84h07a3rsu",
+                "validator_address": "cosmosvaloper1vzj0lluc43k64gagvy9wsygh33dk84h0mf9ku0",
+                "pubkey": "cosmosvalconspub1zcjduepqfqhyah5dlxlnpwr8s3dmt7td8w5sug0vpfmmnkh9wuyymcuhh5zqfxqgg0",
+                "value": {
+                  "denom": "uatom",
+                  "amount": "21000000"
+                }
+              }
+            }
+          ],
+          "fee": {
+            "amount": null,
+            "gas": "200000"
+          },
+          "signatures": [
+            {
+              "pub_key": {
+                "type": "tendermint/PubKeySecp256k1",
+                "value": "Ai017zYj1UVWQKSvcSBv861jUmKYOdeyTcUpnRbOwkwA"
+              },
+              "signature": "D6GB0XEU3qm7mrn5Bbj7+wV964B109XZ/g/aeDaf2Vh4e/JJor8eePON48+hds9QJCIuk9XefF2i2oQHoqPUQw=="
+            }
+          ],
+          "memo": ""
+        }
+      },
+      {
+        "type": "auth/StdTx",
+        "value": {
+          "msg": [
+            {
+              "type": "cosmos-sdk/MsgCreateValidator",
+              "value": {
+                "description": {
+                  "moniker": "Bianjie",
+                  "identity": "A6DFF8A48236A5C7",
+                  "website": "https://www.bianjie.ai/cosmos",
+                  "details": "Core developer of IRISnet, active contributor to Cosmos."
+                },
+                "commission": {
+                  "rate": "0.100000000000000000",
+                  "max_rate": "1.000000000000000000",
+                  "max_change_rate": "0.020000000000000000"
+                },
+                "min_self_delegation": "1",
+                "delegator_address": "cosmos1ssm0d433seakyak8kcf93yefhknjleed4psy4g",
+                "validator_address": "cosmosvaloper1ssm0d433seakyak8kcf93yefhknjleeds4y3em",
+                "pubkey": "cosmosvalconspub1zcjduepqrgyyjxpe0ujefxwnkpmqz9m0hj03y09tdz9lwc0s7mvy469hulfq69f8sd",
+                "value": {
+                  "denom": "uatom",
+                  "amount": "1000000"
+                }
+              }
+            }
+          ],
+          "fee": {
+            "amount": null,
+            "gas": "200000"
+          },
+          "signatures": [
+            {
+              "pub_key": {
+                "type": "tendermint/PubKeySecp256k1",
+                "value": "AnJHwzfg3FEcviT+CFXhNpxiP5msBLZXJG2D3eK3dAdR"
+              },
+              "signature": "vk32Ye5g0VlXclScjLJWAJyUvA5AGfAYUAT5XdIVm6ttrWT9G/ezK3wm+uuu8j5S6QbqXsjC8CBZG4X0i+ijvQ=="
+            }
+          ],
+          "memo": "3e54abe1133a7c61a0732098dcd4d4998d38d2be@cosmos-sentry.bianjie.ai:26656"
+        }
+      },
+      {
+        "type": "auth/StdTx",
+        "value": {
+          "msg": [
+            {
+              "type": "cosmos-sdk/MsgCreateValidator",
+              "value": {
+                "description": {
+                  "moniker": "Blockpower",
+                  "identity": "",
+                  "website": "",
+                  "details": ""
+                },
+                "commission": {
+                  "rate": "0.100000000000000000",
+                  "max_rate": "1.000000000000000000",
+                  "max_change_rate": "0.010000000000000000"
+                },
+                "min_self_delegation": "1",
+                "delegator_address": "cosmos1rpgtz9pskr5geavkjz02caqmeep7cwwpf29g2p",
+                "validator_address": "cosmosvaloper1rpgtz9pskr5geavkjz02caqmeep7cwwpv73axj",
+                "pubkey": "cosmosvalconspub1zcjduepq04y0dtylyed2f8drc9t78dmptfuta7l6xyujwmsgrqefs0sxpgjsnzpsj6",
+                "value": {
+                  "denom": "uatom",
+                  "amount": "50000000000"
+                }
+              }
+            }
+          ],
+          "fee": {
+            "amount": null,
+            "gas": "200000"
+          },
+          "signatures": [
+            {
+              "pub_key": {
+                "type": "tendermint/PubKeySecp256k1",
+                "value": "AsmAoZJSg2Y6OPffgfB1zgMkLxjozbg2LXShEVnwf/kf"
+              },
+              "signature": "judY7OkDn6wdRduwTmPZBmcA6HBVQ17FqA07Pn23K1Bx3N2E+LrhH1DAwYUj1DXbjlFdWnvpJgu8ztfz3YSgIg=="
+            }
+          ],
+          "memo": "d0f26063f5e44f361897e448f81ff0953d7ed2f2@cosmos-sentry.blockpower:26656"
+        }
+      },
+      {
+        "type": "auth/StdTx",
+        "value": {
+          "msg": [
+            {
+              "type": "cosmos-sdk/MsgCreateValidator",
+              "value": {
+                "description": {
+                  "moniker": "BouBouNode",
+                  "identity": "",
+                  "website": "https://boubounode.com",
+                  "details": "AI-based Validator. #1 AI Validator on Game of Stakes. Fairly priced. Don't trust (humans), verify. Made with BouBou love."
+                },
+                "commission": {
+                  "rate": "0.061000000000000000",
+                  "max_rate": "1.000000000000000000",
+                  "max_change_rate": "0.010000000000000000"
+                },
+                "min_self_delegation": "1",
+                "delegator_address": "cosmos1eh5mwu044gd5ntkkc2xgfg8247mgc56f8pycyz",
+                "validator_address": "cosmosvaloper1eh5mwu044gd5ntkkc2xgfg8247mgc56fz4sdg3",
+                "pubkey": "cosmosvalconspub1zcjduepq8hu49qdl5594rzxmdsww3hleu8phxrajjfsseqjere9mjrrrv9tq35mll4",
+                "value": {
+                  "denom": "uatom",
+                  "amount": "1500000000"
+                }
+              }
+            }
+          ],
+          "fee": {
+            "amount": null,
+            "gas": "200000"
+          },
+          "signatures": [
+            {
+              "pub_key": {
+                "type": "tendermint/PubKeySecp256k1",
+                "value": "AoAsj4KOrkiwIV2WZasfD+lekYHj7uIjYTanDjT6i9w/"
+              },
+              "signature": "614bt6iFO0QigPFN5fsfUUWXVOSLAW4iYBjnimyct+48YhUTiVehxhXfUvWP4gbtpwKEa8LIR7/wUzO7b+pYQQ=="
+            }
+          ],
+          "memo": ""
+        }
+      },
+      {
+        "type": "auth/StdTx",
+        "value": {
+          "msg": [
+            {
+              "type": "cosmos-sdk/MsgCreateValidator",
+              "value": {
+                "description": {
+                  "moniker": "ChainPool",
+                  "identity": "",
+                  "website": "",
+                  "details": ""
+                },
+                "commission": {
+                  "rate": "0.100000000000000000",
+                  "max_rate": "0.200000000000000000",
+                  "max_change_rate": "0.010000000000000000"
+                },
+                "min_self_delegation": "1",
+                "delegator_address": "cosmos1cf9yqlamxgeza4nsn7y08vpkcs7qqjp4lzw9ac",
+                "validator_address": "cosmosvaloper1cf9yqlamxgeza4nsn7y08vpkcs7qqjp46k6s3t",
+                "pubkey": "cosmosvalconspub1zcjduepqh743r5du0f53zazrztdu3zj2twp38y7em55lmaeuxdlmna78argqw2s95s",
+                "value": {
+                  "denom": "uatom",
+                  "amount": "100000000"
+                }
+              }
+            }
+          ],
+          "fee": {
+            "amount": null,
+            "gas": "200000"
+          },
+          "signatures": [
+            {
+              "pub_key": {
+                "type": "tendermint/PubKeySecp256k1",
+                "value": "Awyy4qzKg2GKO9KU611j0dusfruU0S/5mEnG6hpcfsPN"
+              },
+              "signature": "C04Q2qlhl1xIIaHRixhEpT+k42CL1xuxkWgMy9b0Bg9LuE9o1E/lQw64a1yprVKql7YHUkrs8uQcF/7WUOM1Bg=="
+            }
+          ],
+          "memo": "e4a6bd1744a029b87bf530e983da30ea58ac50f5@38.143.1.26:26656"
+        }
+      },
+      {
+        "type": "auth/StdTx",
+        "value": {
+          "msg": [
+            {
+              "type": "cosmos-sdk/MsgCreateValidator",
+              "value": {
+                "description": {
+                  "moniker": "Coinone Node",
+                  "identity": "",
+                  "website": "https://node.coinone.co.kr",
+                  "details": "The more, the easier. Coinone Node manages your assets securely."
+                },
+                "commission": {
+                  "rate": "0.100000000000000000",
+                  "max_rate": "0.200000000000000000",
+                  "max_change_rate": "0.010000000000000000"
+                },
+                "min_self_delegation": "1",
+                "delegator_address": "cosmos1pz6yu5vdxfzw85cn6d7rp52me4lu8khx7lpkzd",
+                "validator_address": "cosmosvaloper1pz6yu5vdxfzw85cn6d7rp52me4lu8khxmt4rw7",
+                "pubkey": "cosmosvalconspub1zcjduepq562qtt42wsqmmmhpj5vmgp3dprpeclzc5u57hdvkpq762nthr3vqh8yaf7",
+                "value": {
+                  "denom": "uatom",
+                  "amount": "5000000000"
+                }
+              }
+            }
+          ],
+          "fee": {
+            "amount": null,
+            "gas": "200000"
+          },
+          "signatures": [
+            {
+              "pub_key": {
+                "type": "tendermint/PubKeySecp256k1",
+                "value": "AwTiHwim/dD3CZzUodiZ70trDOLbrKlNuCs8st5jItBK"
+              },
+              "signature": "mOUNQJaxBJupeg2Vn7xAW01QdHFqIIryL/i7pFwBdC44DAaxB1fa9BB0ex8rePVuVmlN67hS2Onz6zx4PpPCXA=="
+            }
+          ],
+          "memo": ""
+        }
+      },
+      {
+        "type": "auth/StdTx",
+        "value": {
+          "msg": [
+            {
+              "type": "cosmos-sdk/MsgCreateValidator",
+              "value": {
+                "description": {
+                  "moniker": "Compass",
+                  "identity": "",
+                  "website": "",
+                  "details": ""
+                },
+                "commission": {
+                  "rate": "0.100000000000000000",
+                  "max_rate": "1.000000000000000000",
+                  "max_change_rate": "0.100000000000000000"
+                },
+                "min_self_delegation": "1",
+                "delegator_address": "cosmos1ff0dw8kawsnxkrgj7p65kvw7jxxakyf8kqnyy4",
+                "validator_address": "cosmosvaloper1ff0dw8kawsnxkrgj7p65kvw7jxxakyf8n583gx",
+                "pubkey": "cosmosvalconspub1zcjduepqu08f7tuce8k88tgewhwer69kfvk5az3cn5lz3v8phl8gvu9nxu8qhrjxfj",
+                "value": {
+                  "denom": "uatom",
+                  "amount": "5000000000"
+                }
+              }
+            }
+          ],
+          "fee": {
+            "amount": null,
+            "gas": "200000"
+          },
+          "signatures": [
+            {
+              "pub_key": {
+                "type": "tendermint/PubKeySecp256k1",
+                "value": "A8kyShNhoxSGVQq/8l4HDqtM8bCaIJFGZq/2aLT1u8Q3"
+              },
+              "signature": "itEhxkOBaZ2/U464Soa90Sw61e/ANyyADAUM4TTvTXM9FDc7XCh96i1cDU7WxSvk2D3qCd+bQnA3aU2v2m49Rw=="
+            }
+          ],
+          "memo": "629ced1ee45898a7684bb4e1732f8685d37f490d@172.31.20.234:26656"
+        }
+      },
+      {
+        "type": "auth/StdTx",
+        "value": {
+          "msg": [
+            {
+              "type": "cosmos-sdk/MsgCreateValidator",
+              "value": {
+                "description": {
+                  "moniker": "Cosmostation",
+                  "identity": "AE4C403A6E7AA1AC",
+                  "website": "https://www.cosmostation.io",
+                  "details": "CØSMOSTATION Validator. Delegate your atoms and Start Earning Staking Rewards"
+                },
+                "commission": {
+                  "rate": "0.120000000000000000",
+                  "max_rate": "0.200000000000000000",
+                  "max_change_rate": "0.100000000000000000"
+                },
+                "min_self_delegation": "10",
+                "delegator_address": "cosmos1clpqr4nrk4khgkxj78fcwwh6dl3uw4ep4tgu9q",
+                "validator_address": "cosmosvaloper1clpqr4nrk4khgkxj78fcwwh6dl3uw4epsluffn",
+                "pubkey": "cosmosvalconspub1zcjduepq0dc9apn3pz2x2qyujcnl2heqq4aceput2uaucuvhrjts75q0rv5smjjn7v",
+                "value": {
+                  "denom": "uatom",
+                  "amount": "30000000000"
+                }
+              }
+            }
+          ],
+          "fee": {
+            "amount": null,
+            "gas": "200000"
+          },
+          "signatures": [
+            {
+              "pub_key": {
+                "type": "tendermint/PubKeySecp256k1",
+                "value": "An0yrOygz23oiJQZg63gJSbg4nkrWmHBC02/6Am2oDrS"
+              },
+              "signature": "6l0B/lTVJxiKoNmo3F4qH5bRPmA9uh2dL43b9w5beUdODGYEXNSe2DG+rSfjg1JBrBvhFKYTt7Rl/5PpdlgKgg=="
+            }
+          ],
+          "memo": ""
+        }
+      },
+      {
+        "type": "auth/StdTx",
+        "value": {
+          "msg": [
+            {
+              "type": "cosmos-sdk/MsgCreateValidator",
+              "value": {
+                "description": {
+                  "moniker": "Cryptium Labs",
+                  "identity": "5A309B5CA189D8B3",
+                  "website": "https://cryptium.ch",
+                  "details": "Secure and available validation from the Swiss Alps"
+                },
+                "commission": {
+                  "rate": "0.200000000000000000",
+                  "max_rate": "1.000000000000000000",
+                  "max_change_rate": "0.010000000000000000"
+                },
+                "min_self_delegation": "1",
+                "delegator_address": "cosmos1kj0h4kn4z5xvedu2nd9c4a9a559wvpuvemr0vq",
+                "validator_address": "cosmosvaloper1kj0h4kn4z5xvedu2nd9c4a9a559wvpuvu0h6qn",
+                "pubkey": "cosmosvalconspub1zcjduepqvc5xdrpvduse3fc084s56n4a6dhzudyzjmywjx25fkgw2fhsj70searwgy",
+                "value": {
+                  "denom": "uatom",
+                  "amount": "100000000"
+                }
+              }
+            }
+          ],
+          "fee": {
+            "amount": null,
+            "gas": "200000"
+          },
+          "signatures": [
+            {
+              "pub_key": {
+                "type": "tendermint/PubKeyMultisigThreshold",
+                "value": {
+                  "threshold": "2",
+                  "pubkeys": [
+                    {
+                      "type": "tendermint/PubKeySecp256k1",
+                      "value": "AlHMIiMT4+ubmUFOJswrv9fwUJ33cWolv2e5ddzm51P9"
+                    },
+                    {
+                      "type": "tendermint/PubKeySecp256k1",
+                      "value": "ApYO482K2n1xA754WsviWNSRZ9IyA9zodACZKCSedq10"
+                    },
+                    {
+                      "type": "tendermint/PubKeySecp256k1",
+                      "value": "AiRJtkfOtRkVHpB/4edZmTi/AKTNq+jPQjFWb0X3Hn22"
+                    }
+                  ]
+                }
+              },
+              "signature": "CgUIAxIBYBJA79FZoB4WSa1b7jxsyoSp0iYuWcRGQuJYGp3x2jJQI78v6mvypi1Wa9VMllH5xdnNPHD/5sfhmKx0V+f4Eh1swhJAP+nHIWbVq2DxIV7XBJD/QU5HbOp8suIK9YpqHPRSx2glRHMwWOvV4lG0Z7H6ZS31YSON+Tta/sZVXFHc0sqS6g=="
+            }
+          ],
+          "memo": "89e4b72625c0a13d6f62e3cd9d40bfc444cbfa77@34.65.7.199:26656"
+        }
+      },
+      {
+        "type": "auth/StdTx",
+        "value": {
+          "msg": [
+            {
+              "type": "cosmos-sdk/MsgCreateValidator",
+              "value": {
+                "description": {
+                  "moniker": "Cypher Core",
+                  "identity": "",
+                  "website": "",
+                  "details": ""
+                },
+                "commission": {
+                  "rate": "0.100000000000000000",
+                  "max_rate": "0.200000000000000000",
+                  "max_change_rate": "0.010000000000000000"
+                },
+                "min_self_delegation": "1",
+                "delegator_address": "cosmos1pjmngrwcsatsuyy8m3qrunaun67sr9x78qhlvr",
+                "validator_address": "cosmosvaloper1pjmngrwcsatsuyy8m3qrunaun67sr9x7z5r2qs",
+                "pubkey": "cosmosvalconspub1zcjduepqcdav5ylt2zst90qmuh8e5w07xmxv9y6wufp5k9ngzmx7v9qewqtqkcq4z8",
+                "value": {
+                  "denom": "uatom",
+                  "amount": "1500000000"
+                }
+              }
+            }
+          ],
+          "fee": {
+            "amount": null,
+            "gas": "200000"
+          },
+          "signatures": [
+            {
+              "pub_key": {
+                "type": "tendermint/PubKeySecp256k1",
+                "value": "AlX825sr2FmvR8R/sizJMm2zuY74AxBrL+tbgrGPG+JN"
+              },
+              "signature": "me9a7TbytgR4O8qH3gdDkU/RNJHIIxM0/IYHdQH/9tQ1a5zkxJZHVciaQqWU6JqKMjy832TruxhNBReUAZAl1A=="
+            }
+          ],
+          "memo": "58aa4b7ebb241b3a87e3a0a965b8ac076566de62@45.76.225.89:26656"
+        }
+      },
+      {
+        "type": "auth/StdTx",
+        "value": {
+          "msg": [
+            {
+              "type": "cosmos-sdk/MsgCreateValidator",
+              "value": {
+                "description": {
+                  "moniker": "DokiaCapital-ION",
+                  "identity": "",
+                  "website": "",
+                  "details": ""
+                },
+                "commission": {
+                  "rate": "0.150000000000000000",
+                  "max_rate": "0.150000000000000000",
+                  "max_change_rate": "0.010000000000000000"
+                },
+                "min_self_delegation": "1",
+                "delegator_address": "cosmos14lultfckehtszvzw4ehu0apvsr77afvyhgqhwh",
+                "validator_address": "cosmosvaloper14lultfckehtszvzw4ehu0apvsr77afvyju5zzy",
+                "pubkey": "cosmosvalconspub1zcjduepqp0j4vum7ryt6nl6zsgq9ar347afmq2c5z6jmzeavv2p2ns6m0dgs5zmg4z",
+                "value": {
+                  "denom": "uatom",
+                  "amount": "100000000000"
+                }
+              }
+            }
+          ],
+          "fee": {
+            "amount": null,
+            "gas": "200000"
+          },
+          "signatures": [
+            {
+              "pub_key": {
+                "type": "tendermint/PubKeySecp256k1",
+                "value": "ArSpHTTpHAZ17Co4dsgfY0fuF5RAA5OZtxnmZLA2Z6vI"
+              },
+              "signature": "ujZakKBUNg3w3OmaUSD4usC3evYt3LK4ZgBlrgOEIqU+/65UF56nuxzkLCv6tPO+dK+atrJLUX5OlH/LbbLdUw=="
+            }
+          ],
+          "memo": "51da73aaf1280016998efada239b2fd59ccc4116@--node-id:26656"
+        }
+      },
+      {
+        "type": "auth/StdTx",
+        "value": {
+          "msg": [
+            {
+              "type": "cosmos-sdk/MsgCreateValidator",
+              "value": {
+                "description": {
+                  "moniker": "DragonStake",
+                  "identity": "EA61A46F31742B22",
+                  "website": "https://dragonstake.io",
+                  "details": "BlockChain Technologies"
+                },
+                "commission": {
+                  "rate": "0.100000000000000000",
+                  "max_rate": "1.000000000000000000",
+                  "max_change_rate": "0.010000000000000000"
+                },
+                "min_self_delegation": "1",
+                "delegator_address": "cosmos15r4tc0m6hc7z8drq3dzlrtcs6rq2q9l2kc6z4s",
+                "validator_address": "cosmosvaloper15r4tc0m6hc7z8drq3dzlrtcs6rq2q9l2nvwher",
+                "pubkey": "cosmosvalconspub1zcjduepqjcp9ez3dzmvsdfcw2h5kllmqvjgqnhtlvhad4q9wzcqf34gf6ewq6zl5mm",
+                "value": {
+                  "denom": "uatom",
+                  "amount": "1500000000"
+                }
+              }
+            }
+          ],
+          "fee": {
+            "amount": null,
+            "gas": "200000"
+          },
+          "signatures": [
+            {
+              "pub_key": {
+                "type": "tendermint/PubKeySecp256k1",
+                "value": "A28+XBwoLf8Q40ivs5UGkBidWs+wkg3VBs1gzriPtmuX"
+              },
+              "signature": "O0azW4WNvLnHLaFSl/hoec2B2X9HEEWzNUm+GWQxDgsb81jrZQuAQKu/rIK0vp3/DRX78X6X1RoQxsGucTZkhg=="
+            }
+          ],
+          "memo": "7c4bc7818858487674e6b532d0ba1640ae675ea3@1.2.3.4:26656"
+        }
+      },
+      {
+        "type": "auth/StdTx",
+        "value": {
+          "msg": [
+            {
+              "type": "cosmos-sdk/MsgCreateValidator",
+              "value": {
+                "description": {
+                  "moniker": "F4RM",
+                  "identity": "",
+                  "website": "",
+                  "details": ""
+                },
+                "commission": {
+                  "rate": "0.200000000000000000",
+                  "max_rate": "1.000000000000000000",
+                  "max_change_rate": "0.010000000000000000"
+                },
+                "min_self_delegation": "1",
+                "delegator_address": "cosmos14az9dmutwtz4vuycvae8csm4wwwtm0au7lt5d2",
+                "validator_address": "cosmosvaloper14az9dmutwtz4vuycvae8csm4wwwtm0aumtlppe",
+                "pubkey": "cosmosvalconspub1zcjduepq59t2nm3ph5k6uc804w0n7ey69ul8ntee2dy47d7u53q248ud822sunv93j",
+                "value": {
+                  "denom": "uatom",
+                  "amount": "1500000000"
+                }
+              }
+            }
+          ],
+          "fee": {
+            "amount": null,
+            "gas": "200000"
+          },
+          "signatures": [
+            {
+              "pub_key": {
+                "type": "tendermint/PubKeySecp256k1",
+                "value": "ApA4WPGwNrJs7QX96kS20y1TbPIuX2ZyMbKHFN24UOOR"
+              },
+              "signature": "GkrExkLIrtZiOn1zHC2p181vyx7HgzqAqSKRpc0O6Epo3x41J8FsSyKPWVFJdptuZcVr4oa2jWwEvxekJfpHWw=="
+            }
+          ],
+          "memo": "F4RM@0.0.0.0:26656"
+        }
+      },
+      {
+        "type": "auth/StdTx",
+        "value": {
+          "msg": [
+            {
+              "type": "cosmos-sdk/MsgCreateValidator",
+              "value": {
+                "description": {
+                  "moniker": "Firmamint",
+                  "identity": "",
+                  "website": "https://www.firmamint.io/",
+                  "details": "The FUTURE is at STAKE - Proudly Canadian - Holder of the Game of Stakes NEVER JAILED Title - By delegating, you confirm that you are aware of the risk of slashing and that Firmamint is not liable for any potential damages to your investment."
+                },
+                "commission": {
+                  "rate": "0.150000000000000000",
+                  "max_rate": "0.300000000000000000",
+                  "max_change_rate": "0.030000000000000000"
+                },
+                "min_self_delegation": "1500000000",
+                "delegator_address": "cosmos19kwwdw0j64xhrmgkz49l0lmu5uyujjayrfzmuq",
+                "validator_address": "cosmosvaloper19kwwdw0j64xhrmgkz49l0lmu5uyujjayxakwsn",
+                "pubkey": "cosmosvalconspub1zcjduepq668g4epaumjtx35rk3ucz2nlm7l7zuewkt0kzutg9hha859zjxmsvl2v67",
+                "value": {
+                  "denom": "uatom",
+                  "amount": "5000000000"
+                }
+              }
+            }
+          ],
+          "fee": {
+            "amount": null,
+            "gas": "200000"
+          },
+          "signatures": [
+            {
+              "pub_key": {
+                "type": "tendermint/PubKeySecp256k1",
+                "value": "A95wHrbxhpQ91P2+0HV4uN2E9dKO+a87iNSceBuu1w+Z"
+              },
+              "signature": "/hxfCtPF9s2WcN1nDaSSlNT/4bOSrWekR6380pUnsasUcBhTf/dXhdxxICP5AWGC24ehbaCYJHOqsG1b2s2pSQ=="
+            }
+          ],
+          "memo": ""
+        }
+      },
+      {
+        "type": "auth/StdTx",
+        "value": {
+          "msg": [
+            {
+              "type": "cosmos-sdk/MsgCreateValidator",
+              "value": {
+                "description": {
+                  "moniker": "HyperBlocksPro",
+                  "identity": "",
+                  "website": "",
+                  "details": ""
+                },
+                "commission": {
+                  "rate": "0.100000000000000000",
+                  "max_rate": "0.250000000000000000",
+                  "max_change_rate": "0.010000000000000000"
+                },
+                "min_self_delegation": "1",
+                "delegator_address": "cosmos1ul2me6vukg2vac2p6ltxmqlaa7jywdgtz5203m",
+                "validator_address": "cosmosvaloper1ul2me6vukg2vac2p6ltxmqlaa7jywdgt8q76ag",
+                "pubkey": "cosmosvalconspub1zcjduepq0cet8ez89wj4yz8uencych7aldc5wyyrpx6jvh6n6kxxslumln5sxkq922",
+                "value": {
+                  "denom": "uatom",
+                  "amount": "100000000000"
+                }
+              }
+            }
+          ],
+          "fee": {
+            "amount": null,
+            "gas": "200000"
+          },
+          "signatures": [
+            {
+              "pub_key": {
+                "type": "tendermint/PubKeySecp256k1",
+                "value": "A870fEa2W+PInGJCjSTyhjosx0gL2TyQqqtKx2FtUrr+"
+              },
+              "signature": "9oCPJFo4WyUzrZUU6+Tp5XiJ64//mrdCjr1DBdBQBbE5X3u/OalCUEgH2oOSHFvOZ9Pfa2rKKKkYLy8HIXePnw=="
+            }
+          ],
+          "memo": "override@override:26656"
+        }
+      },
+      {
+        "type": "auth/StdTx",
+        "value": {
+          "msg": [
+            {
+              "type": "cosmos-sdk/MsgCreateValidator",
+              "value": {
+                "description": {
+                  "moniker": "KalpaTech",
+                  "identity": "6A0D65E29A4CBC8E",
+                  "website": "kalpatech.co",
+                  "details": "KalpaTech offers integrated blockchain solutions for proof of stake networks"
+                },
+                "commission": {
+                  "rate": "0.150000000000000000",
+                  "max_rate": "0.200000000000000000",
+                  "max_change_rate": "0.010000000000000000"
+                },
+                "min_self_delegation": "1",
+                "delegator_address": "cosmos1ehkfl7palwrh6w2hhr2yfrgrq8jetguceek792",
+                "validator_address": "cosmosvaloper1ehkfl7palwrh6w2hhr2yfrgrq8jetgucudztfe",
+                "pubkey": "cosmosvalconspub1zcjduepqvmmhug9hcmm26ce7we0n3esavn4c6tfcfd6zgnuj732ls7khjq4srpg0ft",
+                "value": {
+                  "denom": "uatom",
+                  "amount": "1500000000"
+                }
+              }
+            }
+          ],
+          "fee": {
+            "amount": null,
+            "gas": "200000"
+          },
+          "signatures": [
+            {
+              "pub_key": {
+                "type": "tendermint/PubKeySecp256k1",
+                "value": "AowlwmoBjAAw2DUilvPuu5GuPePi1w0l9zsR1JfMr8tb"
+              },
+              "signature": "ZeWGlnpTJdIPBhiNJQB3t2vKAg8l/siYxD3OG8G+evcJIz5ygJJjEhcu7hjOOeRS8lNo2sVcX2xt2ye/27JQSA=="
+            }
+          ],
+          "memo": ""
+        }
+      },
+      {
+        "type": "auth/StdTx",
+        "value": {
+          "msg": [
+            {
+              "type": "cosmos-sdk/MsgCreateValidator",
+              "value": {
+                "description": {
+                  "moniker": "Mythos",
+                  "identity": "2E9FDF34351A5112",
+                  "website": "https://mythos.services",
+                  "details": "Staking and validator services for crypto networks"
+                },
+                "commission": {
+                  "rate": "0.150000000000000000",
+                  "max_rate": "0.200000000000000000",
+                  "max_change_rate": "0.010000000000000000"
+                },
+                "min_self_delegation": "1",
+                "delegator_address": "cosmos1w42lm7zv55jrh5ggpecg0v643qeatfkdqf5ua6",
+                "validator_address": "cosmosvaloper1w42lm7zv55jrh5ggpecg0v643qeatfkd9aqf3f",
+                "pubkey": "cosmosvalconspub1zcjduepqz679nxu2dkfd6y9hytqwvf2z4yuevraqykkm2464ag4e6z278h3qdq92xu",
+                "value": {
+                  "denom": "uatom",
+                  "amount": "5000000000"
+                }
+              }
+            }
+          ],
+          "fee": {
+            "amount": null,
+            "gas": "200000"
+          },
+          "signatures": [
+            {
+              "pub_key": {
+                "type": "tendermint/PubKeySecp256k1",
+                "value": "AlCWhRIIBlQOV2OuT4Fxx9qbbnafyrSpD2ra8F6s5tOa"
+              },
+              "signature": "lQ9o0uU0KGbWw+hMPIOUI/rIwmZYKpeT0+VhGfYU6s4EvGEBOFcV4usVKpOugS6Xk8OnvvGAUW6rYmPjexe13w=="
+            }
+          ],
+          "memo": "4eb6ef5af7bf1e6c27825f72b1f22ea16213ba50@192.168.0.178:26656"
+        }
+      },
+      {
+        "type": "auth/StdTx",
+        "value": {
+          "msg": [
+            {
+              "type": "cosmos-sdk/MsgCreateValidator",
+              "value": {
+                "description": {
+                  "moniker": "P2P.ORG - P2P Validator",
+                  "identity": "E12F4695036D8072",
+                  "website": "https://p2p.org",
+                  "details": "One of the winners of Cosmos Game of Stakes. We provide a simple, secure and intelligent staking service to help you generate rewards on your blockchain assets across 9+ networks within a single interface. Let’s stake together - p2p.org."
+                },
+                "commission": {
+                  "rate": "0.080000000000000000",
+                  "max_rate": "0.500000000000000000",
+                  "max_change_rate": "0.010000000000000000"
+                },
+                "min_self_delegation": "1",
+                "delegator_address": "cosmos132juzk0gdmwuxvx4phug7m3ymyatxlh9m9paea",
+                "validator_address": "cosmosvaloper132juzk0gdmwuxvx4phug7m3ymyatxlh9734g4w",
+                "pubkey": "cosmosvalconspub1zcjduepq9xu9z6ky3nz3k544ar4zhupjehkxdlpmt2l90kekxkrvuu7hxfgslcdqwy",
+                "value": {
+                  "denom": "uatom",
+                  "amount": "4900000000"
+                }
+              }
+            }
+          ],
+          "fee": {
+            "amount": null,
+            "gas": "200000"
+          },
+          "signatures": [
+            {
+              "pub_key": {
+                "type": "tendermint/PubKeySecp256k1",
+                "value": "Ahq7wODVSvcGba3EsI9KgH9e9uE9/M15J0klT5uUsous"
+              },
+              "signature": "phh3TZySvLK5vTHVdlVM3xglJvIaLs7rymdL9JmN79B4LMAYYRV3ccyAm8TpM/B32svtfaFTbn6Dfvu1QILcOg=="
+            }
+          ],
+          "memo": ""
+        }
+      },
+      {
+        "type": "auth/StdTx",
+        "value": {
+          "msg": [
+            {
+              "type": "cosmos-sdk/MsgCreateValidator",
+              "value": {
+                "description": {
+                  "moniker": "SNZHolding",
+                  "identity": "",
+                  "website": "",
+                  "details": ""
+                },
+                "commission": {
+                  "rate": "0.100000000000000000",
+                  "max_rate": "0.200000000000000000",
+                  "max_change_rate": "0.010000000000000000"
+                },
+                "min_self_delegation": "1",
+                "delegator_address": "cosmos1s6x9fy4wc49wj9jx4jv6czredqsmp46hmc8rxn",
+                "validator_address": "cosmosvaloper1s6x9fy4wc49wj9jx4jv6czredqsmp46h7vnk2q",
+                "pubkey": "cosmosvalconspub1zcjduepqfkkyuexns2l7rw2mx2ms988heah0rjv42e9q88scc3ms5hzg45psycrvr4",
+                "value": {
+                  "denom": "uatom",
+                  "amount": "100000000000"
+                }
+              }
+            }
+          ],
+          "fee": {
+            "amount": null,
+            "gas": "200000"
+          },
+          "signatures": [
+            {
+              "pub_key": {
+                "type": "tendermint/PubKeySecp256k1",
+                "value": "Ap5WX8/zhs4cyHtUSruBuYi77o3zv/aKqHQfnEbi/6Nd"
+              },
+              "signature": "+Qcgb5PXFsxsdAU2A/jmGKco7B31mDpbo1mi7+pIY/VGly0HslwkGhx8vb+UjxEMr2AE3FVyMRjuUNpyOI0YTQ=="
+            }
+          ],
+          "memo": "f7e106f5db9f10bde1f89d177bf0fe12d593f993@10.0.32.24:26656"
+        }
+      },
+      {
+        "type": "auth/StdTx",
+        "value": {
+          "msg": [
+            {
+              "type": "cosmos-sdk/MsgCreateValidator",
+              "value": {
+                "description": {
+                  "moniker": "Simply-VC-Validator",
+                  "identity": "",
+                  "website": "",
+                  "details": ""
+                },
+                "commission": {
+                  "rate": "0.200000000000000000",
+                  "max_rate": "1.000000000000000000",
+                  "max_change_rate": "1.000000000000000000"
+                },
+                "min_self_delegation": "1",
+                "delegator_address": "cosmos1vjqault583hwktfj63k2hh7r02sj2a66v0chv3",
+                "validator_address": "cosmosvaloper1vjqault583hwktfj63k2hh7r02sj2a66fmvzqz",
+                "pubkey": "cosmosvalconspub1zcjduepqduk3drqxx5g8s2vtvlpz97pq06u67ewn5wt7r2wgvtnewfymy9gs0lrzrl",
+                "value": {
+                  "denom": "uatom",
+                  "amount": "100000000000"
+                }
+              }
+            }
+          ],
+          "fee": {
+            "amount": null,
+            "gas": "200000"
+          },
+          "signatures": [
+            {
+              "pub_key": {
+                "type": "tendermint/PubKeySecp256k1",
+                "value": "Ah2SOnyRtwfHRT/Y1CERA7MiLIdkx37DEOwEu3IOQbCU"
+              },
+              "signature": "JSOY7O6BijCI/MfokfkShlWnMaNLFlpzNdHMl1T1tpFq0fKcJiQOy/bzX9nJOFfPma3+fZAl4PEcCOd5FKsiAQ=="
+            }
+          ],
+          "memo": "MemoryLost@Was.Here:26656"
+        }
+      },
+      {
+        "type": "auth/StdTx",
+        "value": {
+          "msg": [
+            {
+              "type": "cosmos-sdk/MsgCreateValidator",
+              "value": {
+                "description": {
+                  "moniker": "Skystar Capital",
+                  "identity": "",
+                  "website": "",
+                  "details": ""
+                },
+                "commission": {
+                  "rate": "0.100000000000000000",
+                  "max_rate": "0.200000000000000000",
+                  "max_change_rate": "0.010000000000000000"
+                },
+                "min_self_delegation": "1",
+                "delegator_address": "cosmos1uhnsxv6m83jj3328mhrql7yax3nge5svxcw7kt",
+                "validator_address": "cosmosvaloper1uhnsxv6m83jj3328mhrql7yax3nge5svrv6t6c",
+                "pubkey": "cosmosvalconspub1zcjduepql42t7mstnewp5rgweteuw95hawzystll7mq8dl24n5yh0th7q2jqetcy07",
+                "value": {
+                  "denom": "uatom",
+                  "amount": "1500000000"
+                }
+              }
+            }
+          ],
+          "fee": {
+            "amount": null,
+            "gas": "200000"
+          },
+          "signatures": [
+            {
+              "pub_key": {
+                "type": "tendermint/PubKeySecp256k1",
+                "value": "Amz9q7DWeRFuItDxfaAyEcW8mLfF5zmhqsv3qZ/x1mjN"
+              },
+              "signature": "bAcqw/EYSCD+KufZavFQntExIW8kKUzaJ5KA/wljCs1xJAM0yIedSFjNklb4FV6+wNRpoGXjvf6hUhnyZTLXBw=="
+            }
+          ],
+          "memo": "527df2fb5f01052d174285da1eb0f0234d590890@138.68.45.219:26656"
+        }
+      },
+      {
+        "type": "auth/StdTx",
+        "value": {
+          "msg": [
+            {
+              "type": "cosmos-sdk/MsgCreateValidator",
+              "value": {
+                "description": {
+                  "moniker": "Staked",
+                  "identity": "7B3A2EFE5B3FCDF8",
+                  "website": "https://staked.us/",
+                  "details": "Staked is the most trusted validator in crypto, delivering highly available and highly secure staking nodes."
+                },
+                "commission": {
+                  "rate": "0.100000000000000000",
+                  "max_rate": "0.200000000000000000",
+                  "max_change_rate": "0.020000000000000000"
+                },
+                "min_self_delegation": "1",
+                "delegator_address": "cosmos1we6knm8qartmmh2r0qfpsz6pq0s7emv3um0vsa",
+                "validator_address": "cosmosvaloper1we6knm8qartmmh2r0qfpsz6pq0s7emv3e0meuw",
+                "pubkey": "cosmosvalconspub1zcjduepq6adydsk7nw3d63qtn30t5rexhfg56pq44sw4l9ld0tcj6jvnx30s5xw9ar",
+                "value": {
+                  "denom": "uatom",
+                  "amount": "4500000000"
+                }
+              }
+            }
+          ],
+          "fee": {
+            "amount": null,
+            "gas": "200000"
+          },
+          "signatures": [
+            {
+              "pub_key": {
+                "type": "tendermint/PubKeySecp256k1",
+                "value": "A4ox0f6xVNCbdP6xlzk2zkvoyTryEmaQp+vc+nWfUd2o"
+              },
+              "signature": "3xACydJ2/vq/aNQ4HH2oU2wVDn4zoPqJUvpzPXrSoj5T461QggzXi4aKKpqBupOcpYcCMvqjm63K5glucn0E/g=="
+            }
+          ],
+          "memo": "71f9ed4d7a7adc737914c901396a7ba3aef22c37@100.97.62.209:26656"
+        }
+      },
+      {
+        "type": "auth/StdTx",
+        "value": {
+          "msg": [
+            {
+              "type": "cosmos-sdk/MsgCreateValidator",
+              "value": {
+                "description": {
+                  "moniker": "Wetez",
+                  "identity": "",
+                  "website": "",
+                  "details": ""
+                },
+                "commission": {
+                  "rate": "0.100000000000000000",
+                  "max_rate": "1.000000000000000000",
+                  "max_change_rate": "0.100000000000000000"
+                },
+                "min_self_delegation": "1",
+                "delegator_address": "cosmos1s05va5d09xlq3et8mapsesqh6r5lqy7mnr69mg",
+                "validator_address": "cosmosvaloper1s05va5d09xlq3et8mapsesqh6r5lqy7mkhwshm",
+                "pubkey": "cosmosvalconspub1zcjduepqgx5xdrx0xktl5r8e3w7vj329fgh3fnep8ahgx8027nd5nkjxzuqs5us5en",
+                "value": {
+                  "denom": "uatom",
+                  "amount": "10000000000"
+                }
+              }
+            }
+          ],
+          "fee": {
+            "amount": null,
+            "gas": "200000"
+          },
+          "signatures": [
+            {
+              "pub_key": {
+                "type": "tendermint/PubKeySecp256k1",
+                "value": "AkQg0kfkxZ+L30N/e3zNIT17Ay47sQxckf6Dxq/TqoR2"
+              },
+              "signature": "dTY1Tc4OVZ39aYT1ax2icV35557HOasqV52NorV/MgdlzDFRWCfRYQwOeuPgL302HblzESzX4YyVUEpGYRBp7Q=="
+            }
+          ],
+          "memo": "3d08a88019e609c207eaa636ac4e03543d086cb8@172.20.73.240:26656"
+        }
+      },
+      {
+        "type": "auth/StdTx",
+        "value": {
+          "msg": [
+            {
+              "type": "cosmos-sdk/MsgCreateValidator",
+              "value": {
+                "description": {
+                  "moniker": "Atom Sandler",
+                  "identity": "",
+                  "website": "",
+                  "details": ""
+                },
+                "commission": {
+                  "rate": "0.250000000000000000",
+                  "max_rate": "1.000000000000000000",
+                  "max_change_rate": "0.010000000000000000"
+                },
+                "min_self_delegation": "1",
+                "delegator_address": "cosmos1cql9ska0xl2rkg6gcv0np4333gn6fygs3qf90r",
+                "validator_address": "cosmosvaloper1cql9ska0xl2rkg6gcv0np4333gn6fygs55asrs",
+                "pubkey": "cosmosvalconspub1zcjduepq902trqaqmnaay5wh44jdj8ljp2qeugg8r6wn5afmxzwpry205d0qd472ha",
+                "value": {
+                  "denom": "uatom",
+                  "amount": "100000000000"
+                }
+              }
+            }
+          ],
+          "fee": {
+            "amount": null,
+            "gas": "200000"
+          },
+          "signatures": [
+            {
+              "pub_key": {
+                "type": "tendermint/PubKeySecp256k1",
+                "value": "Auq/pdNq4/JnJSPjHLlHCHlnegLIwhUuXiENLvstNPNp"
+              },
+              "signature": "u9BoewGMm0StTmH93UyZl4F9HuH/m2QGeXAIRwSi9uQ4B40c4irw84zftfP5CQ1uPCady+FL6ZwSIu7TEh9DAw=="
+            }
+          ],
+          "memo": ""
+        }
+      },
+      {
+        "type": "auth/StdTx",
+        "value": {
+          "msg": [
+            {
+              "type": "cosmos-sdk/MsgCreateValidator",
+              "value": {
+                "description": {
+                  "moniker": "Bison Trails",
+                  "identity": "A296556FF603197C",
+                  "website": "https://bisontrails.co",
+                  "details": "Bison Trails is the easiest way to run infrastructure on multiple blockchains."
+                },
+                "commission": {
+                  "rate": "0.100000000000000000",
+                  "max_rate": "0.500000000000000000",
+                  "max_change_rate": "0.010000000000000000"
+                },
+                "min_self_delegation": "1",
+                "delegator_address": "cosmos1uxh465053nq3at4dn0jywgwq3s9sme3lc9ek2f",
+                "validator_address": "cosmosvaloper1uxh465053nq3at4dn0jywgwq3s9sme3la3drx6",
+                "pubkey": "cosmosvalconspub1zcjduepqc5y2du793cjut0cn6v7thp3xlvphggk6rt2dhw9ekjla5wtkm7nstmv5vy",
+                "value": {
+                  "denom": "uatom",
+                  "amount": "13000000000"
+                }
+              }
+            }
+          ],
+          "fee": {
+            "amount": null,
+            "gas": "200000"
+          },
+          "signatures": [
+            {
+              "pub_key": {
+                "type": "tendermint/PubKeySecp256k1",
+                "value": "Ai+y59+qJLiZeh+8GdOJO2GJkLvtS4sD9UDOBEELUETM"
+              },
+              "signature": "UwNBWnjLPegS+cITJybwFXvaSb/0bPLvn4D6Bvb4z+0RLgV+wWv1RrXJKIlWqfxlP13u3j3kQ1tNm7+xMA5A6Q=="
+            }
+          ],
+          "memo": "54a82740a61e39f384e5fb1cc01de79502d05ba2@10.0.1.202:26656"
+        }
+      },
+      {
+        "type": "auth/StdTx",
+        "value": {
+          "msg": [
+            {
+              "type": "cosmos-sdk/MsgCreateValidator",
+              "value": {
+                "description": {
+                  "moniker": "bity.com",
+                  "identity": "",
+                  "website": "https://bity.com",
+                  "details": "We offer professional, secure, and reliable crypto staking services for investors looking to stake their coins with trusted third parties, such as the Cosmos Network."
+                },
+                "commission": {
+                  "rate": "0.200000000000000000",
+                  "max_rate": "1.000000000000000000",
+                  "max_change_rate": "0.010000000000000000"
+                },
+                "min_self_delegation": "1",
+                "delegator_address": "cosmos1uv26ytrnmydyctq0s58ve2k6wn2p653m9yn69g",
+                "validator_address": "cosmosvaloper1uv26ytrnmydyctq0s58ve2k6wn2p653mqs80fm",
+                "pubkey": "cosmosvalconspub1zcjduepqmpm39a9aqllqr8dm9w3ww0sp0v32vvphqmgxt20fpw7949ayhhqshx7n9c",
+                "value": {
+                  "denom": "uatom",
+                  "amount": "20000000000"
+                }
+              }
+            }
+          ],
+          "fee": {
+            "amount": null,
+            "gas": "200000"
+          },
+          "signatures": [
+            {
+              "pub_key": {
+                "type": "tendermint/PubKeySecp256k1",
+                "value": "A/MVFYmNRfeBJraFOJMmdVvdZRLNpfkSgwZy8j90DzoM"
+              },
+              "signature": "4WmtMo09/FO+SP5+ThIbr8xWI0LLc0d2+4cAhgIn6HtFGlKktIzvga3uf3W/Oq1xac7D8Wau64bnruiMz4Wa8Q=="
+            }
+          ],
+          "memo": "659787510cdb818ad1a3a2eed3ce68a6827354e2@cosmos.bity.com:26656"
+        }
+      },	
+      {
+        "type": "auth/StdTx",
+        "value": {
+          "msg": [
+            {
+              "type": "cosmos-sdk/MsgCreateValidator",
+              "value": {
+                "description": {
+                  "moniker": "blockmatrix",
+                  "identity": "",
+                  "website": "",
+                  "details": ""
+                },
+                "commission": {
+                  "rate": "0.150000000000000000",
+                  "max_rate": "0.250000000000000000",
+                  "max_change_rate": "0.010000000000000000"
+                },
+                "min_self_delegation": "10",
+                "delegator_address": "cosmos1n5pu2rtz4e2skaeatcmlexza7kheedzhzf70tu",
+                "validator_address": "cosmosvaloper1n5pu2rtz4e2skaeatcmlexza7kheedzh8a2680",
+                "pubkey": "cosmosvalconspub1zcjduepqnd9kzfhhvuv5k2cq62yu0e5v73ymsgxa0wlen9c7999ucwg7hg6qdm34pm",
+                "value": {
+                  "denom": "uatom",
+                  "amount": "5000000000"
+                }
+              }
+            }
+          ],
+          "fee": {
+            "amount": null,
+            "gas": "200000"
+          },
+          "signatures": [
+            {
+              "pub_key": {
+                "type": "tendermint/PubKeySecp256k1",
+                "value": "AzKw26WQQPFK/cvMjrFIcTG1CPpj225RzIcDXwOXUzlj"
+              },
+              "signature": "iQDu63RYmDLNK8UONr/jNf+LMGyVgNgqODlcVQJVaOoay91IHYBpST5rQ9dNKaUPgLufCehM8YEOUh1OY8xPEQ=="
+            }
+          ],
+          "memo": "e275ba168d9379eacb186e11b2ffa8a0dd02a63e@1.2.3.4:26656"
+        }
+      },
+      {
+        "type": "auth/StdTx",
+        "value": {
+          "msg": [
+            {
+              "type": "cosmos-sdk/MsgCreateValidator",
+              "value": {
+                "description": {
+                  "moniker": "cephalopod equipment coop",
+                  "identity": "",
+                  "website": "",
+                  "details": "Cephalopod Equipment Coop"
+                },
+                "commission": {
+                  "rate": "0.250000000000000000",
+                  "max_rate": "1.000000000000000000",
+                  "max_change_rate": "0.100000000000000000"
+                },
+                "min_self_delegation": "1000000",
+                "delegator_address": "cosmos1fghgwhgtxtcshj4a9alp7u2qv6n2wffqj4jdl9",
+                "validator_address": "cosmosvaloper1fghgwhgtxtcshj4a9alp7u2qv6n2wffqhpxcnk",
+                "pubkey": "cosmosvalconspub1zcjduepqwzmcs4kpsetyk7fn7czvdljgawa93r6mnzvcwt9a366rep2gcs0q4jpxu5",
+                "value": {
+                  "denom": "uatom",
+                  "amount": "42000000"
+                }
+              }
+            }
+          ],
+          "fee": {
+            "amount": null,
+            "gas": "200000"
+          },
+          "signatures": [
+            {
+              "pub_key": {
+                "type": "tendermint/PubKeySecp256k1",
+                "value": "A8NUKnGCZXhpay1nTggs9kB60tui7lWeifpQkuRjWSeo"
+              },
+              "signature": "PxVmWkumWSfc2Ard4gpL3d/IN/ZG/oD+Ee4voBOl++BRp6o1nWv9gyJunrROCc6LeyWpTwMYNSUd6BrgqtWk4A=="
+            }
+          ],
+          "memo": ""
+        }
+      },
+      {
+        "type": "auth/StdTx",
+        "value": {
+          "msg": [
+            {
+              "type": "cosmos-sdk/MsgCreateValidator",
+              "value": {
+                "description": {
+                  "moniker": "Certus One",
+                  "identity": "ABD51DF68C0D1ECF",
+                  "website": "https://certus.one",
+                  "details": "Stake and earn rewards with the most secure and stable validator. Winner of the Game of Stakes. Operated by Certus One Inc. By delegating, you confirm that you are aware of the risk of slashing and that Certus One Inc is not liable for any potential damages to your investment."
+                },
+                "commission": {
+                  "rate": "0.125000000000000000",
+                  "max_rate": "0.300000000000000000",
+                  "max_change_rate": "0.010000000000000000"
+                },
+                "min_self_delegation": "1",
+                "delegator_address": "cosmos1qwl879nx9t6kef4supyazayf7vjhennyjqwjgr",
+                "validator_address": "cosmosvaloper1qwl879nx9t6kef4supyazayf7vjhennyh568ys",
+                "pubkey": "cosmosvalconspub1zcjduepqwrjpn0slu86e32zfu5xxg8l42uk40guuw6er44vw2yl6s7wc38est6l0ux",
+                "value": {
+                  "denom": "uatom",
+                  "amount": "55000000000"
+                }
+              }
+            }
+          ],
+          "fee": {
+            "amount": null,
+            "gas": "200000"
+          },
+          "signatures": [
+            {
+              "pub_key": {
+                "type": "tendermint/PubKeySecp256k1",
+                "value": "A0hW8ESfYxhZt8Jxix/qgLOIl3TjnOrpTDSEGzo0qRm0"
+              },
+              "signature": "FxQ3VLXQeaRbeSQoumEvr52mcZC6ej1WAGH1papeukN5EkUGpY5NicoHMFNIRV4BGRKgSNoiFIwvVCfTHIWXhQ=="
+            }
+          ],
+          "memo": ""
+        }
+      },
+      {
+        "type": "auth/StdTx",
+        "value": {
+          "msg": [
+            {
+              "type": "cosmos-sdk/MsgCreateValidator",
+              "value": {
+                "description": {
+                  "moniker": "chainflow-cosmos-prodval-01",
+                  "identity": "",
+                  "website": "",
+                  "details": ""
+                },
+                "commission": {
+                  "rate": "0.150000000000000000",
+                  "max_rate": "1.000000000000000000",
+                  "max_change_rate": "0.010000000000000000"
+                },
+                "min_self_delegation": "1",
+                "delegator_address": "cosmos1j0vaeh27t4rll7zhmarwcuq8xtrmvqhughud6h",
+                "validator_address": "cosmosvaloper1j0vaeh27t4rll7zhmarwcuq8xtrmvqhudrgcky",
+                "pubkey": "cosmosvalconspub1zcjduepqvn4a4skwj88c8e0jvns3qjrhyy0whvnuwmth3k8kexvqk5vupw4qsdje47",
+                "value": {
+                  "denom": "uatom",
+                  "amount": "500000000"
+                }
+              }
+            }
+          ],
+          "fee": {
+            "amount": null,
+            "gas": "200000"
+          },
+          "signatures": [
+            {
+              "pub_key": {
+                "type": "tendermint/PubKeySecp256k1",
+                "value": "A7s/Wt/O0q/TXK1wm/AC/iYkHAUlTnT2csEcB6hTOoVE"
+              },
+              "signature": "y+kaSKQwdN0VMPLUhZUpoVv4W16SoHLmlBDre6cwG59IAkvuQyW8CxILF9/TpaFb0TObVBxDZT1WnLScgcIMdQ=="
+            }
+          ],
+          "memo": ""
+        }
+      },
+      {
+        "type": "auth/StdTx",
+        "value": {
+          "msg": [
+            {
+              "type": "cosmos-sdk/MsgCreateValidator",
+              "value": {
+                "description": {
+                  "moniker": "Chorus One",
+                  "identity": "00B79D689B7DC1CE",
+                  "website": "https://chorus.one/",
+                  "details": "Secure Cosmos and shape its future by delegating to Chorus One, a highly secure and stable validator. By delegating, you agree to the terms of service at: https://chorus.one/cosmos/tos"
+                },
+                "commission": {
+                  "rate": "0.150000000000000000",
+                  "max_rate": "0.250000000000000000",
+                  "max_change_rate": "0.020000000000000000"
+                },
+                "min_self_delegation": "10",
+                "delegator_address": "cosmos15urq2dtp9qce4fyc85m6upwm9xul3049um7trd",
+                "validator_address": "cosmosvaloper15urq2dtp9qce4fyc85m6upwm9xul3049e02707",
+                "pubkey": "cosmosvalconspub1zcjduepqjc07nu2ya8tyzl8m385rnc382pkulwt2gh8yary73f3a96jak7pqsf63xf",
+                "value": {
+                  "denom": "uatom",
+                  "amount": "4500000000"
+                }
+              }
+            }
+          ],
+          "fee": {
+            "amount": null,
+            "gas": "200000"
+          },
+          "signatures": [
+            {
+              "pub_key": {
+                "type": "tendermint/PubKeySecp256k1",
+                "value": "AoUAnGnBsT7xGv2PTnIQbfK4t4oNyimGk2AhPwfgxq3T"
+              },
+              "signature": "Zoxl7XkkI8Frefnck9lKsqsnqUHefYZerjK7a9gG/wlCNG8v5E9iFnqoepDLykjo3MVB6YQup2Ub+vS2ZeFM9w=="
+            }
+          ],
+          "memo": ""
+        }
+      },
+      {
+        "type": "auth/StdTx",
+        "value": {
+          "msg": [
+            {
+              "type": "cosmos-sdk/MsgCreateValidator",
+              "value": {
+                "description": {
+                  "moniker": "Colmena",
+                  "identity": "",
+                  "website": "https://www.coworkingcolmena.com/",
+                  "details": "May the force be with you"
+                },
+                "commission": {
+                  "rate": "0.100000000000000000",
+                  "max_rate": "0.500000000000000000",
+                  "max_change_rate": "0.010000000000000000"
+                },
+                "min_self_delegation": "1",
+                "delegator_address": "cosmos16gdxm24ht2mxtpz9cma6tr6a6d47x63hlq4pxt",
+                "validator_address": "cosmosvaloper16gdxm24ht2mxtpz9cma6tr6a6d47x63h65p52c",
+                "pubkey": "cosmosvalconspub1zcjduepq9s5y3sk6g6x35pk2ljzs446xgfmamzuptrlrgs9mquc982j0ujuqq0vzhf",
+                "value": {
+                  "denom": "uatom",
+                  "amount": "1000"
+                }
+              }
+            }
+          ],
+          "fee": {
+            "amount": null,
+            "gas": "200000"
+          },
+          "signatures": [
+            {
+              "pub_key": {
+                "type": "tendermint/PubKeySecp256k1",
+                "value": "AzaSKwy1GgbQmJlWIbFBR8l4Q9YSvWDwyakmccdgoqOs"
+              },
+              "signature": "LGBPGXGU3rhkQBdoHHeMMOOrVfu32gqrpVjNMmJhft8jY5mCinzdR6IgKFUwu2qe6LdKE1kDRaWPJirONkZCHA=="
+            }
+          ],
+          "memo": "34b6a464293de57570540bf8cb37a0458a94d138@0.0.0.0:26656"
+        }
+      },
+      {
+        "type": "auth/StdTx",
+        "value": {
+          "msg": [
+            {
+              "type": "cosmos-sdk/MsgCreateValidator",
+              "value": {
+                "description": {
+                  "moniker": "cosmospool.org",
+                  "identity": "",
+                  "website": "http://cosmospool.org",
+                  "details": "Cosmospool.org Delegation Services"
+                },
+                "commission": {
+                  "rate": "0.100000000000000000",
+                  "max_rate": "0.400000000000000000",
+                  "max_change_rate": "0.010000000000000000"
+                },
+                "min_self_delegation": "100000000",
+                "delegator_address": "cosmos1ps7dmygt4wm72t8l9kdjetelhggsv8w7m0ezaz",
+                "validator_address": "cosmosvaloper1ps7dmygt4wm72t8l9kdjetelhggsv8w77mdh33",
+                "pubkey": "cosmosvalconspub1zcjduepqupgzsdq2w7m77h4xyrtywzx8mlqnj97ucdv7kaae78w5p7xadqfs3e34w8",
+                "value": {
+                  "denom": "uatom",
+                  "amount": "20000000000"
+                }
+              }
+            }
+          ],
+          "fee": {
+            "amount": null,
+            "gas": "200000"
+          },
+          "signatures": [
+            {
+              "pub_key": {
+                "type": "tendermint/PubKeySecp256k1",
+                "value": "A7noP7sKUSsy4PJeNJf/yApZQa/V1rcuBYk5IalYItyc"
+              },
+              "signature": "jedggMAw6ArULMZiLKe6efia7DqPXTVWa9yz9RNoH29vDVCs8238roGA4HYonV27kf8zdp9momNToaY7fvgS2Q=="
+            }
+          ],
+          "memo": ""
+        }
+      },
+      {
+        "type": "auth/StdTx",
+        "value": {
+          "msg": [
+            {
+              "type": "cosmos-sdk/MsgCreateValidator",
+              "value": {
+                "description": {
+                  "moniker": "darkqueen",
+                  "identity": "",
+                  "website": "",
+                  "details": ""
+                },
+                "commission": {
+                  "rate": "0.100000000000000000",
+                  "max_rate": "0.200000000000000000",
+                  "max_change_rate": "0.010000000000000000"
+                },
+                "min_self_delegation": "1",
+                "delegator_address": "cosmos1f63lrmnn4upu722kxdhw04taxa6w50lnchnjp4",
+                "validator_address": "cosmosvaloper1f63lrmnn4upu722kxdhw04taxa6w50lnar88dx",
+                "pubkey": "cosmosvalconspub1zcjduepqqypxy7l8tav52nengx8esff2h3v78taqpj3qpcugy0rk3ee79sxs5la5u6",
+                "value": {
+                  "denom": "uatom",
+                  "amount": "100000000"
+                }
+              }
+            }
+          ],
+          "fee": {
+            "amount": null,
+            "gas": "200000"
+          },
+          "signatures": [
+            {
+              "pub_key": {
+                "type": "tendermint/PubKeySecp256k1",
+                "value": "Ay1sFLp6lSJwXRYLWsh2TBoWDZ/ocs8ctamkIqDbNeto"
+              },
+              "signature": "EsT6nUo9HpcCBz+6EZ15lNzccaH3s/VkBPgoFBffy2M5FzWtS/2U9t1NzUIhTmo9I1vLBYWFp83LtwMRf6nslQ=="
+            }
+          ],
+          "memo": "5cc113055ac56e03e80a71b37127146beaf62419@45.79.106.28:26656"
+        }
+      },
+      {
+        "type": "auth/StdTx",
+        "value": {
+          "msg": [
+            {
+              "type": "cosmos-sdk/MsgCreateValidator",
+              "value": {
+                "description": {
+                  "moniker": "Delega",
+                  "identity": "1BED7C08416A619F",
+                  "website": "https://delega.io",
+                  "details": "Your trusted validator for PoS"
+                },
+                "commission": {
+                  "rate": "0.100000000000000000",
+                  "max_rate": "0.500000000000000000",
+                  "max_change_rate": "0.010000000000000000"
+                },
+                "min_self_delegation": "1",
+                "delegator_address": "cosmos1mrkn3uug9dm32hyp9tcxs5dmmuspt7nezrdmhz",
+                "validator_address": "cosmosvaloper1mrkn3uug9dm32hyp9tcxs5dmmuspt7ne8hewm3",
+                "pubkey": "cosmosvalconspub1zcjduepqxr0r707t6djym8vwrq39j7u4t3cjsx6ka0a08aew9fqh8hv50fyqck470f",
+                "value": {
+                  "denom": "uatom",
+                  "amount": "1000000000"
+                }
+              }
+            }
+          ],
+          "fee": {
+            "amount": null,
+            "gas": "200000"
+          },
+          "signatures": [
+            {
+              "pub_key": {
+                "type": "tendermint/PubKeySecp256k1",
+                "value": "A+turACQcuu0YWxdJxSt1FG2NlAoNevwUaMe4UxfenLB"
+              },
+              "signature": "rV0m9uDoMkF5Jz71JwPLSDPHei7GJhYzu79CGOYb8QkgwFwnaMw5AYyhSCWyhcfWb/+2FslKhb2grSPE832/Mg=="
+            }
+          ],
+          "memo": "d490b109cf63e880fce61928331c2ea3eb73fe8a@192.168.2.238:26656"
+        }
+      },
+      {
+        "type": "auth/StdTx",
+        "value": {
+          "msg": [
+            {
+              "type": "cosmos-sdk/MsgCreateValidator",
+              "value": {
+                "description": {
+                  "moniker": "figment",
+                  "identity": "E5F274B870BDA01D",
+                  "website": "https://figment.network",
+                  "details": "Based in Canada. The #1 Legal and Compliant Cosmos Validator."
+                },
+                "commission": {
+                  "rate": "0.150000000000000000",
+                  "max_rate": "0.300000000000000000",
+                  "max_change_rate": "0.010000000000000000"
+                },
+                "min_self_delegation": "1",
+                "delegator_address": "cosmos1hjct6q7npsspsg3dgvzk3sdf89spmlpfg8wwf7",
+                "validator_address": "cosmosvaloper1hjct6q7npsspsg3dgvzk3sdf89spmlpfdn6m9d",
+                "pubkey": "cosmosvalconspub1zcjduepqnltddase4lqjcfhup8ymg0qex3srakg54ppv06pstvwdjxkm6tmq08znvs",
+                "value": {
+                  "denom": "uatom",
+                  "amount": "4800000000"
+                }
+              }
+            }
+          ],
+          "fee": {
+            "amount": null,
+            "gas": "200000"
+          },
+          "signatures": [
+            {
+              "pub_key": {
+                "type": "tendermint/PubKeySecp256k1",
+                "value": "A/ME5Wre92HJOJH4wBFveSeq3Yj8wZJrn/pEWc3pcrSc"
+              },
+              "signature": "KkpNbaYCHI2B4RoUhuo0+RglExyN/xSH+b7WFhn8fIgbtVyrpk1bpPuMJqehMkjUiBrqw5/RSPoNUrn2nPgX3w=="
+            }
+          ],
+          "memo": "6659591b5e73d5a5cbc5e6e892d7a478564e10f9@54.39.178.218:26656"
+        }
+      },
+      {
+        "type": "auth/StdTx",
+        "value": {
+          "msg": [
+            {
+              "type": "cosmos-sdk/MsgCreateValidator",
+              "value": {
+                "description": {
+                  "moniker": "firstblock.io",
+                  "identity": "23D9B8528FC93D58",
+                  "website": "https://firstblock.io",
+                  "details": "You Delegate. We Validate."
+                },
+                "commission": {
+                  "rate": "0.100000000000000000",
+                  "max_rate": "0.200000000000000000",
+                  "max_change_rate": "0.010000000000000000"
+                },
+                "min_self_delegation": "1",
+                "delegator_address": "cosmos1s65zmn32zugl57ysj47s7vmfcek0rtd7jd2mp2",
+                "validator_address": "cosmosvaloper1s65zmn32zugl57ysj47s7vmfcek0rtd7he7wde",
+                "pubkey": "cosmosvalconspub1zcjduepqrc6g9m2eyy4zs7kyeph8vk5ldpgnceveelc39zf7lc32j8k3shqssevdlg",
+                "value": {
+                  "denom": "uatom",
+                  "amount": "3000000000"
+                }
+              }
+            }
+          ],
+          "fee": {
+            "amount": null,
+            "gas": "200000"
+          },
+          "signatures": [
+            {
+              "pub_key": {
+                "type": "tendermint/PubKeySecp256k1",
+                "value": "AlLytZYcIwiP/kUu5EeR9seek332Mc1857kHeiwPYFNL"
+              },
+              "signature": "ngZIoTD7oaCbH+7jH+/SqdNq2vOxV8ssU8KDyc2Sf0V9g5PIOh0cYgoPckYhLcEZZlgy1k1VM5GIyQlEBrHbDA=="
+            }
+          ],
+          "memo": ""
+        }
+      },
+      {
+        "type": "auth/StdTx",
+        "value": {
+          "msg": [
+            {
+              "type": "cosmos-sdk/MsgCreateValidator",
+              "value": {
+                "description": {
+                  "moniker": "Forbole",
+                  "identity": "4A5D9C100A76D9A8",
+                  "website": "https://www.forbole.com/cosmos-hub-validator/",
+                  "details": "Forbole is a Genesis Validator on Cosmos Hub. We are a named winner in Game of Stakes and HackAtom3 by Cosmos. We are a very helpful contributor in both the English and Chinese community."
+                },
+                "commission": {
+                  "rate": "0.125000000000000000",
+                  "max_rate": "0.250000000000000000",
+                  "max_change_rate": "0.010000000000000000"
+                },
+                "min_self_delegation": "1",
+                "delegator_address": "cosmos14kn0kk33szpwus9nh8n87fjel8djx0y0mmswhp",
+                "validator_address": "cosmosvaloper14kn0kk33szpwus9nh8n87fjel8djx0y070ymmj",
+                "pubkey": "cosmosvalconspub1zcjduepqmfxl36td7rcdzszzrk6c7kzp5l3jlw4lnxz8zms3py7qcsa9xlns7zxfd6",
+                "value": {
+                  "denom": "uatom",
+                  "amount": "5000000000"
+                }
+              }
+            }
+          ],
+          "fee": {
+            "amount": null,
+            "gas": "200000"
+          },
+          "signatures": [
+            {
+              "pub_key": {
+                "type": "tendermint/PubKeySecp256k1",
+                "value": "AhF73wdGhoSfbDgqjxIeefFGBYtBU2PBIDG/6OhPt60+"
+              },
+              "signature": "wzt26vJnEhSe92C8Of6MuSETfrk4cm0ya+iKEucUGUVQ4HEYvzzC3gM6cvPjGPWUuYfU8XhHpGKByUzzVy6Dzg=="
+            }
+          ],
+          "memo": "e20dca7582870356c7a843115374c7a97dc06ae8@10.6.0.46:26656"
+        }
+      },
+      {
+        "type": "auth/StdTx",
+        "value": {
+          "msg": [
+            {
+              "type": "cosmos-sdk/MsgCreateValidator",
+              "value": {
+                "description": {
+                  "moniker": "clawmvp | 01no.de",
+                  "identity": "",
+                  "website": "",
+                  "details": ""
+                },
+                "commission": {
+                  "rate": "0.100000000000000000",
+                  "max_rate": "0.200000000000000000",
+                  "max_change_rate": "0.010000000000000000"
+                },
+                "min_self_delegation": "1",
+                "delegator_address": "cosmos17mggn4znyeyg25wd7498qxl7r2jhgue8ep585n",
+                "validator_address": "cosmosvaloper17mggn4znyeyg25wd7498qxl7r2jhgue8u4qjcq",
+                "pubkey": "cosmosvalconspub1zcjduepqlzmd0spn9m0m3eq9zp93d4w6e5tugamv44yqjzyacelnvra634fqnfec0r",
+                "value": {
+                  "denom": "uatom",
+                  "amount": "20000000000"
+                }
+              }
+            }
+          ],
+          "fee": {
+            "amount": null,
+            "gas": "200000"
+          },
+          "signatures": [
+            {
+              "pub_key": {
+                "type": "tendermint/PubKeySecp256k1",
+                "value": "A9isBJO7xtwuV0PlTRTcJJN9Vk+cYDtjD35IUExoWVGW"
+              },
+              "signature": "DqgDxTiOvltlH1Oy2PFfvocGXHnxH8a5gDne50RjD7J+l0iglJQ5UdE2vI+F0ybQ+JXHahMJaKJebwB62tHB9g=="
+            }
+          ],
+          "memo": "01no.de@0.0.0.0:26656"
+        }
+      },
+      {
+        "type": "auth/StdTx",
+        "value": {
+          "msg": [
+            {
+              "type": "cosmos-sdk/MsgCreateValidator",
+              "value": {
+                "description": {
+                  "moniker": "Castlenode",
+                  "identity": "",
+                  "website": "https://www.castlenode.com/cosmos",
+                  "details": "Castlenode is a validator operator focused on security and run by experienced professionals. Please read our Terms and Conditions on our website before delegating"
+                },
+                "commission": {
+                  "rate": "0.090000000000000000",
+                  "max_rate": "0.500000000000000000",
+                  "max_change_rate": "0.050000000000000000"
+                },
+                "min_self_delegation": "1",
+                "delegator_address": "cosmos1qs8tnw2t8l6amtzvdemnnsq9dzk0ag0z37gh3h",
+                "validator_address": "cosmosvaloper1qs8tnw2t8l6amtzvdemnnsq9dzk0ag0z52uzay",
+                "pubkey": "cosmosvalconspub1zcjduepqsszd2gzte82dzt0xpa3w0ky8lxhjs6zpd5ft8akmkscwujpftymsnt83qc",
+                "value": {
+                  "denom": "uatom",
+                  "amount": "14750000000"
+                }
+              }
+            }
+          ],
+          "fee": {
+            "amount": null,
+            "gas": "200000"
+          },
+          "signatures": [
+            {
+              "pub_key": {
+                "type": "tendermint/PubKeySecp256k1",
+                "value": "A6YjD9RkuLPQ1tCzRVQoWEG1FmyNgPoVTAN1HrCkHoI9"
+              },
+              "signature": "cA9XsVaNPNhbgTsfi6LQhaXCnxpgshINIu8N0YVNAlANKwlQKT57OihEWojs3/ycMQruSuEZi/404PSpEuaxDw=="
+            }
+          ],
+          "memo": ""
+        }
+      },
+      {
+        "type": "auth/StdTx",
+        "value": {
+          "msg": [
+            {
+              "type": "cosmos-sdk/MsgCreateValidator",
+              "value": {
+                "description": {
+                  "moniker": "hashquark_cosmos",
+                  "identity": "",
+                  "website": "",
+                  "details": ""
+                },
+                "commission": {
+                  "rate": "0.100000000000000000",
+                  "max_rate": "0.200000000000000000",
+                  "max_change_rate": "0.010000000000000000"
+                },
+                "min_self_delegation": "1",
+                "delegator_address": "cosmos1cgh5ksjwy2sd407lyre4l3uj2fdrqhpk84m04f",
+                "validator_address": "cosmosvaloper1cgh5ksjwy2sd407lyre4l3uj2fdrqhpkzp06e6",
+                "pubkey": "cosmosvalconspub1zcjduepq3f6wnsk6k6qu6g8n5vly4z7ajw7q930wh3qx6zkxhktnh49l40kszf5lry",
+                "value": {
+                  "denom": "uatom",
+                  "amount": "1500000000"
+                }
+              }
+            }
+          ],
+          "fee": {
+            "amount": null,
+            "gas": "200000"
+          },
+          "signatures": [
+            {
+              "pub_key": {
+                "type": "tendermint/PubKeySecp256k1",
+                "value": "Ai0Bs9o/qWp5uKB7R2w1XsvBhKpCOLOO7ZNObt3PZh2L"
+              },
+              "signature": "9AEpXvgQnyI3G4P3YQ62+hF8lL/xe2LPM+F1j+t9mhctPsIBFU1/pfkUdwoH9NJ/d1zY44OBmjLvNFeP0N4Knw=="
+            }
+          ],
+          "memo": "fc8abc401ade02fdc41a41d1accc5ffdd634f9fb@10.10.10.60:26656"
+        }
+      },
+      {
+        "type": "auth/StdTx",
+        "value": {
+          "msg": [
+            {
+              "type": "cosmos-sdk/MsgCreateValidator",
+              "value": {
+                "description": {
+                  "moniker": "in3s.com",
+                  "identity": "",
+                  "website": "https://in3s.com",
+                  "details": "cosmosvaloper1rcp29q3hpd246n6qak7jluqep4v006cdsc2kkl"
+                },
+                "commission": {
+                  "rate": "1.000000000000000000",
+                  "max_rate": "1.000000000000000000",
+                  "max_change_rate": "1.000000000000000000"
+                },
+                "min_self_delegation": "1",
+                "delegator_address": "cosmos1rcp29q3hpd246n6qak7jluqep4v006cd4v7r6v",
+                "validator_address": "cosmosvaloper1rcp29q3hpd246n6qak7jluqep4v006cdsc2kkl",
+                "pubkey": "cosmosvalconspub1zcjduepq7mft6gfls57a0a42d7uhx656cckhfvtrlmw744jv4q0mvlv0dypskehfk8",
+                "value": {
+                  "denom": "uatom",
+                  "amount": "5000000000"
+                }
+              }
+            }
+          ],
+          "fee": {
+            "amount": null,
+            "gas": "200000"
+          },
+          "signatures": [
+            {
+              "pub_key": {
+                "type": "tendermint/PubKeySecp256k1",
+                "value": "AmbZ4oUx+GWVQDUo2z+NB0YzOpj9g4Px/n8H3EbId7aC"
+              },
+              "signature": "CISlc+hUODhDWFiY30aYhYwouOa7SZbtSzRueJRIjvZmRXJ5Gf4OQoUj5b8pU7soPJFQCXBBLdBrVQzkkKbadQ=="
+            }
+          ],
+          "memo": ""
+        }
+      },
+      {
+        "type": "auth/StdTx",
+        "value": {
+          "msg": [
+            {
+              "type": "cosmos-sdk/MsgCreateValidator",
+              "value": {
+                "description": {
+                  "moniker": "liangping",
+                  "identity": "",
+                  "website": "",
+                  "details": ""
+                },
+                "commission": {
+                  "rate": "0.200000000000000000",
+                  "max_rate": "1.000000000000000000",
+                  "max_change_rate": "0.200000000000000000"
+                },
+                "min_self_delegation": "1",
+                "delegator_address": "cosmos1jxv0u20scum4trha72c7ltfgfqef6nscj25050",
+                "validator_address": "cosmosvaloper1jxv0u20scum4trha72c7ltfgfqef6nsch7q6cu",
+                "pubkey": "cosmosvalconspub1zcjduepqnru7aa6ayyuwddd5qsa6tvutzs7xl9jk6pfx4ka5dr4y9d3q6eesgz9rz7",
+                "value": {
+                  "denom": "uatom",
+                  "amount": "5000000000"
+                }
+              }
+            }
+          ],
+          "fee": {
+            "amount": null,
+            "gas": "200000"
+          },
+          "signatures": [
+            {
+              "pub_key": {
+                "type": "tendermint/PubKeySecp256k1",
+                "value": "A+MHfxshRkw5H0UDZ0IxglCOQkVF1jhZWJpgdh3ajH6r"
+              },
+              "signature": "62IXmtbUCEG7Rq/UxWNALrnlR2kxmyy3YbkFNI/Qb0c3EuAx0a9osXkZI3Qry/5oARbq1YmksIKdgHTjezzlaA=="
+            }
+          ],
+          "memo": "cdfae2ab251678159b0d32be815afc64e3702574@172.24.230.219:26656"
+        }
+      },
+      {
+        "type": "auth/StdTx",
+        "value": {
+          "msg": [
+            {
+              "type": "cosmos-sdk/MsgCreateValidator",
+              "value": {
+                "description": {
+                  "moniker": "cosmos-Inspiron-7570",
+                  "identity": "",
+                  "website": "",
+                  "details": ""
+                },
+                "commission": {
+                  "rate": "0.070000000000000000",
+                  "max_rate": "1.000000000000000000",
+                  "max_change_rate": "0.200000000000000000"
+                },
+                "min_self_delegation": "1",
+                "delegator_address": "cosmos1ma02nlc7lchu7caufyrrqt4r6v2mpsj92s3mw7",
+                "validator_address": "cosmosvaloper1ma02nlc7lchu7caufyrrqt4r6v2mpsj90y9wzd",
+                "pubkey": "cosmosvalconspub1zcjduepqxtu8am2qmf0qnglqtvkar9gaclhccfn29tsp7n82vasrtnc8m2fsulp4h2",
+                "value": {
+                  "denom": "uatom",
+                  "amount": "100000000000"
+                }
+              }
+            }
+          ],
+          "fee": {
+            "amount": null,
+            "gas": "200000"
+          },
+          "signatures": [
+            {
+              "pub_key": {
+                "type": "tendermint/PubKeySecp256k1",
+                "value": "A74AjNDhszhX7e38QZAk5nSCqpsfBtjiUBhZakx+Xbg7"
+              },
+              "signature": "TO4eXKAifpxjndtE25q9xp+nd7/ui7EWiLz3y4Coj6R2he59bTKqxu2nG51q0EhIMTh4Tmy7ZPkMWBXJ+tbPiQ=="
+            }
+          ],
+          "memo": "2f3aef5af1d925a609c66912d452cbce52d09099@172.19.3.215:26656"
+        }
+      },
+      {
+        "type": "auth/StdTx",
+        "value": {
+          "msg": [
+            {
+              "type": "cosmos-sdk/MsgCreateValidator",
+              "value": {
+                "description": {
+                  "moniker": "iqlusion",
+                  "identity": "7843656AA22520BC",
+                  "website": "iqlusion.io",
+                  "details": ""
+                },
+                "commission": {
+                  "rate": "0.100000000000000000",
+                  "max_rate": "1.000000000000000000",
+                  "max_change_rate": "0.010000000000000000"
+                },
+                "min_self_delegation": "100000000000",
+                "delegator_address": "cosmos1grgelyng2v6v3t8z87wu3sxgt9m5s03xvslewd",
+                "validator_address": "cosmosvaloper1grgelyng2v6v3t8z87wu3sxgt9m5s03xfytvz7",
+                "pubkey": "cosmosvalconspub1zcjduepqdgvppnyr5c9pulsrmzr9e9rp7qpgm9jwp5yu8g3aumekgjugxacq8a9p2c",
+                "value": {
+                  "denom": "uatom",
+                  "amount": "100000000000"
+                }
+              }
+            }
+          ],
+          "fee": {
+            "amount": null,
+            "gas": "200000"
+          },
+          "signatures": [
+            {
+              "pub_key": {
+                "type": "tendermint/PubKeyMultisigThreshold",
+                "value": {
+                  "threshold": "2",
+                  "pubkeys": [
+                    {
+                      "type": "tendermint/PubKeySecp256k1",
+                      "value": "ArTJsvxtWUcdZX8fyNTR922d/O09KTy0RcWtsU2T9ysY"
+                    },
+                    {
+                      "type": "tendermint/PubKeySecp256k1",
+                      "value": "Am45Rm3Hp7G7Y6/Vnk0keHtcxBxfj158jLWuxo+QCA+C"
+                    },
+                    {
+                      "type": "tendermint/PubKeySecp256k1",
+                      "value": "A0OjtIUCFJM3AobJ9HJTWKP9RZV2+WPcwVjLgsAidrZ/"
+                    }
+                  ]
+                }
+              },
+              "signature": "CgUIAxIBoBJA0vtPzD/AYC7skr82W0VfJl3Jn4SXIUqDzL0SijWSoC8lFHFK0HR3XwhR5Q132c3fV+h9KHPIj/7AHoochEsc/xJAErPuh81ahn/+ZQ8CAh6auyaYIhDkajWXJmBs+v39kEUIxjx8iZI8vgc9KzBfwHchMSKMaDxm9sV1rbh75qBmDg=="
+            }
+          ],
+          "memo": ""
+        }
+      },
+      {
+        "type": "auth/StdTx",
+        "value": {
+          "msg": [
+            {
+              "type": "cosmos-sdk/MsgCreateValidator",
+              "value": {
+                "description": {
+                  "moniker": "kochacolaj",
+                  "identity": "1E9CE94FD0BA5CFEB901F90BC658D64D85B134D2",
+                  "website": "",
+                  "details": "Top 5 Game Of Stakes winner with a low commission!  https://blog.cosmos.network/game-of-stakes-closing-ceremonies-eddb71d3b114#147d"
+                },
+                "commission": {
+                  "rate": "0.090000000000000000",
+                  "max_rate": "1.000000000000000000",
+                  "max_change_rate": "1.000000000000000000"
+                },
+                "min_self_delegation": "1",
+                "delegator_address": "cosmos1emaa7mwgpnpmc7yptm728ytp9quamsvuz92x5u",
+                "validator_address": "cosmosvaloper1emaa7mwgpnpmc7yptm728ytp9quamsvu837nc0",
+                "pubkey": "cosmosvalconspub1zcjduepqfuxvufupnsm7v5anpwd7z8ec70z2k209j7xclnm25zz7vauhyc5qjgxx3h",
+                "value": {
+                  "denom": "uatom",
+                  "amount": "5000000000"
+                }
+              }
+            }
+          ],
+          "fee": {
+            "amount": null,
+            "gas": "200000"
+          },
+          "signatures": [
+            {
+              "pub_key": {
+                "type": "tendermint/PubKeySecp256k1",
+                "value": "A9IQHKHGskTTRO16DO7H9c325dg5HqcHoj2XTpxLGsIL"
+              },
+              "signature": "kSGKCs8FujbEEA99OKF71rEy/hnN6U2UYj2N0uoflIN8K0/5JzNh8ziNw+rIBTtoo9zckIAlMByxeeGba7pWFg=="
+            }
+          ],
+          "memo": ""
+        }
+      },
+      {
+        "type": "auth/StdTx",
+        "value": {
+          "msg": [
+            {
+              "type": "cosmos-sdk/MsgCreateValidator",
+              "value": {
+                "description": {
+                  "moniker": "kytzu",
+                  "identity": "",
+                  "website": "",
+                  "details": ""
+                },
+                "commission": {
+                  "rate": "0.100000000000000000",
+                  "max_rate": "0.200000000000000000",
+                  "max_change_rate": "0.010000000000000000"
+                },
+                "min_self_delegation": "1000000",
+                "delegator_address": "cosmos1wtv0kp6ydt03edd8kyr5arr4f3yc52vp5g7na0",
+                "validator_address": "cosmosvaloper1wtv0kp6ydt03edd8kyr5arr4f3yc52vp3u2x3u",
+                "pubkey": "cosmosvalconspub1zcjduepq0zyaquh6c8vmjfzft43uqylf2ejjpjcvup2zrtsk40uyz8xsq29s0k4eaw",
+                "value": {
+                  "denom": "uatom",
+                  "amount": "1490000000"
+                }
+              }
+            }
+          ],
+          "fee": {
+            "amount": null,
+            "gas": "200000"
+          },
+          "signatures": [
+            {
+              "pub_key": {
+                "type": "tendermint/PubKeySecp256k1",
+                "value": "A2Jl4SgkOkb8cD3D0GQjaDndOCbTftt9ziWQ0oQFwV7O"
+              },
+              "signature": "aeE+ZC9nl0AYfCRn+jrVKC2lBFSUDERVLZK26DJVlHARCZwGkj8CoxMY+hs7CA9kcm05LDIWqy13hQ705Ze2rw=="
+            }
+          ],
+          "memo": "b236fa97193239ce5e4032be0caf55957ac17a3c@167.86.70.194:26656"
+        }
+      },
+      {
+        "type": "auth/StdTx",
+        "value": {
+          "msg": [
+            {
+              "type": "cosmos-sdk/MsgCreateValidator",
+              "value": {
+                "description": {
+                  "moniker": "lunamint",
+                  "identity": "4F26823468DD7518",
+                  "website": "https://lunamint.com",
+                  "details": "Always adding value to Cosmos. Check out Lunagram, the Cosmos wallet built into Telegram."
+                },
+                "commission": {
+                  "rate": "0.150000000000000000",
+                  "max_rate": "1.000000000000000000",
+                  "max_change_rate": "1.000000000000000000"
+                },
+                "min_self_delegation": "1",
+                "delegator_address": "cosmos1ec3p6a75mqwkv33zt543n6cnxqwun37rxqj2vl",
+                "validator_address": "cosmosvaloper1ec3p6a75mqwkv33zt543n6cnxqwun37rr5xlqv",
+                "pubkey": "cosmosvalconspub1zcjduepqd85nu5nelvcyyzcsrr0yaglh8rfvn6cv9pp3p0hgmwtk8hf3cazqc7vz5c",
+                "value": {
+                  "denom": "uatom",
+                  "amount": "6500000000"
+                }
+              }
+            }
+          ],
+          "fee": {
+            "amount": null,
+            "gas": "200000"
+          },
+          "signatures": [
+            {
+              "pub_key": {
+                "type": "tendermint/PubKeySecp256k1",
+                "value": "A5jDkVzd9IL+B6ZPeFIWW8VkZuTGQ8lOKtduG0Z37GkB"
+              },
+              "signature": "etBUdqf+/JeKvgPIii8jen+aIefOpYTUr/8fAL98P41u8cQpAAkUg7HHaMwfDZUN1hwlQ0mpdpa6VzrnKpsrUg=="
+            }
+          ],
+          "memo": ""
+        }
+      },
+      {
+        "type": "auth/StdTx",
+        "value": {
+          "msg": [
+            {
+              "type": "cosmos-sdk/MsgCreateValidator",
+              "value": {
+                "description": {
+                  "moniker": "CosmosTrust-meleaTrust",
+                  "identity": "4BE49EABAA41B8BF",
+                  "website": "https://meleatrust.com/",
+                  "details": "Validator service secure and trusted, we speak English, Spanish, Portuguese, Catalan."
+                },
+                "commission": {
+                  "rate": "0.200000000000000000",
+                  "max_rate": "0.500000000000000000",
+                  "max_change_rate": "0.010000000000000000"
+                },
+                "min_self_delegation": "1",
+                "delegator_address": "cosmos1zqgheeawp7cmqk27dgyctd80rd8ryhqsltfszt",
+                "validator_address": "cosmosvaloper1zqgheeawp7cmqk27dgyctd80rd8ryhqs6la9wc",
+                "pubkey": "cosmosvalconspub1zcjduepq5tm478lhn4du7l46yp6fgu9e8fcfks0j4kf87pk4z8vc3clckxzqvh2q72",
+                "value": {
+                  "denom": "uatom",
+                  "amount": "511111111"
+                }
+              }
+            }
+          ],
+          "fee": {
+            "amount": null,
+            "gas": "200000"
+          },
+          "signatures": [
+            {
+              "pub_key": {
+                "type": "tendermint/PubKeySecp256k1",
+                "value": "AyPH2QpEl1JRsQtRDDfgNcQEtXzZx0QdWd/zdROcI1eM"
+              },
+              "signature": "RRLvPZPnHLSn/aM62S6OYAR9D/IXVqia2PsAZgyBq5Ne2KytrEMHXF8rR5Wilfyi0VghiO+4bhs+/DrowP93Mw=="
+            }
+          ],
+          "memo": "287b57b07756a06a6583ee0f7a55184e661eacb6@51.38.113.59:26656"
+        }
+      },
+      {
+        "type": "auth/StdTx",
+        "value": {
+          "msg": [
+            {
+              "type": "cosmos-sdk/MsgCreateValidator",
+              "value": {
+                "description": {
+                  "moniker": "nylira",
+                  "identity": "6A0D65E29A4CBC8E",
+                  "website": "https://nylira.net",
+                  "details": "Nylira is a Cosmos validator service run by Peng Zhong @zcpeng"
+                },
+                "commission": {
+                  "rate": "0.100000000000000000",
+                  "max_rate": "1.000000000000000000",
+                  "max_change_rate": "0.010000000000000000"
+                },
+                "min_self_delegation": "1000000",
+                "delegator_address": "cosmos1dany3yuj5qzcyl33qjcxwc6m478a3wftv347sh",
+                "validator_address": "cosmosvaloper1dany3yuj5qzcyl33qjcxwc6m478a3wftf9ptuy",
+                "pubkey": "cosmosvalconspub1zcjduepqg93r2qwfj0vkzl8mvr0vqtnz2ukpm4785kmaw692g7s964w4mv3s95lufg",
+                "value": {
+                  "denom": "uatom",
+                  "amount": "20000000000"
+                }
+              }
+            }
+          ],
+          "fee": {
+            "amount": null,
+            "gas": "200000"
+          },
+          "signatures": [
+            {
+              "pub_key": {
+                "type": "tendermint/PubKeySecp256k1",
+                "value": "AgdcjdT2Pxb2stqtGP0pq8R/KFEhP0Moco561uulsyLj"
+              },
+              "signature": "GWsQu+QKq4v+7UQpVJSPdRnKOhJCupsc416c7LOkZqUwz1TibxCcpDqV5KFxJCiBl/Lc4hATu/PVry/7JLfLmg=="
+            }
+          ],
+          "memo": ""
+        }
+      },
+      {
+        "type": "auth/StdTx",
+        "value": {
+          "msg": [
+            {
+              "type": "cosmos-sdk/MsgCreateValidator",
+              "value": {
+                "description": {
+                  "moniker": "piggy-coin.com",
+                  "identity": "9979ae5a5da54bf04719b8c8ebdc0d24",
+                  "website": "https://www.piggy-coin.com/",
+                  "details": "Delegate here to support piggy-coin's hard-spoon to tendermint / cosmos"
+                },
+                "commission": {
+                  "rate": "0.250000000000000000",
+                  "max_rate": "0.500000000000000000",
+                  "max_change_rate": "0.005000000000000000"
+                },
+                "min_self_delegation": "100000000",
+                "delegator_address": "cosmos1zp6kg7qlmztyw2km2af4z5ruz5vn04cpq84vjk",
+                "validator_address": "cosmosvaloper1zp6kg7qlmztyw2km2af4z5ruz5vn04cp9npe79",
+                "pubkey": "cosmosvalconspub1zcjduepq5supzpux2jafyv06qw2dnd0fzshd2enmea9zeak9emu2ft5rs8nswzlqxf",
+                "value": {
+                  "denom": "uatom",
+                  "amount": "1000000000"
+                }
+              }
+            }
+          ],
+          "fee": {
+            "amount": null,
+            "gas": "200000"
+          },
+          "signatures": [
+            {
+              "pub_key": {
+                "type": "tendermint/PubKeySecp256k1",
+                "value": "A92fKIknHSbNXRS3MpM+IUTuCJ01AG6SwabK1nMvZVoj"
+              },
+              "signature": "iW0RF/rSEe0fXtiGn0cZrv0VHdOprJnObmd0Ziyp3u8U93oKgJF4umj/GwNJn93oHBcCnxkDlOLoJXHkD/SbDg=="
+            }
+          ],
+          "memo": ""
+        }
+      },
+      {
+        "type": "auth/StdTx",
+        "value": {
+          "msg": [
+            {
+              "type": "cosmos-sdk/MsgCreateValidator",
+              "value": {
+                "description": {
+                  "moniker": "Polychain Labs",
+                  "identity": "",
+                  "website": "https://cosmos.polychainlabs.com",
+                  "details": ""
+                },
+                "commission": {
+                  "rate": "0.200000000000000000",
+                  "max_rate": "1.000000000000000000",
+                  "max_change_rate": "0.010000000000000000"
+                },
+                "min_self_delegation": "1",
+                "delegator_address": "cosmos16m93gjfqvnjajzrfyszml8qm92a0w67ntjhd3d",
+                "validator_address": "cosmosvaloper16m93gjfqvnjajzrfyszml8qm92a0w67nwxrca7",
+                "pubkey": "cosmosvalconspub1zcjduepqfgl6yafrrlx0saks9w2nafptm3lvmvzwdwhmvsqmx4l6cnqfn7ss9tdah3",
+                "value": {
+                  "denom": "uatom",
+                  "amount": "100000000000"
+                }
+              }
+            }
+          ],
+          "fee": {
+            "amount": null,
+            "gas": "200000"
+          },
+          "signatures": [
+            {
+              "pub_key": {
+                "type": "tendermint/PubKeySecp256k1",
+                "value": "A8mJRMqtUZDBLPHWEZXaPeMW7ieIyCn/7CjQaB/gojGT"
+              },
+              "signature": "I8K3bM4gER/ONfqOdNvdvWyLALoxh7xh9sgpAF92dH1PQyFeivtGAxbDo3lqWuLerZ5q6vWEEXoA3YaGNX1wfA=="
+            }
+          ],
+          "memo": ""
+        }
+      },
+      {
+        "type": "auth/StdTx",
+        "value": {
+          "msg": [
+            {
+              "type": "cosmos-sdk/MsgCreateValidator",
+              "value": {
+                "description": {
+                  "moniker": "Sentinel",
+                  "identity": "D54C8032CF19C407",
+                  "website": "sentinel.co",
+                  "details": "We are Team-Sentinel https://github.com/sentinel-official/sentinel"
+                },
+                "commission": {
+                  "rate": "0.100000000000000000",
+                  "max_rate": "1.000000000000000000",
+                  "max_change_rate": "0.100000000000000000"
+                },
+                "min_self_delegation": "1000000",
+                "delegator_address": "cosmos1u6ddcsjueax884l3tfrs66497c7g86skk24gr0",
+                "validator_address": "cosmosvaloper1u6ddcsjueax884l3tfrs66497c7g86skn7pa0u",
+                "pubkey": "cosmosvalconspub1zcjduepq87zcnf8sm4ewacjafqujfevt8rhwj5qk9uwtx4ef89ctuqmndkeq446ahw",
+                "value": {
+                  "denom": "uatom",
+                  "amount": "1500000000"
+                }
+              }
+            }
+          ],
+          "fee": {
+            "amount": null,
+            "gas": "200000"
+          },
+          "signatures": [
+            {
+              "pub_key": {
+                "type": "tendermint/PubKeySecp256k1",
+                "value": "A9OBEL9yE1gG2+gbzUxKa3T1GIPInHGkzi34CXdDXq+0"
+              },
+              "signature": "rmc8rAi/u2kLkGaXvYvIvm9hb7zPOHyKJF0ogXg8R6Ra0AagGKTn6m2IJhPi1VzBkrjPTLlUQjJgay/N5Rdr9g=="
+            }
+          ],
+          "memo": ""
+        }
+      },
+      {
+        "type": "auth/StdTx",
+        "value": {
+          "msg": [
+            {
+              "type": "cosmos-sdk/MsgCreateValidator",
+              "value": {
+                "description": {
+                  "moniker": "Sikka",
+                  "identity": "https://keybase.io/team/sikka",
+                  "website": "sikka.tech",
+                  "details": "Sunny Aggarwal (@sunnya97) and Dev Ojha (@ValarDragon)"
+                },
+                "commission": {
+                  "rate": "0.000000000000000000",
+                  "max_rate": "1.000000000000000000",
+                  "max_change_rate": "1.000000000000000000"
+                },
+                "min_self_delegation": "1",
+                "delegator_address": "cosmos1ey69r37gfxvxg62sh4r0ktpuc46pzjrmz29g45",
+                "validator_address": "cosmosvaloper1ey69r37gfxvxg62sh4r0ktpuc46pzjrm873ae8",
+                "pubkey": "cosmosvalconspub1zcjduepqg6y8magedjwr9p6s2c28zp28jdjtecxhn97ew6tnuzqklg63zgfspp9y3n",
+                "value": {
+                  "denom": "uatom",
+                  "amount": "20190313"
+                }
+              }
+            }
+          ],
+          "fee": {
+            "amount": null,
+            "gas": "566626"
+          },
+          "signatures": [
+            {
+              "pub_key": {
+                "type": "tendermint/PubKeyMultisigThreshold",
+                "value": {
+                  "threshold": "2",
+                  "pubkeys": [
+                    {
+                      "type": "tendermint/PubKeySecp256k1",
+                      "value": "AldOvgv8dU9ZZzuhGydQD5FYreLhfhoBgrDKi8ZSTbCQ"
+                    },
+                    {
+                      "type": "tendermint/PubKeySecp256k1",
+                      "value": "AxUMR/GKoycWplR+2otzaQZ9zhHRQWJFt3h1bPg1ltha"
+                    },
+                    {
+                      "type": "tendermint/PubKeySecp256k1",
+                      "value": "AlI9yVj2Aejow6bYl2nTRylfU+9LjQLEl3keq0sERx9+"
+                    },
+                    {
+                      "type": "tendermint/PubKeySecp256k1",
+                      "value": "A0UvHPcvCCaIoFY9Ygh0Pxq9SZTAWtduOyinit/8uo+Q"
+                    },
+                    {
+                      "type": "tendermint/PubKeySecp256k1",
+                      "value": "As7R9fDUnwsUVLDr1cxspp+cY9UfXfUf7i9/w+N0EzKA"
+                    }
+                  ]
+                }
+              },
+              "signature": "CgUIBRIBSBJAYzfuW4yNj3lH4MWAzKrScBY9gEQxra+nfui3irKad04nDR5wyDIfCZEdPnnh555hVA1oLYIuEz7YAUF3ns8pExJAZlNUh6V+yz42UoGkJQY0L7veKXRWvltxOK0xxt2KdwZYqr6UA1E1ttJhGdyzlh0PyNXuYV2xGZ3UVbz5Qrx2/w=="
+            }
+          ],
+          "memo": "Brexit vote must be put on hold, MPs warn May"
+        }
+      },
+      {
+        "type": "auth/StdTx",
+        "value": {
+          "msg": [
+            {
+              "type": "cosmos-sdk/MsgCreateValidator",
+              "value": {
+                "description": {
+                  "moniker": "SparkPool",
+                  "identity": "",
+                  "website": "",
+                  "details": ""
+                },
+                "commission": {
+                  "rate": "0.040000000000000000",
+                  "max_rate": "0.200000000000000000",
+                  "max_change_rate": "0.050000000000000000"
+                },
+                "min_self_delegation": "100000000000",
+                "delegator_address": "cosmos1rwh0cxa72d3yle3r4l8gd7vyphrmjy2kydpnje",
+                "validator_address": "cosmosvaloper1rwh0cxa72d3yle3r4l8gd7vyphrmjy2kpe4x72",
+                "pubkey": "cosmosvalconspub1zcjduepq5kg8xls9l35ftulkm2rt70hexeeyr5cqqkcv4h7936z5uasvvazqla8eck",
+                "value": {
+                  "denom": "uatom",
+                  "amount": "100000000000"
+                }
+              }
+            }
+          ],
+          "fee": {
+            "amount": null,
+            "gas": "200000"
+          },
+          "signatures": [
+            {
+              "pub_key": {
+                "type": "tendermint/PubKeySecp256k1",
+                "value": "AiAgJzJcreOXL0Ghqq3TCv4KV1y3dqULgMac4sxMLEbs"
+              },
+              "signature": "ep2jqnCzJvSGFW6vkQbA4tQVojHSly2jduIvqHeesqZwTTSLaGMrxhbvMSne0hzt9pimv3Y1GqhUWBOR55p79Q=="
+            }
+          ],
+          "memo": "cba84e07b094cc836bf182d0b82a4c28e4d9546f@192.168.65.3:26656"
+        }
+      },
+      {
+        "type": "auth/StdTx",
+        "value": {
+          "msg": [
+            {
+              "type": "cosmos-sdk/MsgCreateValidator",
+              "value": {
+                "description": {
+                  "moniker": "stake.zone",
+                  "identity": "",
+                  "website": "",
+                  "details": ""
+                },
+                "commission": {
+                  "rate": "0.080000000000000000",
+                  "max_rate": "0.300000000000000000",
+                  "max_change_rate": "0.030000000000000000"
+                },
+                "min_self_delegation": "50000000000",
+                "delegator_address": "cosmos1rfpar0qx3umnhu0f6wjp4hvnr3x6u538qdmsep",
+                "validator_address": "cosmosvaloper1rfpar0qx3umnhu0f6wjp4hvnr3x6u5389e094j",
+                "pubkey": "cosmosvalconspub1zcjduepqe4egjtvcewavewd4rvukeks60jeaxpujevl6kkgcwj0phpxgg3sse83m68",
+                "value": {
+                  "denom": "uatom",
+                  "amount": "100000000000"
+                }
+              }
+            }
+          ],
+          "fee": {
+            "amount": null,
+            "gas": "200000"
+          },
+          "signatures": [
+            {
+              "pub_key": {
+                "type": "tendermint/PubKeySecp256k1",
+                "value": "AtKB3oTNvxcWGQp9h1INAe1G6m2ozq+Ev/stQS0wV/aB"
+              },
+              "signature": "dTAR4ntqNAgxYkB/uEgO1bhit5QeXvOKTIrc/lqQL/5ZH606Apg4K2PNbeYMxnU55KSnxl7er3lg8faK6kU5Eg=="
+            }
+          ],
+          "memo": "123456789@192.168.100.100:26656"
+        }
+      },
+      {
+        "type": "auth/StdTx",
+        "value": {
+          "msg": [
+            {
+              "type": "cosmos-sdk/MsgCreateValidator",
+              "value": {
+                "description": {
+                  "moniker": "Stake Capital",
+                  "identity": "",
+                  "website": "",
+                  "details": ""
+                },
+                "commission": {
+                  "rate": "0.080000000000000000",
+                  "max_rate": "0.300000000000000000",
+                  "max_change_rate": "0.030000000000000000"
+                },
+                "min_self_delegation": "1",
+                "delegator_address": "cosmos1k9a0cs97vul8w2vwknlfmpez6prv8klv29tea7",
+                "validator_address": "cosmosvaloper1k9a0cs97vul8w2vwknlfmpez6prv8klv03lv3d",
+                "pubkey": "cosmosvalconspub1zcjduepqfgpyq4xk4s96ksmkfrr7juea9kmdxkl5ht94xgpxe240743u9cvsht489p",
+                "value": {
+                  "denom": "uatom",
+                  "amount": "2500000000"
+                }
+              }
+            }
+          ],
+          "fee": {
+            "amount": null,
+            "gas": "200000"
+          },
+          "signatures": [
+            {
+              "pub_key": {
+                "type": "tendermint/PubKeySecp256k1",
+                "value": "A5GqfkKy7ureduVOAcgBW5hf/yKJ6cVxEM7bOe8Fe9m0"
+              },
+              "signature": "Qerv6mMtvwcESO8+nciMcU7GpkrgALeJ5BGKH6XPnEguscuF5Rb6lWGPue8q/ohemWJ4vPc4twqMz4wsEhShMg=="
+            }
+          ],
+          "memo": "a4396a9d621dad287124da4f8861bd8d5fd99a69@10.0.1.134:26656"
+        }
+      },
+      {
+        "type": "auth/StdTx",
+        "value": {
+          "msg": [
+            {
+              "type": "cosmos-sdk/MsgCreateValidator",
+              "value": {
+                "description": {
+                  "moniker": "stake.fish",
+                  "identity": "",
+                  "website": "stake.fish",
+                  "details": "Winner of the Game of Stakes. Brought to you by stake.fish and bitfish."
+                },
+                "commission": {
+                  "rate": "0.040000000000000000",
+                  "max_rate": "1.000000000000000000",
+                  "max_change_rate": "0.010000000000000000"
+                },
+                "min_self_delegation": "1",
+                "delegator_address": "cosmos1sjllsnramtg3ewxqwwrwjxfgc4n4ef9u0tvx7u",
+                "validator_address": "cosmosvaloper1sjllsnramtg3ewxqwwrwjxfgc4n4ef9u2lcnj0",
+                "pubkey": "cosmosvalconspub1zcjduepq6fpkt3qn9xd7u44478ypkhrvtx45uhfj3uhdny420hzgsssrvh3qnzwdpe",
+                "value": {
+                  "denom": "uatom",
+                  "amount": "19000000000"
+                }
+              }
+            }
+          ],
+          "fee": {
+            "amount": null,
+            "gas": "200000"
+          },
+          "signatures": [
+            {
+              "pub_key": {
+                "type": "tendermint/PubKeySecp256k1",
+                "value": "A2/+IgTx8HlG4xa68Nkw6dXOWobR+PFOKDhMTrYS5q0r"
+              },
+              "signature": "gOrq4fFvvAB9fCh561hK8lzKPklftQoowQ7u52gkk1Zk13i0bYa3V/aFCZWXIaxlBs74Z2jlxXHGg64TYorrYw=="
+            }
+          ],
+          "memo": ""
+        }
+      },
+      {
+        "type": "auth/StdTx",
+        "value": {
+          "msg": [
+            {
+              "type": "cosmos-sdk/MsgCreateValidator",
+              "value": {
+                "description": {
+                  "moniker": "StakeWith.Us",
+                  "identity": "",
+                  "website": "https://stakewith.us",
+                  "details": "Secured Staking Made Easy. Put Your Crypto to Work - Hassle Free. Disclaimer: Delegators should understand that delegation comes with slashing risk. By delegating to StakeWithUs Pte Ltd, you acknowledge that StakeWithUs Pte Ltd is not liable for any losses on your investment."
+                },
+                "commission": {
+                  "rate": "0.150000000000000000",
+                  "max_rate": "0.250000000000000000",
+                  "max_change_rate": "0.010000000000000000"
+                },
+                "min_self_delegation": "1",
+                "delegator_address": "cosmos1urtpxwfuu8k57aqt0h5zhsvmjt4m2mmdxmxfwm",
+                "validator_address": "cosmosvaloper1urtpxwfuu8k57aqt0h5zhsvmjt4m2mmdr0juzg",
+                "pubkey": "cosmosvalconspub1zcjduepqqf375ynp09sdnfdld0h0y5guphjr0pey06tjnfatrk2ck96vzvcq0r0kxj",
+                "value": {
+                  "denom": "uatom",
+                  "amount": "12680000000"
+                }
+              }
+            }
+          ],
+          "fee": {
+            "amount": null,
+            "gas": "200000"
+          },
+          "signatures": [
+            {
+              "pub_key": {
+                "type": "tendermint/PubKeySecp256k1",
+                "value": "A9QrxM2cU3P1k021CIDIsieZxK83etp7wQQB7IxF7pCL"
+              },
+              "signature": "vxaaUIsfe0nJxYgjAA6kPq9uOJvrX3oxMfOojpnBpp9RuxqN6eJfmsfV3ZOlaF4kZwQZVWeEiHAiH+YtZhM8tA=="
+            }
+          ],
+          "memo": ""
+        }
+      },
+      {
+        "type": "auth/StdTx",
+        "value": {
+          "msg": [
+            {
+              "type": "cosmos-sdk/MsgCreateValidator",
+              "value": {
+                "description": {
+                  "moniker": "Staking Facilities",
+                  "identity": "6B0DF6793DE1FB1F",
+                  "website": "stakingfacilities.com",
+                  "details": "Earn rewards with one of the most experienced and secure validators. More than 150k USD in customer rewards paid out. We exclude liability for any financial damage resulting from delegating."
+                },
+                "commission": {
+                  "rate": "0.150000000000000000",
+                  "max_rate": "0.250000000000000000",
+                  "max_change_rate": "0.010000000000000000"
+                },
+                "min_self_delegation": "100000000000",
+                "delegator_address": "cosmos1x88j7vp2xnw3zec8ur3g4waxycyz7m0mcreeaj",
+                "validator_address": "cosmosvaloper1x88j7vp2xnw3zec8ur3g4waxycyz7m0mahdv3p",
+                "pubkey": "cosmosvalconspub1zcjduepqhm6gjjkwecqyfrgey96s5up7drnspnl4t3rdr79grklkg9ff6zaqnfl2dg",
+                "value": {
+                  "denom": "uatom",
+                  "amount": "100000000000"
+                }
+              }
+            }
+          ],
+          "fee": {
+            "amount": null,
+            "gas": "200000"
+          },
+          "signatures": [
+            {
+              "pub_key": {
+                "type": "tendermint/PubKeySecp256k1",
+                "value": "Aubaj/1yDFn0RecGGbjuWBun0rXWKO99oT5mfaAMwtKi"
+              },
+              "signature": "m7QOXS7YQgJQOUgE3LXggI0Inz1/H6fjiUXuRDd6xDUgaLRdaBERJFX/491Z/9UPodukO8GAieQqNjLVupk3hA=="
+            }
+          ],
+          "memo": ""
+        }
+      },
+      {
+        "type": "auth/StdTx",
+        "value": {
+          "msg": [
+            {
+              "type": "cosmos-sdk/MsgCreateValidator",
+              "value": {
+                "description": {
+                  "moniker": "Staking Fund ✔ - Winner of the GoS",
+                  "identity": "805F39B20E881861",
+                  "website": "https://www.staking.fund",
+                  "details": "Staking Fund has been participating in the validating role since early 2018, and we are a proud winner of the Game of Stakes."
+                },
+                "commission": {
+                  "rate": "0.010000000000000000",
+                  "max_rate": "0.334000000000000000",
+                  "max_change_rate": "0.012019031323000000"
+                },
+                "min_self_delegation": "1",
+                "delegator_address": "cosmos1000ya26q2cmh399q4c5aaacd9lmmdqp92z6l7q",
+                "validator_address": "cosmosvaloper1000ya26q2cmh399q4c5aaacd9lmmdqp90kw2jn",
+                "pubkey": "cosmosvalconspub1zcjduepqe93asg05nlnj30ej2pe3r8rkeryyuflhtfw3clqjphxn4j3u27msrr63nk",
+                "value": {
+                  "denom": "uatom",
+                  "amount": "5000000000"
+                }
+              }
+            }
+          ],
+          "fee": {
+            "amount": null,
+            "gas": "200000"
+          },
+          "signatures": [
+            {
+              "pub_key": {
+                "type": "tendermint/PubKeySecp256k1",
+                "value": "A0sSh9hdJ/AmahR47jRwcMRtvUE5Q582oHRduBDzLwDd"
+              },
+              "signature": "J5rzM9Vo/uegl2GTLb6/deJOrlCBTLhf/EDS1wPu2/Q/yvodFJxQXlfUo7RIp05+6u19AWVNBJhh2w/HKkGBWg=="
+            }
+          ],
+          "memo": ""
+        }
+      },
+      {
+        "type": "auth/StdTx",
+        "value": {
+          "msg": [
+            {
+              "type": "cosmos-sdk/MsgCreateValidator",
+              "value": {
+                "description": {
+                  "moniker": "syncnode",
+                  "identity": "",
+                  "website": "",
+                  "details": ""
+                },
+                "commission": {
+                  "rate": "0.100000000000000000",
+                  "max_rate": "0.200000000000000000",
+                  "max_change_rate": "0.010000000000000000"
+                },
+                "min_self_delegation": "1",
+                "delegator_address": "cosmos19j2hd230c3hw6ds843yu8akc0xgvdvyu83c6xl",
+                "validator_address": "cosmosvaloper19j2hd230c3hw6ds843yu8akc0xgvdvyuz9v02v",
+                "pubkey": "cosmosvalconspub1zcjduepq9ge7uqrfp9qkdapzd29tjtwrqpt2mm9meptx395ygxgm40tdc8ysrzj40a",
+                "value": {
+                  "denom": "uatom",
+                  "amount": "1495000000"
+                }
+              }
+            }
+          ],
+          "fee": {
+            "amount": null,
+            "gas": "200000"
+          },
+          "signatures": [
+            {
+              "pub_key": {
+                "type": "tendermint/PubKeySecp256k1",
+                "value": "Ahnp+4CCJLf8bdFqYv+6FN3dYAEx5fKwaVwOcKKumGzn"
+              },
+              "signature": "7BhOphVBSpsrzz96uGT+LtW24f1nQxIJ6Z4UyaPZAp0X+/8S8mbdKylTnzxcW3THkuwgur2nGkqEWXjDpFbJLw=="
+            }
+          ],
+          "memo": "fbc52e72126c560697a7d9bddc969746c451859c@116.202.25.145:26656"
+        }
+      },
+      {
+        "type": "auth/StdTx",
+        "value": {
+          "msg": [
+            {
+              "type": "cosmos-sdk/MsgCreateValidator",
+              "value": {
+                "description": {
+                  "moniker": "Tezos Capital",
+                  "identity": "",
+                  "website": "https://tezos.capital",
+                  "details": ""
+                },
+                "commission": {
+                  "rate": "0.200000000000000000",
+                  "max_rate": "1.000000000000000000",
+                  "max_change_rate": "0.010000000000000000"
+                },
+                "min_self_delegation": "1",
+                "delegator_address": "cosmos1s7jnk7t6yqzensdgpvkvkag022udk8429exc87",
+                "validator_address": "cosmosvaloper1s7jnk7t6yqzensdgpvkvkag022udk842qdjdtd",
+                "pubkey": "cosmosvalconspub1zcjduepqnnh28nlj55sc329ppnhcr0xx7kuc9vnsp3dpwc28wdhhxtjc7jfs9k57f7",
+                "value": {
+                  "denom": "uatom",
+                  "amount": "1500000000"
+                }
+              }
+            }
+          ],
+          "fee": {
+            "amount": null,
+            "gas": "200000"
+          },
+          "signatures": [
+            {
+              "pub_key": {
+                "type": "tendermint/PubKeySecp256k1",
+                "value": "Ag+I0OzjX2AHatgaW1kJjNRs+Ck/2UQe8t0eDr5Av3/6"
+              },
+              "signature": "pFmZrSFtfH/LrHnLAyWvs9o/YJJDb9TA5RbnKxmLua1rNlOv3x+zHgelJeFCsy8n4qedMqZ9QZbxJ7snUZacQA=="
+            }
+          ],
+          "memo": ""
+        }
+      },
+      {
+        "type": "auth/StdTx",
+        "value": {
+          "msg": [
+            {
+              "type": "cosmos-sdk/MsgCreateValidator",
+              "value": {
+                "description": {
+                  "moniker": "Umbrella",
+                  "identity": "A530AC4D75991FE2",
+                  "website": "https://umbrellavalidator.com",
+                  "details": "Validating service from the USA ☔"
+                },
+                "commission": {
+                  "rate": "0.100000000000000000",
+                  "max_rate": "1.000000000000000000",
+                  "max_change_rate": "0.100000000000000000"
+                },
+                "min_self_delegation": "1",
+                "delegator_address": "cosmos1lktjhnzkpkz3ehrg8psvmwhafg56kfss5597tg",
+                "validator_address": "cosmosvaloper1lktjhnzkpkz3ehrg8psvmwhafg56kfss3q3t8m",
+                "pubkey": "cosmosvalconspub1zcjduepqelcwpat987h9yq0ck6g9fsc8t0mththk547gwvk0w4wnkpl0stnspr3hdc",
+                "value": {
+                  "denom": "uatom",
+                  "amount": "666"
+                }
+              }
+            }
+          ],
+          "fee": {
+            "amount": null,
+            "gas": "200000"
+          },
+          "signatures": [
+            {
+              "pub_key": {
+                "type": "tendermint/PubKeySecp256k1",
+                "value": "AqunADN83SgkEatv9N7TKhxzYgXxYC39Gt+xEBKu1/2g"
+              },
+              "signature": "IYdZ3q6fZ39EOgn8SJMc8YNRJA0yoJ0f+vD/iIcZCfs5MzbZNzckuxMhXGfQ1MOBHdMEA55Ia1+GABWEI8iAYA=="
+            }
+          ],
+          "memo": "🚀"
+        }
+      },
+      {
+        "type": "auth/StdTx",
+        "value": {
+          "msg": [
+            {
+              "type": "cosmos-sdk/MsgCreateValidator",
+              "value": {
+                "description": {
+                  "moniker": "Validator Network",
+                  "identity": "357F80896B3311B4",
+                  "website": "https://validator.network",
+                  "details": "Highly resilient and secure validator operating out of Northern Europe. See website for terms of service."
+                },
+                "commission": {
+                  "rate": "0.125000000000000000",
+                  "max_rate": "1.000000000000000000",
+                  "max_change_rate": "0.010000000000000000"
+                },
+                "min_self_delegation": "100000000",
+                "delegator_address": "cosmos1sxx9mszve0gaedz5ld7qdkjkfv8z992arw3rr5",
+                "validator_address": "cosmosvaloper1sxx9mszve0gaedz5ld7qdkjkfv8z992ax69k08",
+                "pubkey": "cosmosvalconspub1zcjduepqjnnwe2jsywv0kfc97pz04zkm7tc9k2437cde2my3y5js9t7cw9mstfg3sa",
+                "value": {
+                  "denom": "uatom",
+                  "amount": "14000000000"
+                }
+              }
+            }
+          ],
+          "fee": {
+            "amount": null,
+            "gas": "200000"
+          },
+          "signatures": [
+            {
+              "pub_key": {
+                "type": "tendermint/PubKeySecp256k1",
+                "value": "A874FW2YoONx6zbQemNXwaJSqtQ6Wb9BRg0HRLWvtp2o"
+              },
+              "signature": "DVtmJ7kqp3rdMktRn/0yHTr6zsCJBH5R4/qNHVELm1hOCwKP3nRp2Udb8EEhorqMt0Q83T7zP14nwttFagox/w=="
+            }
+          ],
+          "memo": "4e2e13e5552000e0a80eac8a4f291a0a3e4012f8@52.57.20.18:26656"
+        }
+      },
+      {
+        "type": "auth/StdTx",
+        "value": {
+          "msg": [
+            {
+              "type": "cosmos-sdk/MsgCreateValidator",
+              "value": {
+                "description": {
+                  "moniker": "Ztake.org",
+                  "identity": "",
+                  "website": "https://ztake.org/",
+                  "details": "We are a team of tech-savvy blockchain developers and enthusiasts who run nodes on PoS and PoA blockchains. We took care all of the technical setup needed, so that you could easily stake your assets."
+                },
+                "commission": {
+                  "rate": "0.081000000000000000",
+                  "max_rate": "0.250000000000000000",
+                  "max_change_rate": "0.100000000000000000"
+                },
+                "min_self_delegation": "10",
+                "delegator_address": "cosmos102ruvpv2srmunfffxavttxnhezln6fnc3pf7tt",
+                "validator_address": "cosmosvaloper102ruvpv2srmunfffxavttxnhezln6fnc54at8c",
+                "pubkey": "cosmosvalconspub1zcjduepq9weu2v0za8fdcvx0w3ps972k5v7sm6h5as9qaznc437vwpfxu37q0f3lyg",
+                "value": {
+                  "denom": "uatom",
+                  "amount": "5000000000"
+                }
+              }
+            }
+          ],
+          "fee": {
+            "amount": null,
+            "gas": "200000"
+          },
+          "signatures": [
+            {
+              "pub_key": {
+                "type": "tendermint/PubKeySecp256k1",
+                "value": "ApAH7o7BzCs5sI0aACr5yojkRm4A84GG8IO9zMBaxyf1"
+              },
+              "signature": "k6UTw4nGFkx/Bq8OosgCL05iu6mfusciANxHRHJQkpxmeujy/ehMXFvrh7ELdycKhLHR+P+7RoKdLNIUSvqs0Q=="
+            }
+          ],
+          "memo": ""
+        }
+      }
+    ]
   }
 }
