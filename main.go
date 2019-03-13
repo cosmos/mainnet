@@ -10,11 +10,10 @@ import (
 	"strings"
 	"time"
 
-	amino "github.com/tendermint/go-amino"
-	tmtypes "github.com/tendermint/tendermint/types"
-
 	gaia "github.com/cosmos/cosmos-sdk/cmd/gaia/app"
 	sdk "github.com/cosmos/cosmos-sdk/types"
+	amino "github.com/tendermint/go-amino"
+	tmtypes "github.com/tendermint/tendermint/types"
 
 	"github.com/cosmos/launch/pkg"
 )
@@ -30,6 +29,7 @@ const (
 	aibMultisigJSON = "accounts/aib/multisig.json"
 
 	genesisTemplate = "params/genesis_template.json"
+	genTxPath       = "gentx"
 	genesisFile     = "penultimate_genesis.json"
 
 	atomDenomination    = "uatom"
@@ -88,7 +88,7 @@ func newCoins(amt float64) sdk.Coins {
 }
 
 func main() {
-	// for each path, accumulate the contributors file
+	// for each path, accumulate the contributors file.
 	// icf addresses are in bech32, fundraiser are in hex
 	contribs := make(map[string]float64)
 	{
@@ -101,129 +101,34 @@ func main() {
 	employees, multisig := aibAtoms(aibEmployeeJSON, aibMultisigJSON, contribs)
 
 	// construct the genesis accounts :)
-	var genesisAccounts []gaia.GenesisAccount
-	{
-		for addr, amt := range contribs {
-			acc := gaia.GenesisAccount{
-				Address: fromBech32(addr),
-				Coins:   newCoins(amt),
-			}
-			genesisAccounts = append(genesisAccounts, acc)
-		}
+	genesisAccounts := makeGenesisAccounts(contribs, employees, multisig)
 
-		// add aib employees vesting for 1 year cliff
-		for _, aibAcc := range employees {
-			coins := newCoins(aibAcc.Amount)
-			genAcc := gaia.GenesisAccount{
-				Address:         fromBech32(aibAcc.Address),
-				Coins:           coins,
-				OriginalVesting: coins,
-				EndTime:         timeGenesisOneYear.Unix(),
-			}
-			genesisAccounts = append(genesisAccounts, genAcc)
-		}
-
-		// add aib multisig vesting continuosuly for 2 years
-		// starting after 2 months
-		multisigCoins := newCoins(multisig.Amount)
-		genAcc := gaia.GenesisAccount{
-			Address:         fromBech32(multisig.Address),
-			Coins:           multisigCoins,
-			OriginalVesting: multisigCoins,
-			StartTime:       timeGenesisTwoMonths.Unix(),
-			EndTime:         timeGenesisTwoYears.Unix(),
-		}
-		genesisAccounts = append(genesisAccounts, genAcc)
-	}
-
-	// check uAtom total
-	uAtomTotal := sdk.NewInt(0)
-	for _, account := range genesisAccounts {
-		uAtomTotal = uAtomTotal.Add(account.Coins[0].Amount)
-	}
-	if !uAtomTotal.Equal(atomToUAtomInt(atomGenesisTotal)) {
-		panicStr := fmt.Sprintf("expected %s atoms, got %s atoms allocated in genesis", atomToUAtomInt(atomGenesisTotal), uAtomTotal.String())
-		panic(panicStr)
-	}
-	if len(genesisAccounts) != addressGenesisTotal {
-		panicStr := fmt.Sprintf("expected %d addresses, got %d addresses allocated in genesis", addressGenesisTotal, len(genesisAccounts))
-		panic(panicStr)
-	}
+	// check totals
+	checkTotals(genesisAccounts)
 
 	fmt.Println("-----------")
 	fmt.Println("TOTAL addrs", len(genesisAccounts))
-	fmt.Println("TOTAL uAtoms", uAtomTotal.String())
+	fmt.Println("TOTAL uAtoms", atomGenesisTotal)
 
-	// ensure no duplicates
-	{
-		checkdupls := make(map[string]struct{})
-		for _, acc := range genesisAccounts {
-			if _, ok := checkdupls[acc.Address.String()]; ok {
-				panic(fmt.Sprintf("Got duplicate: %v", acc.Address))
-			}
-			checkdupls[acc.Address.String()] = struct{}{}
-		}
-		if len(checkdupls) != len(genesisAccounts) {
-			panic("length mismatch!")
-		}
-	}
-
-	// sort the accounts
-	sort.SliceStable(genesisAccounts, func(i, j int) bool {
-		return strings.Compare(
-			genesisAccounts[i].Address.String(),
-			genesisAccounts[j].Address.String(),
-		) < 0
-	})
-
-	var genesisDoc *tmtypes.GenesisDoc
-	// XXX: this is a bit much. is there something we can more easily resuse here?
-	// and do we need to register amino here?
-	// Note the app state is decoded using amino (ints are strings, anything else ?)
+	// XXX: the app state is decoded using amino JSON (eg. ints are strings)
+	// doesn't seem like we need to register anything though
 	cdc := amino.NewCodec()
-	{
-		// read the template with the params
-		var err error
-		genesisDoc, err = tmtypes.GenesisDocFromFile(genesisTemplate)
-		if err != nil {
-			panic(err)
-		}
-		// set genesis time
-		genesisDoc.GenesisTime = timeGenesis
 
-		// read the gaia state from the generic tendermint app state bytes
-		// and populate with the accounts.
-		var genesisState gaia.GenesisState
-		err = cdc.UnmarshalJSON(genesisDoc.AppState, &genesisState)
-		if err != nil {
-			panic(err)
-		}
-		genesisState.Accounts = genesisAccounts
-
-		// marshal the gaia app state back to json and update the genesisDoc
-		genesisStateJSON, err := cdc.MarshalJSON(genesisState)
-		if err != nil {
-			panic(err)
-		}
-		genesisDoc.AppState = genesisStateJSON
-	}
+	genesisDoc := makeGenesisDoc(cdc, genesisAccounts)
 
 	// write the genesis file
-	{
-
-		bz, err := cdc.MarshalJSON(genesisDoc)
-		if err != nil {
-			panic(err)
-		}
-		buf := bytes.NewBuffer([]byte{})
-		err = json.Indent(buf, bz, "", "  ")
-		if err != nil {
-			panic(err)
-		}
-		err = ioutil.WriteFile(genesisFile, buf.Bytes(), 0600)
-		if err != nil {
-			panic(err)
-		}
+	bz, err := cdc.MarshalJSON(genesisDoc)
+	if err != nil {
+		panic(err)
+	}
+	buf := bytes.NewBuffer([]byte{})
+	err = json.Indent(buf, bz, "", "  ")
+	if err != nil {
+		panic(err)
+	}
+	err = ioutil.WriteFile(genesisFile, buf.Bytes(), 0600)
+	if err != nil {
+		panic(err)
 	}
 }
 
@@ -312,4 +217,124 @@ func aibAtoms(employeesFile, multisigFile string, contribs map[string]float64) (
 		}
 	}
 	return
+}
+
+//---------------------------------------------------------------
+// gaia accounts and genesis doc
+
+// compose the gaia genesis accounts from the inputs,
+// check total and for duplicates,
+// sort by address
+func makeGenesisAccounts(
+	contribs map[string]float64,
+	employees []Account,
+	multisig MultisigAccount) []gaia.GenesisAccount {
+
+	var genesisAccounts []gaia.GenesisAccount
+	{
+		// public, private, and icf contribs
+		for addr, amt := range contribs {
+			acc := gaia.GenesisAccount{
+				Address: fromBech32(addr),
+				Coins:   newCoins(amt),
+			}
+			genesisAccounts = append(genesisAccounts, acc)
+		}
+
+		// aib employees vesting for 1 year cliff
+		for _, aibAcc := range employees {
+			coins := newCoins(aibAcc.Amount)
+			genAcc := gaia.GenesisAccount{
+				Address:         fromBech32(aibAcc.Address),
+				Coins:           coins,
+				OriginalVesting: coins,
+				EndTime:         timeGenesisOneYear.Unix(),
+			}
+			genesisAccounts = append(genesisAccounts, genAcc)
+		}
+
+		// aib multisig vesting continuosuly for 2 years
+		// starting after 2 months
+		multisigCoins := newCoins(multisig.Amount)
+		genAcc := gaia.GenesisAccount{
+			Address:         fromBech32(multisig.Address),
+			Coins:           multisigCoins,
+			OriginalVesting: multisigCoins,
+			StartTime:       timeGenesisTwoMonths.Unix(),
+			EndTime:         timeGenesisTwoYears.Unix(),
+		}
+		genesisAccounts = append(genesisAccounts, genAcc)
+	}
+
+	// sort the accounts
+	sort.SliceStable(genesisAccounts, func(i, j int) bool {
+		return strings.Compare(
+			genesisAccounts[i].Address.String(),
+			genesisAccounts[j].Address.String(),
+		) < 0
+	})
+
+	return genesisAccounts
+}
+
+// check total atoms and no duplicates
+func checkTotals(genesisAccounts []gaia.GenesisAccount) {
+	// check uAtom total
+	uAtomTotal := sdk.NewInt(0)
+	for _, account := range genesisAccounts {
+		uAtomTotal = uAtomTotal.Add(account.Coins[0].Amount)
+	}
+	if !uAtomTotal.Equal(atomToUAtomInt(atomGenesisTotal)) {
+		panicStr := fmt.Sprintf("expected %s atoms, got %s atoms allocated in genesis", atomToUAtomInt(atomGenesisTotal), uAtomTotal.String())
+		panic(panicStr)
+	}
+	if len(genesisAccounts) != addressGenesisTotal {
+		panicStr := fmt.Sprintf("expected %d addresses, got %d addresses allocated in genesis", addressGenesisTotal, len(genesisAccounts))
+		panic(panicStr)
+	}
+
+	// ensure no duplicates
+	checkdupls := make(map[string]struct{})
+	for _, acc := range genesisAccounts {
+		if _, ok := checkdupls[acc.Address.String()]; ok {
+			panic(fmt.Sprintf("Got duplicate: %v", acc.Address))
+		}
+		checkdupls[acc.Address.String()] = struct{}{}
+	}
+	if len(checkdupls) != len(genesisAccounts) {
+		panic("length mismatch!")
+	}
+}
+
+// json marshal the initial app state (accounts and gentx) and add them to the template
+func makeGenesisDoc(cdc *amino.Codec, genesisAccounts []gaia.GenesisAccount) *tmtypes.GenesisDoc {
+
+	// read the template with the params
+	genesisDoc, err := tmtypes.GenesisDocFromFile(genesisTemplate)
+	if err != nil {
+		panic(err)
+	}
+
+	// set genesis time
+	genesisDoc.GenesisTime = timeGenesis
+
+	// read the gaia state from the generic tendermint app state bytes
+	// and populate with the accounts and gentxs
+	var genesisState gaia.GenesisState
+	err = cdc.UnmarshalJSON(genesisDoc.AppState, &genesisState)
+	if err != nil {
+		panic(err)
+	}
+	genesisState.Accounts = genesisAccounts
+
+	// TODO: gentxs
+
+	// marshal the gaia app state back to json and update the genesisDoc
+	genesisStateJSON, err := cdc.MarshalJSON(genesisState)
+	if err != nil {
+		panic(err)
+	}
+	genesisDoc.AppState = genesisStateJSON
+
+	return genesisDoc
 }
