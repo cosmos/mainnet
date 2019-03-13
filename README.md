@@ -57,7 +57,8 @@ transferable.
 We request known community members who wish to run public p2p seed nodes make pull requests to add community run seed nodes below.
 
 ```
-Seed nodes
-
+Syncnode
+2626942148fd39830cb7a3acccb235fab0332d86@173.212.199.36:26656
+3028c6ee9be21f0d34be3e97a59b093e15ec0658@91.205.173.168:26656
 ```
 
