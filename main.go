@@ -31,7 +31,7 @@ const (
 
 	genesisTemplate = "params/genesis_template.json"
 	genTxPath       = "gentx"
-	genesisFile     = "penultimate_genesis.json"
+	genesisFile     = "genesis.json"
 
 	atomDenomination    = "uatom"
 	atomGenesisTotal    = 236198958.12
