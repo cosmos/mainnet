@@ -9,7 +9,14 @@ to adopt the recommended Genesis Block Release Software.
 Therefore, Interchain Foundation *cannot* guarantee that (i) ATOMs will be created and
 (ii) the recommended allocation as set forth herein will actually take place.
 
-The recommended genesis file is [genesis.json](genesis.json).
+The recommended genesis file is [genesis.json](genesis.json). It has the
+following SHA256 hash:
+
+```
+$ shasum -a 256 genesis.json 
+73a866b21723ecbc28b6d15951b2eb3aa2f2443650ff6df489bf55ac5edceefa  genesis.json
+```
+
 It includes a genesis time of `2019-03-13 23:00:00 UTC`.
 Please read [GENESIS.md](GENESIS.md) for details on how it was generated and
 to recompute it for yourself.
