@@ -348,6 +348,9 @@ func makeGenesisDoc(cdc *amino.Codec, genesisAccounts []gaia.GenesisAccount, gen
 	genesisState.Accounts = genesisAccounts
 	genesisState.GenTxs = genTxs
 
+	// fix staking data
+	genesisState.StakingData.Pool.NotBondedTokens = atomToUAtomInt(atomGenesisTotal)
+
 	// marshal the gaia app state back to json and update the genesisDoc
 	genesisStateJSON, err := cdc.MarshalJSON(genesisState)
 	if err != nil {
