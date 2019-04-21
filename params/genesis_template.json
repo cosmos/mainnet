@@ -20,7 +20,7 @@
               "tax_policy": {
                   "change_max": "0.000250000000000000", 
                   "cap": {
-                      "denom": "msdr", 
+                      "denom": "usdr", 
                       "amount": "1000000"
                   }, 
                   "rate_min": "0.000500000000000000", 
@@ -41,7 +41,7 @@
               "vote_period": "518400", 
               "active_threshold": "0.100000000000000000", 
               "deposit": {
-                  "denom": "msdr", 
+                  "denom": "usdr", 
                   "amount": "100000000"
               }
           }

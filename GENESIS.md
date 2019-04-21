@@ -26,18 +26,33 @@ Terra Core facilitates the creation of many fiat-pegged currencies, facilitated 
 In order to finance the development of the Terra Project, Terraform Labs held three token sales: 
 
 1. Pre-seed sale: 10 cents per Luna, sold ~100M tokens. Lockup 12 months, with 30% early liquidity. 
-2. Seed-sale: 23 cents per Luna, sold ~100M tokens. Lockup 10~18 months, with 30% early liquidity. 
+2. Seed-sale: 23 cents per Luna, sold ~100M tokens. Lockup 10 - 18 months, with 30% early liquidity. 
 3. Private-sale: 80 cents per Luna, sold ~60M tokens. Lockup 3 months, with 6 months linear vest thereafter. 
 
 Several backers have failed to meet the guidelines and/or deadlines to reclaim their tokens, leading significant allocations to not be included in the genesis account generation. 
 
 - **Genesis liquidity (4%)**: 4% of Luna will be made available to the market close to genesis to allow everyday users to use and interact with it. 
 
-
 ## Validator Drill
 
-On April 19th, 2019, 30 genesis validators for Columbus gathered together to conduct a drill 
+On April 19th, 2019, 30 validators for Columbus gathered together to conduct a drill for the Columbus network genesis. The last known list of participating validators can be found [here](https://medium.com/terra-money/countdown-to-terra-mainnet-launch-f8c0b998c12a). The goal for the drill was simple: "exploit the broken oracle." Terraform Labs would use its voting stake to submit faulty price votes to the oracle, which would allow arbitragers to benefit by sending in swap trades that would capture the arbitrage opportinity. For more information in how swaps & stability work in Terra, please read up on our [docs](https://docs.terra.money/features/terra-stability). 
+
+The results from the drill are [here](drill_results.json). We had a very high level of engagement with the drill participants, with several of the validators getting outrageous returns. The winners of the drill are: 
+
+- **The Staking Fund** (#1 returns) Also created terra.stake.id, which proved to be instrumental in monitoring the state of the drill. 
+- **Cosmostation** (#2 returns, even managed to perform a consensus attack by capturing returns in luna and staking rapidly)
+- **ATEAM** (#3)
+- **Castlenode** (#4)
+- **Chorus-one** (#5)
+
+Outside of the winning list, we recognize the following validators: 
+- **Dokia Capital**: managed to find a [bug](https://github.com/terra-project/core/pull/112) while minting a non-whitelisted currency.
+- **B-Harvest**: actively educated other validators during the course of the drill, and showed the highest level of understanding / activity.
+- **Certus One**: Helped to design and run the drill, as well as the setup of our own validators. 
+
+All validators that took part in the genesis drill will be granted 100 Luna to boostrap their validators. We will be working closely with the initial validator set close to genesis to offer delegation rewards for community engagement and ecosystem tool development. 
 
 
 ## Looking Ahead
 
+Soon after network launch, 
