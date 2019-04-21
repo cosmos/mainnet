@@ -1,6 +1,6 @@
 # Genesis instructions for validators
 
-This README contains instructions for validators to prepare for and participate in the Columbus network genesis. Those of you that participated in the Columbus genesis drill should be familiar with the requisite steps. 
+This README contains instructions for validators to prepare for and participate in the Columbus network genesis. Those of you that participated in the genesis drill should be familiar with the requisite steps. 
 
 ## Overview of steps
 
