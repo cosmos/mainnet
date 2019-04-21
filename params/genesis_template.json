@@ -1,122 +1,149 @@
 {
-  "genesis_time": "2019-03-13T17:00:00.000000000Z",
-  "chain_id": "cosmoshub-1",
-  "consensus_params": {
-    "block_size": {
-      "max_bytes": "150000",
-      "max_gas": "1500000"
-    },
-    "evidence": {
-      "max_age": "1000000"
-    },
-    "validator": {
-      "pub_key_types": [
-        "ed25519"
-      ]
-    }
-  },
-  "app_hash": "",
+  "genesis_time": "2019-04-23 23:00:00 PST", 
+  "app_hash": "", 
   "app_state": {
-    "accounts": null,
-    "auth": {
-      "collected_fees": [],
-      "params": {
-        "max_memo_characters": "512",
-        "tx_sig_limit": "7",
-        "tx_size_cost_per_byte": "10",
-        "sig_verify_cost_ed25519": "590",
-        "sig_verify_cost_secp256k1": "1000"
-      }
-    },
-    "bank": {
-      "send_enabled": false
-    },
-    "staking": {
-      "pool": {
-        "not_bonded_tokens": "0",
-        "bonded_tokens": "0"
-      },
-      "params": {
-        "unbonding_time": "1814400000000000",
-        "max_validators": 100,
-        "max_entries": 7,
-        "bond_denom": "uatom"
-      },
-      "last_total_power": "0",
-      "last_validator_powers": null,
-      "validators": null,
-      "bonds": null,
-      "unbonding_delegations": null,
-      "redelegations": null,
-      "exported": false
-    },
-    "mint": {
-      "minter": {
-        "inflation": "0.07",
-        "annual_provisions": "0.0"
-      },
-      "params": {
-        "mint_denom": "uatom",
-        "inflation_rate_change": "0.13",
-        "inflation_max": "0.2",
-        "inflation_min": "0.07",
-        "goal_bonded": "0.67",
-        "blocks_per_year": "6311520"
-      }
-    },
-    "distr": {
-      "fee_pool": {
-        "community_pool": []
-      },
-      "community_tax": "0.020000000000000000",
-      "base_proposer_reward": "0.010000000000000000",
-      "bonus_proposer_reward": "0.040000000000000000",
-      "withdraw_addr_enabled": false,
-      "delegator_withdraw_infos": [],
-      "previous_proposer": "",
-      "outstanding_rewards": [],
-      "validator_accumulated_commissions": [],
-      "validator_historical_rewards": [],
-      "validator_current_rewards": [],
-      "delegator_starting_infos": [],
-      "validator_slash_events": []
-    },
-    "gov": {
-      "starting_proposal_id": "1",
-      "deposits": null,
-      "votes": null,
-      "proposals": null,
-      "deposit_params": {
-        "min_deposit": [
-          {
-            "denom": "uatom",
-            "amount": "512000000"
+      "gentxs": null, 
+      "treasury": {
+          "params": {
+              "window_long": "52", 
+              "budget_share": "0.900000000000000000", 
+              "reward_policy": {
+                  "change_max": "0.025000000000000000", 
+                  "cap": {
+                      "denom": "unused", 
+                      "amount": "0"
+                  }, 
+                  "rate_min": "0.050000000000000000", 
+                  "rate_max": "0.200000000000000000"
+              }, 
+              "oracle_share": "0.100000000000000000", 
+              "tax_policy": {
+                  "change_max": "0.000250000000000000", 
+                  "cap": {
+                      "denom": "msdr", 
+                      "amount": "1000000"
+                  }, 
+                  "rate_min": "0.000500000000000000", 
+                  "rate_max": "0.010000000000000000"
+              }, 
+              "window_short": "4", 
+              "window_probation": "12", 
+              "seigniorage_burden_target": "0.670000000000000000", 
+              "mining_increment": "1.070000000000000000"
+          }, 
+          "tax_rate": "0.001000000000000000", 
+          "reward_weight": "0.050000000000000000"
+      }, 
+      "budget": {
+          "params": {
+              "legacy_threshold": "0.000000000000000000", 
+              "vote_peroid": "518400", 
+              "vote_period": "518400", 
+              "active_threshold": "0.100000000000000000", 
+              "deposit": {
+                  "denom": "msdr", 
+                  "amount": "100000000"
+              }
           }
-        ],
-        "max_deposit_period": "1209600000000000"
-      },
-      "voting_params": {
-        "voting_period": "1209600000000000"
-      },
-      "tally_params": {
-        "quorum": "0.4",
-        "threshold": "0.5",
-        "veto": "0.334",
-        "governance_penalty": "0.0"
+      }, 
+      "auth": {
+          "collected_fees": [], 
+          "params": {
+              "max_memo_characters": "256", 
+              "sig_verify_cost_secp256k1": "1000", 
+              "tx_size_cost_per_byte": "10", 
+              "tx_sig_limit": "100", 
+              "sig_verify_cost_ed25519": "590"
+          }
+      }, 
+      "staking": {
+          "last_total_power": "0", 
+          "params": {
+              "max_entries": 7, 
+              "max_validators": 100, 
+              "unbonding_time": "1814400000000000", 
+              "bond_denom": "uluna"
+          }, 
+          "last_validator_powers": null, 
+          "delegations": null, 
+          "validators": null, 
+          "unbonding_delegations": null, 
+          "redelegations": null, 
+          "pool": {
+              "not_bonded_tokens": "0", 
+              "bonded_tokens": "0"
+          }, 
+          "exported": false
+      }, 
+      "accounts": [
+      ], 
+      "slashing": {
+          "missed_blocks": {}, 
+          "signing_infos": {}, 
+          "params": {
+              "slash_fraction_double_sign": "0.010000000000000000", 
+              "max_evidence_age": "1814400000000000", 
+              "min_signed_per_window": "0.050000000000000000", 
+              "slash_fraction_downtime": "0.000100000000000000", 
+              "signed_blocks_window": "10000", 
+              "downtime_jail_duration": "600000000000"
+          }
+      }, 
+      "distr": {
+          "validator_historical_rewards": [], 
+          "fee_pool": {
+              "community_pool": []
+          }, 
+          "delegator_withdraw_infos": [], 
+          "bonus_proposer_reward": "0.040000000000000000", 
+          "base_proposer_reward": "0.010000000000000000", 
+          "previous_proposer": "", 
+          "community_tax": "0.000000000000000000", 
+          "validator_current_rewards": [], 
+          "validator_slash_events": [], 
+          "withdraw_addr_enabled": true, 
+          "outstanding_rewards": [], 
+          "delegator_starting_infos": [], 
+          "validator_accumulated_commissions": [], 
+          "base_bonus_proposer_reward": "0.040000000000000000"
+      }, 
+      "oracle": {
+          "params": {
+              "oracle_reward_band": "0.010000000000000000", 
+              "vote_threshold": "0.500000000000000000", 
+              "vote_period": "180", 
+              "drop_threshold": "10"
+          }
+      }, 
+      "bank": {
+          "send_enabled": true
+      }, 
+      "crisis": {
+          "constant_fee": {
+              "denom": "uluna", 
+              "amount": "10000000000"
+          }
+      }, 
+      "market": {
+          "params": {
+              "daily_swap_limit": "0.010000000000000000"
+          }
       }
-    },
-    "slashing": {
-      "params": {
-        "max_evidence_age": "1814400000000000",
-        "signed_blocks_window": "10000",
-        "min_signed_per_window": "0.05",
-        "downtime_jail_duration": "600000000000",
-        "slash_fraction_double_sign": "0.05",
-        "slash_fraction_downtime": "0.0001"
-      },
-      "signing_infos": {},
-      "missed_blocks": {}
-    },
-    "gentxs": null
-  }
+  }, 
+  "consensus_params": {
+      "validator": {
+          "pub_key_types": [
+              "ed25519"
+          ]
+      }, 
+      "block": {
+          "time_iota_ms": "1000", 
+          "max_bytes": "20000000", 
+          "max_gas": "-1"
+      }, 
+      "evidence": {
+          "max_age": "100000"
+      }
+  }, 
+  "chain_id": "columbus-1"
 }

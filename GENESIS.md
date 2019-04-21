@@ -164,7 +164,7 @@ the ICF. See [JSON](accounts/icf/multisig.json).
 
 # Disclaimer
 
-The Cosmos Hub is *highly* experimental software. In these early days, we can
+The Columbus is *highly* experimental software. In these early days, we can
 expect to have issues, updates, and bugs. The existing tools require advanced
 technical skills and involve risks which are outside of the control of the
 Interchain Foundation and/or the Tendermint team (see also the risk section in
