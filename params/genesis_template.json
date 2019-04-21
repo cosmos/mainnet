@@ -1,5 +1,5 @@
 {
-  "genesis_time": "2019-04-23 23:00:00 PST", 
+  "genesis_time": "2019-04-24T06:00:00.000000Z", 
   "app_hash": "", 
   "app_state": {
       "gentxs": null, 

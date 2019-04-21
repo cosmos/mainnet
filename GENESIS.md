@@ -41,8 +41,8 @@ The results from the drill are [here](drill_results.json). We had a very high le
 
 - **The Staking Fund** (#1 returns) Also created terra.stake.id, which proved to be instrumental in monitoring the state of the drill. 
 - **Cosmostation** (#2 returns, even managed to perform a consensus attack by capturing returns in luna and staking rapidly)
-- **ATEAM** (#3)
-- **Castlenode** (#4)
+- **ATEAM** (#3 returns)
+- **Castlenode** (#4 returns)
 - **Chorus-one** (#5)
 
 Outside of the winning list, we recognize the following validators: 
@@ -52,7 +52,11 @@ Outside of the winning list, we recognize the following validators:
 
 All validators that took part in the genesis drill will be granted 100 Luna to boostrap their validators. We will be working closely with the initial validator set close to genesis to offer delegation rewards for community engagement and ecosystem tool development. 
 
+The full retrospective from the drill is [here](https://docs.google.com/document/d/1cNWCK8GyIfb1CWfn6IaoO8T80mxNsfv6rA3S06hb5As). 
+
 
 ## Looking Ahead
 
-Soon after network launch, 
+A few weeks after network launch, Columbus will [power payment services](http://fortune.com/2018/08/29/cryptocurrency-exchanges-back-32-million-stable-coin-project/) across the Terra Alliance. It will also be used by a federation including the Mongolian government to [pay for taxes and utilities in the country](https://www.forbes.com/sites/yoavvilner/2019/01/11/mongolia-starts-off-2019-with-its-eyes-on-crypto-payment-adoption/?fbclid=IwAR0GqylqQev_7JhnEGdi7lJwDgfaMZRMODqVXZbos30z1eqqlLO1lSJ9_Nk). 
+
+Though the protocol has been robustly been tested over the course of several testnets and simulations, having large numbers of real users interact with the system across a diverse range of use cases may break or test our assumptions. The Terra community may be obliged to update the Terra Core software to better accomodate real world use patterns.  
