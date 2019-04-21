@@ -50,6 +50,8 @@ Outside of the winning list, we recognize the following validators:
 - **B-Harvest**: actively educated other validators during the course of the drill, and showed the highest level of understanding / activity.
 - **Certus One**: Helped to design and run the drill, as well as the setup of our own validators. 
 
+Terraform Labs will delegate at least 1 million Luna to each validator mentioned above shortly after genesis. Each validator must charge a commission rate of less than 20% and meet our key management guidelines, which will be communicated separately. 
+
 All validators that took part in the genesis drill will be granted 100 Luna to boostrap their validators. We will be working closely with the initial validator set close to genesis to offer delegation rewards for community engagement and ecosystem tool development. 
 
 The full retrospective from the drill is [here](https://docs.google.com/document/d/1cNWCK8GyIfb1CWfn6IaoO8T80mxNsfv6rA3S06hb5As). 
