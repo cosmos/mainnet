@@ -112,7 +112,7 @@
               "oracle_reward_band": "0.010000000000000000", 
               "vote_threshold": "0.500000000000000000", 
               "vote_period": "180", 
-              "drop_threshold": "10"
+              "drop_threshold": "100"
           }
       }, 
       "bank": {

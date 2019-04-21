@@ -1,0 +1,379 @@
+[
+    {
+      "moniker": "Staking Fund",
+      "address": "terra10993luwlar59q7syh7t3hhk0kmtee645vs3kev",
+      "earning": 22885388.813155,
+      "coins": [
+        {
+          "denom": "mluna",
+          "amount": "4579077762631"
+        }
+      ],
+      "start": 10000000000
+    },
+    {
+      "moniker": "Cosmostation",
+      "address": "terra18tmu0lrfsdvke8e3a3jsd7fq2rs29krfhthxrj",
+      "earning": 8820237.50493,
+      "coins": [
+        {
+          "denom": "mluna",
+          "amount": "1766047500986"
+        }
+      ],
+      "start": 10000000000
+    },
+    {
+      "moniker": "ATEAM",
+      "address": "terra1tusfpgvjrplqg2fm7wacy4slzjmnzswcfn9puj",
+      "earning": 2028989.8727530746,
+      "coins": [
+        {
+          "denom": "mkrw",
+          "amount": "1991228494"
+        },
+        {
+          "denom": "mluna",
+          "amount": "15999940198"
+        },
+        {
+          "denom": "musd",
+          "amount": "1958988419482"
+        }
+      ],
+      "start": 10000000000
+    },
+    {
+      "moniker": "Castlenode",
+      "address": "terra1uxl5thq5lzgfwk9rc4z9zl9tenusc2vv7dk3yg",
+      "earning": 1377708.149995,
+      "coins": [
+        {
+          "denom": "mluna",
+          "amount": "277541629999"
+        }
+      ],
+      "start": 10000000000
+    },
+    {
+      "moniker": "genesis",
+      "address": "terra1wg2mlrxdmnnkkykgqg4znky86nyrtc45q336yv",
+      "earning": 537700,
+      "coins": [
+        {
+          "denom": "mluna",
+          "amount": "134740000000"
+        }
+      ],
+      "start": 136000000000
+    },
+    {
+      "moniker": "chorus-one",
+      "address": "terra10jyck997nejjyca2cynz5v3qpr2pw7dk8rxl8l",
+      "earning": 111082.3472622408,
+      "coins": [
+        {
+          "denom": "mkrw",
+          "amount": "120548121888910"
+        },
+        {
+          "denom": "mluna",
+          "amount": "5000000000"
+        }
+      ],
+      "start": 20000000000
+    },
+    {
+      "moniker": "kytzu",
+      "address": "terra1jyjg55hzsh0f4xymy0kuuan30pp4q75ru0h35c",
+      "earning": 94041.42886,
+      "coins": [
+        {
+          "denom": "mluna",
+          "amount": "20808285772"
+        }
+      ],
+      "start": 10000000000
+    },
+    {
+      "moniker": "01node",
+      "address": "terra1khfcg09plqw84jxy5e7fj6ag4s2r9wqsg5jt4x",
+      "earning": 90000,
+      "coins": [
+        {
+          "denom": "mluna",
+          "amount": "20000000000"
+        }
+      ],
+      "start": 10000000000
+    },
+    {
+      "moniker": "Certus One",
+      "address": "terra1jnumgxn6gm0aee9gvzxceymv7nhjjpz7gqkhus",
+      "earning": 90000,
+      "coins": [
+        {
+          "denom": "mluna",
+          "amount": "20000000000"
+        }
+      ],
+      "start": 10000000000
+    },
+    {
+      "moniker": "figment",
+      "address": "terra1wrc04r9lyc5wt2yk7hxae8f577n44fu6qnmgvn",
+      "earning": 90000,
+      "coins": [
+        {
+          "denom": "mluna",
+          "amount": "20000000000"
+        }
+      ],
+      "start": 10000000000
+    },
+    {
+      "moniker": "de-light.io",
+      "address": "terra1fjuvyccn8hfmn5r7wc2t3kwqy09zzp6tya55yu",
+      "earning": 90000,
+      "coins": [
+        {
+          "denom": "mluna",
+          "amount": "20000000000"
+        }
+      ],
+      "start": 10000000000
+    },
+    {
+      "moniker": "ip-172-31-31-4",
+      "address": "terra1p5mwuyx66dr7ctjlxl9ve5c6a9q43a04nsvd6z",
+      "earning": 90000,
+      "coins": [
+        {
+          "denom": "mluna",
+          "amount": "20000000000"
+        }
+      ],
+      "start": 10000000000
+    },
+    {
+      "moniker": "forbole",
+      "address": "terra1ne9kd2c4y6ap5ujkgh6r6s7q76t53xnxmclsnf",
+      "earning": 89994.7756625002,
+      "coins": [
+        {
+          "denom": "mjpy",
+          "amount": "547810618"
+        },
+        {
+          "denom": "musd",
+          "amount": "98"
+        },
+        {
+          "denom": "mluna",
+          "amount": "19997980010"
+        }
+      ],
+      "start": 10000000000
+    },
+    {
+      "moniker": "chinezupwnz",
+      "address": "terra1d0vfj9zvxfgcm4yt4ze4u35mvhj57eg2knxyxl",
+      "earning": 89314.998026,
+      "coins": [
+        {
+          "denom": "mluna",
+          "amount": "14000000000"
+        },
+        {
+          "denom": "musd",
+          "amount": "29314998026"
+        }
+      ],
+      "start": 10000000000
+    },
+    {
+      "moniker": "B-Harvest",
+      "address": "terra16m9pgh3d8vrdgzhnlwwpve8n2723p4cc2urj34",
+      "earning": 88992.519724,
+      "coins": [
+        {
+          "denom": "musd",
+          "amount": "58992519724"
+        },
+        {
+          "denom": "mluna",
+          "amount": "8000000000"
+        }
+      ],
+      "start": 10000000000
+    },
+    {
+      "moniker": "ION",
+      "address": "terra17ynkw3pcuhmz4x8z4qvl4qakauxuxenx3urhgt",
+      "earning": 85909.6566591865,
+      "coins": [
+        {
+          "denom": "meur",
+          "amount": "7014748420"
+        },
+        {
+          "denom": "mjpy",
+          "amount": "904847012785"
+        },
+        {
+          "denom": "mluna",
+          "amount": "16000000003"
+        }
+      ],
+      "start": 10000000000
+    },
+    {
+      "moniker": "healings",
+      "address": "terra1elcq22c93y3s9e6jq4c7extfacf6ryzyxev2c8",
+      "earning": 80000.55111,
+      "coins": [
+        {
+          "denom": "mluna",
+          "amount": "20000110222"
+        }
+      ],
+      "start": 20000000000
+    },
+    {
+      "moniker": "syncnode",
+      "address": "terra1sym8gyehrdsm03vdc44rg9sflg8zeuqwfd3384",
+      "earning": 80000,
+      "coins": [
+        {
+          "denom": "mluna",
+          "amount": "20000000000"
+        }
+      ],
+      "start": 20000000000
+    },
+    {
+      "moniker": "BTC.Secure",
+      "address": "terra13qe9xw0g5zxz9yem79nxvg3vugefclepys6ms0",
+      "earning": 79876.16890836,
+      "coins": [
+        {
+          "denom": "meur",
+          "amount": "3"
+        },
+        {
+          "denom": "mluna",
+          "amount": "19975233781"
+        }
+      ],
+      "start": 20000000000
+    },
+    {
+      "moniker": "stake.zone",
+      "address": "terra13uf6ldgc6h2gpdxn0ugga8g6vw0z389s98n3mn",
+      "earning": 40500.320934512296,
+      "coins": [
+        {
+          "denom": "mjpy",
+          "amount": "507"
+        },
+        {
+          "denom": "mluna",
+          "amount": "10100064186"
+        }
+      ],
+      "start": 10000000000
+    },
+    {
+      "moniker": "100100vc",
+      "address": "terra1c0fm9urg4aa26xr86dqu57r6k6peu5h5qme3ya",
+      "earning": 40000,
+      "coins": [
+        {
+          "denom": "mluna",
+          "amount": "10000000000"
+        }
+      ],
+      "start": 10000000000
+    },
+    {
+      "moniker": "lunamint",
+      "address": "terra1jlxnjxf0xcd36chaejmvvhql3wn52eadz6cp82",
+      "earning": 40000,
+      "coins": [
+        {
+          "denom": "mluna",
+          "amount": "10000000000"
+        }
+      ],
+      "start": 10000000000
+    },
+    {
+      "moniker": "hashed",
+      "address": "terra1pa925tpld9tq9al5tnz23rsq6paeqevgm7hcgg",
+      "earning": 40000,
+      "coins": [
+        {
+          "denom": "mluna",
+          "amount": "10000000000"
+        }
+      ],
+      "start": 10000000000
+    },
+    {
+      "moniker": "desyncio",
+      "address": "terra1z30qnrtsnvvg8f80h7wvnwx86hcrp6ecs4a0uw",
+      "earning": 39998.94785,
+      "coins": [
+        {
+          "denom": "mluna",
+          "amount": "9999789570"
+        }
+      ],
+      "start": 10000000000
+    },
+    {
+      "moniker": "booyoun",
+      "address": "terra16aj9azcar58hg5lgmrfap6f8dm5sdhp5zr0f0n",
+      "earning": 38451.14474775688,
+      "coins": [
+        {
+          "denom": "mkrw",
+          "amount": "26643346309951"
+        },
+        {
+          "denom": "mluna",
+          "amount": "5000999999"
+        }
+      ],
+      "start": 10000000000
+    },
+    {
+      "moniker": "terraforming",
+      "address": "terra1r3ljw4tmddfg6vxy3rtj4vvum94m2wejy7lwuw",
+      "earning": 24873.2641362668,
+      "coins": [
+        {
+          "denom": "mkrw",
+          "amount": "1580985"
+        },
+        {
+          "denom": "mluna",
+          "amount": "6974652549"
+        }
+      ],
+      "start": 10000000000
+    },
+    {
+      "moniker": "Genesis Lab",
+      "address": "terra1gh7wpfpsjrqnash5uc84z4njt95y9g5nh7saj4",
+      "earning": 5,
+      "coins": [
+        {
+          "denom": "mluna",
+          "amount": "1000000"
+        }
+      ],
+      "start": 0
+    }
+  ]
+  

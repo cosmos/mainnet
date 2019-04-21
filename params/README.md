@@ -49,7 +49,7 @@ Parameters that are also in the Cosmos Hub but different in Columbus are highlig
 
 - `"vote_period": "180"`. Number of blocks (approx. 15 minutes) for a oracle vote to be tallied. 
 - `"vote_threshold": "0.5"`.  ratio of bonded tokens that have to submit votes before the vote can be tallied
-- `"drop_threshold": "10"`. # of epochs (1 weeks) that oracle tallies have to be skipped sequentially before the Terra denom is dropped from the oracle
+- `"drop_threshold": "100"`. # of vote cycles that oracle tallies have to be skipped sequentially before the Terra denom is dropped from the oracle
 - `"oracle_reward_band": "0.01"`. oracle rewardee range
 
 ### Slashing Module
@@ -58,6 +58,6 @@ Parameters that are also in the Cosmos Hub but different in Columbus are highlig
 - `"signed_blocks_window": "10000"`. The rolling window for uptime measurement is 10,000 blocks.
 - `"min_signed_per_window": "0.05"`. A minimum of 5% of the blocks in the last window must have been signed or else a validator will be slashed for downtime. To nurture network launch, a lenient uptime requirement is recommended that can later be increased by governance.
 - `"downtime_jail_duration": "600000000000"`. Validators slashed for downtime are jailed for ten minutes. This provides a disincentive for validator downtime.
-- `"slash_fraction_double_sign": "0.01"`. Validators who equivocate (double-sign a block, and thereby compromise safety) and are caught are slashed by 1% of their bonded stake.-
+- `"slash_fraction_double_sign": "0.01"`. Validators who equivocate (double-sign a block, and thereby compromise safety) and are caught are slashed by 1% of their bonded stake.
 - `"slash_fraction_downtime": "0.0001"`. Validators who are slashed for downtime and thereby compromise the availability of the network are slashed by 0.01% of their bonded stake. This is to provide additional disincentive for validator downtime.
 
