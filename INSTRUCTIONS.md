@@ -12,8 +12,6 @@ Generally the steps to create a validator are as follows:
 
 3. Download the [genesis template file](https://raw.githubusercontent.com/terra-project/launch/master/params/genesis_template.json) to `~/.terrad/config/genesis.json`. Note that the final genesis file is currently being formed. You will be asked to replace the genesis file with the penultimate_genesis.json file later. 
 
-**Note**: The penultimate genesis file is currently being formed. 
-
 4. Sign a genesis transaction:
 
 ```bash
