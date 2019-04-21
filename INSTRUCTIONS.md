@@ -1,6 +1,6 @@
 # Genesis instructions for validators
 
-This README contains instructions for validators to prepare for and participate in the Columbus network genesis. Those of you that participated in the Columbus genesis drill should be familiar with the requisite steps. 
+This README contains instructions for validators to prepare for and participate in the Columbus network genesis. Those of you that participated in the genesis drill should be familiar with the requisite steps. 
 
 ## Overview of steps
 
@@ -11,8 +11,6 @@ Generally the steps to create a validator are as follows:
 2. [Setup your genesis keys](https://docs.terra.money/guide/users)
 
 3. Download the [genesis template file](https://raw.githubusercontent.com/terra-project/launch/master/params/genesis_template.json) to `~/.terrad/config/genesis.json`. Note that the final genesis file is currently being formed. You will be asked to replace the genesis file with the penultimate_genesis.json file later. 
-
-**Note**: The penultimate genesis file is currently being formed. 
 
 4. Sign a genesis transaction:
 
