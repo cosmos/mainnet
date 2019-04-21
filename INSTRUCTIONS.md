@@ -84,13 +84,17 @@ cp ~/.terrad/config/gentx/gentx-<node_id>.json ./gentx/<moniker>.json
 
 ## Timelines
 
-1. **21 April 2019 19:00 PST**: Terraform Labs will publish its `genesis_template.json` file to be used by validators to assemble genesis transactions. 
+1. **22 April 2019 07:00 PST**: Validators from the Columbus genesis drill must submit their addresses via pull request to [the validator address directory](https://github.com/terra-project/accounts/validators/address.json) to reclaim their drill rewards.  
 
-2. **23 April 2019 02:00 PST**: By this time, all genesis validators MUST submit a gentx PR to this repository to be included in the genesis block. We will not be accepting gentxs past this time. Rewardees from the Columbus genesis drill must also submit their addresses via pull request to [the validator address directory](https://github.com/terra-project/accounts/validators/address.json) to reclaim their drill rewards.  
+2. **22 April 2019 09:00 PST**: Terraform Labs will publish its `genesis_template.json` file to be used by validators to assemble genesis transactions. 
 
-3. **23 April 2019 05:00 PST**: At this point, Terraform Labs will publish the penultimate `genesis.json` file. Validators should replace their `genesis_template.json` file with this file. 
+3. **23 April 2019 02:00 PST**: By this time, all genesis validators MUST submit a gentx PR to this repository to be included in the genesis block. We will not be accepting gentxs past this time. 
 
-4. **23 April 2019 23:00 PST**: The Genesis Block for Columbus will be mined. 
+4. **23 April 2019 05:00 PST**: At this point, Terraform Labs will publish the `penultimate_genesis.json` file. Validators should replace their `genesis_template.json` file with this file. 
+
+5. **23 April 2019 23:00 PST**: The Genesis Block for Columbus will be mined.
+
+6. **24 April 2019 02:00 PST**: Terraform Labs' ecosystem tools (finder, station) will go live for the mainnet. 
 
 
 ## Important Notices
