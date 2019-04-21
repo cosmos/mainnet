@@ -10,7 +10,7 @@ Generally the steps to create a validator are as follows:
 
 2. [Setup your genesis keys](https://docs.terra.money/guide/users)
 
-3. Download the [genesis template file](https://raw.githubusercontent.com/terra-project/launch/master/params/genesis_template.json) to `~/.terrad/config/genesis.json`. Note that the final genesis file is currently being formed. You will be asked to replace the genesis file with the penultimate_genesis.json file later. 
+3. Download the [genesis template file](https://raw.githubusercontent.com/terra-project/launch/master/params/genesis_template.json) to `~/.terrad/config/genesis.json`. Note that the final genesis file is currently being formed. You will be asked to replace the temporary genesis file with the genesis.json file later. 
 
 4. Sign a genesis transaction:
 
@@ -90,7 +90,7 @@ cp ~/.terrad/config/gentx/gentx-<node_id>.json ./gentx/<moniker>.json
 
 3. **23 April 2019 02:00 PST**: By this time, all genesis validators MUST submit a gentx PR to this repository to be included in the genesis block. We will not be accepting gentxs past this time. 
 
-4. **23 April 2019 05:00 PST**: At this point, Terraform Labs will publish the `penultimate_genesis.json` file. Validators should replace their `genesis_template.json` file with this file. 
+4. **23 April 2019 05:00 PST**: At this point, Terraform Labs will publish the `genesis.json` file. Validators should replace their `genesis_template.json` file with this file. 
 
 5. **23 April 2019 23:00 PST**: The Genesis Block for Columbus will be mined.
 
