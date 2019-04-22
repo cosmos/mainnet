@@ -54,9 +54,9 @@ containing a valid `gen-tx` to this repository in the `/gentx` folder with a fil
 
 Generally the steps to create a validator are as follows:
 
-1. [Install Gaiad and Gaiacli version v0.33.0](https://github.com/cosmos/cosmos-sdk/blob/master/docs/gaia/installation.md)
+1. [Install Gaiad and Gaiacli version v0.33.0](https://github.com/cosmos/cosmos-sdk/blob/master/docs/cosmos-hub/installation.md)
 
-2. [Setup your fundraiser keys](https://github.com/cosmos/cosmos-sdk/blob/master/docs/gaia/delegator-guide-cli.md#restoring-an-account-from-the-fundraiser)
+2. [Setup your fundraiser keys](https://github.com/cosmos/cosmos-sdk/blob/master/docs/cosmos-hub/delegator-guide-cli.md#restoring-an-account-from-the-fundraiser)
 
 3. Download the [genesis file](https://raw.githubusercontent.com/cosmos/launch/master/penultimate_genesis.json) to `~/.gaiad/config/genesis.json`
 
