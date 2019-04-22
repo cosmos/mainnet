@@ -24,7 +24,7 @@ Parameters that are also in the Cosmos Hub but different in Columbus are highlig
 
 ### Market Module
 
-- `"daily_swap_limit"`: "0.01". We impose a 1% swap cap on Luna inflation for market trades. In practice, this means that the daily inflation of Luna is at most 1%. 
+- `"daily_swap_limit": "0.01"`. We impose a 1% swap cap on Luna inflation for market trades. In practice, this means that the daily inflation of Luna is at most 1%. 
 
 ### Treasury Module
 
