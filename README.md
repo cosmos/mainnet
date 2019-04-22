@@ -42,8 +42,8 @@ to recompute it for yourself.
 The recommended software version is [v0.33.0 of the
 Cosmos-SDK](https://github.com/cosmos/cosmos-sdk/releases/tag/v0.33.0).
 See the [installation
-instructions](https://cosmos.network/docs/gaia/installation.html)
-and the [guide to joining mainnet](https://cosmos.network/docs/gaia/join-mainnet.html).
+instructions](https://cosmos.network/docs/cosmos-hub/installation.html)
+and the [guide to joining mainnet](https://cosmos.network/docs/cosmos-hub/join-mainnet.html).
 
 Users wishing to interact with the network should carefully review [how to
 protect themselves](https://cosmos.network/atom-protection) and the security
