@@ -19,7 +19,7 @@ Terra Core facilitates the creation of many fiat-pegged currencies, facilitated 
 
 - **Terraform Labs (10%)**: Used to facilitate the research & development of the Terra Project. can be found in the `accounts/terraform-labs` directory. 
 - **Employees & Contributor Pool (20%)**: Used to compensate employees and contributors of the project. Some part of the coins have already been granted, and can be found in the `accounts/employees` directory. Currently 4.7% of this pool has been granted. 
-- **Terra Alliance (20%)**: The Terra Alliance is key to driving early adoption and usage for Terra. We will be using this pool to set incentives, mainly marketing discount programs (such as coupons for users) and volume incentives for alliance partners. Terraform Labs will be playing custodian for this pool, taking input from the community to best allocate resources from this pool. 
+- **Terra Alliance (20%)**: [The Terra Alliance](https://medium.com/terra-money/state-of-the-terra-alliance-d7f3ff8f6411?fbclid=IwAR2xyZ2sRi_gTHeNPH8tL_VoXpvmDq3sdWMwXaSQCAbHhQGhIEx-yHxWRio) is key to driving early adoption and usage for Terra. We will be using this pool to set incentives, mainly marketing discount programs (such as coupons for users) and volume incentives for alliance partners. Terraform Labs will be playing custodian for this pool, taking input from the community to best allocate resources from this pool. 
 - **Stability Reserves (20%)**: Bootstrapping stablecoins is no easy feat, with threats to the peg coming from every adversarial angle. Stability reserves will be to manage the network's early stability close to genesis. 
 - **Backers (26%)**:
 
@@ -35,7 +35,9 @@ Several backers have failed to meet the guidelines and/or deadlines to reclaim t
 
 ## Validator Drill
 
-On April 19th, 2019, 30 validators for Columbus gathered together to conduct a drill for the Columbus network genesis. The last known list of participating validators can be found [here](https://medium.com/terra-money/countdown-to-terra-mainnet-launch-f8c0b998c12a). The goal for the drill was simple: "exploit the broken oracle." Terraform Labs would use its voting stake to submit faulty price votes to the oracle, which would allow arbitragers to benefit by sending in swap trades that would capture the arbitrage opportinity. For more information in how swaps & stability work in Terra, please read up on our [docs](https://docs.terra.money/features/terra-stability). 
+On April 19th, 2019, [30 validators](https://medium.com/terra-money/countdown-to-terra-mainnet-launch-f8c0b998c12a) gathered together to conduct a drill for the Columbus network genesis. The goal for the drill was simple: "exploit the broken oracle." Terraform Labs would use its voting stake to submit faulty price votes to the blockchain, which would allow arbitragers to benefit by sending in swap trades that would capture the arbitrage opportunity. 
+
+::**Note**:For more information in how swaps & stability work in Terra, please read up on our [docs](https://docs.terra.money/features/terra-stability). 
 
 The results from the drill are [here](drill_results.json). We had a very high level of engagement with the drill participants, with several of the validators getting outrageous returns. The winners of the drill are: 
 
@@ -61,4 +63,4 @@ The full retrospective from the drill is [here](https://docs.google.com/document
 
 A few weeks after network launch, Columbus will [power payment services](http://fortune.com/2018/08/29/cryptocurrency-exchanges-back-32-million-stable-coin-project/) across the Terra Alliance. It will also be used by a federation including the Mongolian government to [pay for taxes and utilities in the country](https://www.forbes.com/sites/yoavvilner/2019/01/11/mongolia-starts-off-2019-with-its-eyes-on-crypto-payment-adoption/?fbclid=IwAR0GqylqQev_7JhnEGdi7lJwDgfaMZRMODqVXZbos30z1eqqlLO1lSJ9_Nk). 
 
-Though the protocol has been robustly been tested over the course of several testnets and simulations, having large numbers of real users interact with the system across a diverse range of use cases may break or test our assumptions. The Terra community may be obliged to update the Terra Core software to better accomodate real world use patterns.  
+Though the protocol has been robustly been tested over the course of several [testnets](https://github.com/terra-project/networks) and [simulations](https://github.com/terra-project/research), having millions of real users interact with the system across a diverse range of use cases may break or test our assumptions. The Terra community may be obliged to update the Terra Core software to better accomodate the needs of its users.

@@ -6,7 +6,7 @@ This README contains instructions for validators to prepare for and participate 
 
 Generally the steps to create a validator are as follows:
 
-1. [Install terrad and terracli version v0.1.0](https://docs.terra.money/guide/installation)
+1. [Install terrad and terracli version v0.1.1](https://docs.terra.money/guide/installation)
 
 2. [Setup your genesis keys](https://docs.terra.money/guide/users)
 
@@ -84,13 +84,13 @@ cp ~/.terrad/config/gentx/gentx-<node_id>.json ./gentx/<moniker>.json
 
 ## Timelines
 
-1. **22 April 2019 07:00 PST**: Validators from the Columbus genesis drill must submit their addresses via pull request to [the validator address directory](https://github.com/terra-project/accounts/validators/address.json) to reclaim their drill rewards.  
+1. ~~**22 April 2019 07:00 PST**: Validators from the Columbus genesis drill must submit their addresses via pull request to [the validator address directory](https://github.com/terra-project/accounts/validators/address.json) to reclaim their drill rewards.~~
 
-2. **22 April 2019 09:00 PST**: Terraform Labs will publish its `penultimate_genesis.json` file to be used by validators to assemble genesis transactions. 
+2. ~~**22 April 2019 09:00 PST**: Terraform Labs will publish its `penultimate_genesis.json` file to be used by validators to assemble genesis transactions.~~ 
 
-3. **23 April 2019 02:00 PST**: By this time, all genesis validators MUST submit a gentx PR to this repository to be included in the genesis block. We will not be accepting gentxs past this time. 
+3. **23 April 2019 02:00 PST**: By this time, all genesis validators MUST submit a gentx PR to this repository to be included in the genesis block. We will not be accepting gentxs past this time.
 
-4. **23 April 2019 05:00 PST**: At this point, Terraform Labs will publish the `genesis.json` file. Validators should replace their `genesis_template.json` file with this file. 
+4. **23 April 2019 05:00 PST**: At this point, Terraform Labs will publish the `genesis.json` file containing the gentx submissions from validators. Validators should replace their `penultimate_genesis.json` file with this file. 
 
 5. **23 April 2019 23:00 PST**: The Genesis Block for Columbus will be mined.
 
@@ -101,7 +101,7 @@ cp ~/.terrad/config/gentx/gentx-<node_id>.json ./gentx/<moniker>.json
 
 1. The atomic units on Terra Core has been switched from m-asset (for example, `mluna`) to u-asset (for example, `uluna`) to be consistent with SI unit conventions. https://github.com/terra-project/core/pull/113 Make sure you are using the right nomenclature for fees and transactions. 
 
-2. You must re-install `terrad` and `terracli`, as the software that is being used has changed from the drill. The software version that is being used has changed from `v0.1.0rc0` to `v0.1.0`. 
+2. You must re-install `terrad` and `terracli`, as the software that is being used has changed from the drill. The software version that is being used has changed from `v0.1.0rc0` to `v0.1.1`. 
 
 3. Please stay tuned to the Validator Discord channel for updates leading up to the launch. Important notices will happen in real time close to genesis, and you should stay updated to not miss out on important updates. 
 
