@@ -10,7 +10,7 @@ in the fundraiser finally operate a decentralized network based on the software 
 
 This document focuses only on the way the ATOM allocation recommendations and
 the genesis state have been implemented in the Genesis Block Release Software.
-Please assure that you read [all other documentations on the software](https://cosmos.network/docs/gaia/what-is-gaia.html) 
+Please assure that you read [all other documentations on the software](https://cosmos.network/docs/cosmos-hub/what-is-gaia.html) 
 carefully as negligence in interacting with it could lead to an indefinite loss of your ATOMs. 
 
 - [Genesis Validator Ceremony](#Genesis-Validator-Ceremony)
