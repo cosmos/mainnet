@@ -1,3 +1,18 @@
+# Cosmos Hub Upgrade 1
+
+**Transfer enablement**
+
+According to governance proposal #3 and #5, the state of the `cosmoshub-1` chain was exported at block 500.000 and migrated to `cosmoshub-2` using [this guide](https://github.com/cosmos/cosmos-sdk/wiki/Cosmos-Hub-1-Upgrade).
+
+
+```
+$ shasum -a 256 genesis.json
+1e349fb39b85f7707ee78d39879f9d5d61f4d30f67980bb0bf07bd35b2f8bf30  genesis.json
+$ b2sum genesis.json
+1910abe394fc80e0e4ebc7d9388219363a94cf67bc19544f6bd33e01f5afbf38282e832ae321ba62cfd201179febf9b4a7380c7e4a1b1dabaf85ce2649831e24  genesis.json
+```
+
+
 # Cosmos Hub Launch
 
 This is the Interchain Foundation's recommendation for the Genesis Block Release
