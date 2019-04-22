@@ -1,0 +1,45 @@
+{
+  "type": "auth/StdTx",
+  "value": {
+    "msg": [
+      {
+        "type": "cosmos-sdk/MsgCreateValidator",
+        "value": {
+          "description": {
+            "moniker": "stake.zone",
+            "identity": "0A888728046018EC",
+            "website": "http://stake.zone",
+            "details": "operated by nuevax"
+          },
+          "commission": {
+            "rate": "0.080000000000000000",
+            "max_rate": "0.150000000000000000",
+            "max_change_rate": "0.030000000000000000"
+          },
+          "min_self_delegation": "1",
+          "delegator_address": "terra18fk2ye6m5wnnfrarpwycunnw0ls8564zw7jx5m",
+          "validator_address": "terravaloper18fk2ye6m5wnnfrarpwycunnw0ls8564zw37myg",
+          "pubkey": "terravalconspub1addwnpepq095405rvax3nzkckufpljtf0xj4grk8s9r056rg3y66970yfl2l2fzeh2h",
+          "value": {
+            "denom": "uluna",
+            "amount": "100000000"
+          }
+        }
+      }
+    ],
+    "fee": {
+      "amount": null,
+      "gas": "200000"
+    },
+    "signatures": [
+      {
+        "pub_key": {
+          "type": "tendermint/PubKeySecp256k1",
+          "value": "A8tKvoNnTRmK2LcSH8lpeaVUDseBRvpoaIk1ovnkT9X1"
+        },
+        "signature": "R4a9Q47nDC8BhmMA9xZLyDqnQuCxlsDjHQghDfRHgbZkuaNNchbcFUtmxK3VDBx19RCK8HRMjAq9Hh+cMgk2Jg=="
+      }
+    ],
+    "memo": "fa578a4590b4f8b37f3079a78487e99f08862a9a@192.168.238.129:26656"
+  }
+}
