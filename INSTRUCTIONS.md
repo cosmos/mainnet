@@ -22,6 +22,7 @@ terrad gentx \
   --commission-max-change-rate <commission_max_change_rate> \
   --pubkey <consensus_pubkey> \
   --name <key_name>
+  --min-self-delegation "1uluna"
 ```
 
 This will produce a file in the ~/.terrad/config/gentx/ folder that has a name with the format `gentx-<node_id>.json`. The content of the file should have a structure as follows:
