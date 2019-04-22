@@ -30,7 +30,7 @@ Parameters that are also in the Cosmos Hub but different in Columbus are highlig
 
 - `"tax_policy": { "rate_min": 0.0005,  "rate_max": 0.01, "change_max": 0.00025, "cap": { denom":usdr, "amount":1000000 }} `. Tax rate is between 0.1% and 1%. Max change rate at a given 4 week period is 0.025%, and the absolute value cap on any transaction is 1TerraSDR. 
 - `"reward_policy": { "rate_min": 0.05,  "rate_max": 0.2, "change_max": 0.025}`. Seigniorage reward rate for miners is between 5% and 20%. Max change rate at a given 4 week period is 2.5% 
-- `"seigniorage_burden_target": "0.67"` We target the burden of miner rewards to come 67% from seigniorage and 33% from seigniorage.  
+- `"seigniorage_burden_target": "0.67"` We target the burden of miner rewards to come 67% from seigniorage and 33% from tx taxes (not the same as gas fees).  
 - `"mining_increment": "1.07"`, We increment mining rewards by 1.07 every 4 weeks. Implies a target return rate of ~50% barring mining token value volatility
 - `"window_short": "4"`, Internal period metric, see policy.go
 - `"window_long": "52"`, Internal period metric, see policy.go
