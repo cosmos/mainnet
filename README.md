@@ -81,4 +81,5 @@ Seed nodes
 - `2626942148fd39830cb7a3acccb235fab0332d86@173.212.199.36:26656` - syncnode
 - `3028c6ee9be21f0d34be3e97a59b093e15ec0658@91.205.173.168:26656` - syncnode
 - `89e4b72625c0a13d6f62e3cd9d40bfc444cbfa77@34.65.6.52:26656` - Cryptium Labs (@adrianbrink, @awasunyin, @cwgoes)
+- `6be0856f6365559fdc2e9e97a07d609f754632b0@cosmos-cosmoshub-2-seed.nodes.polychainlabs.com:26656`
 ```
