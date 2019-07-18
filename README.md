@@ -1,4 +1,8 @@
-# Cosmos Hub Upgrade 1
+# Cosmos Hub Mainnet
+
+The current SDK version of the Cosmos Hub mainnet: [v0.34.6+](https://github.com/cosmos/cosmos-sdk/releases/tag/v0.34.6)
+
+## Cosmos Hub Upgrade 1
 
 **Transfer enablement**
 
@@ -13,7 +17,7 @@ $ b2sum genesis.json
 ```
 
 
-# Cosmos Hub Launch
+## Cosmos Hub Launch
 
 This is the Interchain Foundation's recommendation for the Genesis Block Release
 Software and marks the initiation of [phase
