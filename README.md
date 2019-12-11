@@ -1,6 +1,15 @@
 # Cosmos Hub Mainnet
 
-The current SDK version of the Cosmos Hub mainnet: [v0.34.6+](https://github.com/cosmos/cosmos-sdk/releases/tag/v0.34.6)
+The current Gaia Version of the Cosmos Hub mainnet: [v2.0.3+](https://github.com/cosmos/gaia/releases/tag/v2.0.3)
+
+## Cosmos Hub Upgrade 2
+
+According to governance proposal #19, the state of the `cosmoshub-2` chain was exported at block 2,902,000 and migrated to `cosmoshub-3` using [this guide](https://github.com/cosmos/gaia/blob/master/docs/migration/cosmoshub-2.md).
+
+```
+$ jq -S -c -M '' genesis.json | shasum -a 256
+749c3244ed1bda96309d12b44184666423a258f8aeb249d94dec8b69c0fc83de  -
+```
 
 ## Cosmos Hub Upgrade 1
 
