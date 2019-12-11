@@ -2,6 +2,13 @@
 
 The current SDK version of the Cosmos Hub mainnet: [v0.34.6+](https://github.com/cosmos/cosmos-sdk/releases/tag/v0.34.6)
 
+## Cosmos Hub Upgrade 2
+
+```
+$ jq -S -c -M '' genesis.json | shasum -a 256
+749c3244ed1bda96309d12b44184666423a258f8aeb249d94dec8b69c0fc83de  -
+```
+
 ## Cosmos Hub Upgrade 1
 
 **Transfer enablement**
