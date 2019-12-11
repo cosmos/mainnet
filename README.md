@@ -1,6 +1,6 @@
 # Cosmos Hub Mainnet
 
-The current SDK version of the Cosmos Hub mainnet: [v0.34.6+](https://github.com/cosmos/cosmos-sdk/releases/tag/v0.34.6)
+The current Gaia Version of the Cosmos Hub mainnet: [v2.0.3+](https://github.com/cosmos/gaia/releases/tag/v2.0.3)
 
 ## Cosmos Hub Upgrade 2
 
