@@ -161,9 +161,10 @@ func fromBech32(address string) sdk.AccAddress {
 	if err != nil {
 		panic(err)
 	}
-	if len(bz) != sdk.AddrLen {
-		panic("Incorrect address length")
+	if sdk.VerifyAddressFormat(bz) != nil {
+		
 	}
+	
 	return sdk.AccAddress(bz)
 }
 
