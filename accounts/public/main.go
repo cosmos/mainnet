@@ -6,7 +6,7 @@ import (
 	"io/ioutil"
 	"math"
 
-	"github.com/cosmos/launch/pkg"
+	"github.com/cosmos/mainnet/pkg"
 )
 
 const (

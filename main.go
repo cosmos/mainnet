@@ -11,12 +11,12 @@ import (
 	"strings"
 	"time"
 
-	gaia "github.com/cosmos/cosmos-sdk/cmd/gaia/app"
+	gaia "github.com/cosmos/gaia/cmd/gaiad/app"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	amino "github.com/tendermint/go-amino"
 	tmtypes "github.com/tendermint/tendermint/types"
 
-	"github.com/cosmos/launch/pkg"
+	"github.com/cosmos/mainnet/pkg"
 )
 
 const (
