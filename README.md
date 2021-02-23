@@ -86,7 +86,7 @@ transferable.
 
 We request known community members who wish to run public p2p seed nodes make pull requests to add community run seed nodes below.
 
-Chainflow is maintaining a validator sourced list of seeds [here](https://hackmd.io/@KFEZk8oMTz6vBlwADz0M4A/BkKEUOsZu)
+Chainflow is maintaining a validator sourced list of seeds for `cosmoshub-4` [here](https://hackmd.io/@KFEZk8oMTz6vBlwADz0M4A/BkKEUOsZu)
 
 ```
 Seed nodes
