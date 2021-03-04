@@ -11,7 +11,7 @@ import (
 	"strings"
 	"time"
 
-	gaia "github.com/cosmos/cosmos-sdk/cmd/gaia/app"
+	gaia "github.com/cosmos/gaia/cmd/gaiad/app"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	amino "github.com/tendermint/go-amino"
 	tmtypes "github.com/tendermint/tendermint/types"
@@ -161,9 +161,10 @@ func fromBech32(address string) sdk.AccAddress {
 	if err != nil {
 		panic(err)
 	}
-	if len(bz) != sdk.AddrLen {
-		panic("Incorrect address length")
+	if sdk.VerifyAddressFormat(bz) != nil {
+		
 	}
+	
 	return sdk.AccAddress(bz)
 }
 

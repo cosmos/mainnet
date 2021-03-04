@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"io/ioutil"
 
-	"github.com/cosmos/launch/pkg"
+	pkg "github.com/cosmos/mainnet/pkg"
 )
 
 const (
@@ -33,12 +33,14 @@ func main() {
 	fmt.Printf("Total %f\n", sum)
 }
 
+//Account is the form of an account added to genesis state
 type Account struct {
 	Address string  `json:"addr"`
 	Amount  float64 `json:"amount"`
 	Lock    string  `json:"lock"`
 }
 
+//MultisigAccount is the form of a multisig account added to genesis state
 type MultisigAccount struct {
 	Address   string   `json:"addr"`
 	Threshold int      `json:"threshold"`

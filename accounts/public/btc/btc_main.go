@@ -7,7 +7,7 @@ import (
 	"os"
 
 	"github.com/alfg/blockchain"
-	"github.com/cosmos/launch/pkg"
+	"github.com/cosmos/mainnet/pkg"
 )
 
 const (

@@ -1,6 +1,13 @@
 # Cosmos Hub Mainnet
 
-The current Gaia Version of the Cosmos Hub mainnet: [v2.0.3+](https://github.com/cosmos/gaia/releases/tag/v2.0.3)
+The current Gaia Version of the Cosmos Hub mainnet: [v4.0.5](https://github.com/cosmos/gaia/releases/tag/v4.0.5)
+
+You can find upgrade information here: https://github.com/cosmos/gaia/blob/main/docs/migration/cosmoshub-3.md
+
+This repository 
+
+
+
 
 ## Cosmos Hub Upgrade 2
 

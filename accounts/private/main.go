@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"io/ioutil"
 
-	"github.com/cosmos/launch/pkg"
+	"github.com/cosmos/mainnet/pkg"
 )
 
 const (
