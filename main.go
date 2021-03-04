@@ -16,7 +16,7 @@ import (
 	amino "github.com/tendermint/go-amino"
 	tmtypes "github.com/tendermint/tendermint/types"
 
-	"github.com/cosmos/launch/pkg"
+	"github.com/cosmos/mainnet/pkg"
 )
 
 const (
