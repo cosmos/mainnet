@@ -4,7 +4,7 @@ The current Gaia Version of the Cosmos Hub mainnet: [v4.0.5](https://github.com/
 
 You can find upgrade information here: https://github.com/cosmos/gaia/blob/main/docs/migration/cosmoshub-3.md
 
-This repository 
+This repository contains information about the genesis state of Gaia, the Cosmos Hub, and how that genesis state was generated.  
 
 
 

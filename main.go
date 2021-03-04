@@ -11,7 +11,8 @@ import (
 	"strings"
 	"time"
 
-	gaia "github.com/cosmos/gaia/cmd/gaiad/app"
+
+	gaia "github.com/cosmos/cosmos-sdk/x/auth/types"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	amino "github.com/tendermint/go-amino"
 	tmtypes "github.com/tendermint/tendermint/types"
@@ -161,8 +162,8 @@ func fromBech32(address string) sdk.AccAddress {
 	if err != nil {
 		panic(err)
 	}
-	if sdk.VerifyAddressFormat(bz) != nil {
-		
+	if len(bz) != sdk.AddrLen {
+		panic("Incorrect address length")
 	}
 	
 	return sdk.AccAddress(bz)
@@ -202,12 +203,14 @@ func accumulateBechContributors(fileName string, contribs map[string]float64) er
 //----------------------------------------------------------
 // AiB Data
 
+// Account contains Regular, single-signature accounts from Allinbits
 type Account struct {
 	Address string  `json:"addr"`
 	Amount  float64 `json:"amount"`
 	Lock    string  `json:"lock"`
 }
 
+// MultisigAccount is for multisig accounts from Allinbits
 type MultisigAccount struct {
 	Address   string   `json:"addr"`
 	Threshold int      `json:"threshold"`
