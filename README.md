@@ -77,7 +77,7 @@ gzip -d genesis.cosmoshub-4.json.gz
 mv genesis.cosmoshub-4.json $HOME/.gaia/config
 ```
 
-If you want to connect to the public testnet instead, click [here](./join-testnet.md)
+If you want to connect to the public testnet instead, click [here](https://github.com/cosmos/testnets)
 
 To verify the correctness of the configuration run:
 
@@ -199,4 +199,4 @@ deducted as the blockchain will halt (aka. this is a free transaction).
 
 ## Upgrade to Validator Node
 
-You now have an active full node. What's the next step? You can upgrade your full node to become a Cosmos Validator. The top 125 validators have the ability to propose new blocks to the Cosmos Hub. Continue onto [the Validator Setup](../validators/validator-setup.md).
+You now have an active full node. What's the next step? You can upgrade your full node to become a Cosmos Validator. The top 125 validators have the ability to propose new blocks to the Cosmos Hub. Continue onto [the Validator Setup](https://hub.cosmos.network/main/validators/validator-setup.html).
