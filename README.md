@@ -1,6 +1,6 @@
 # Cosmos Hub Mainnet
 
-The current Gaia Version of the Cosmos Hub mainnet is [v5.0.2](https://github.com/cosmos/gaia/releases/tag/v5.0.2). However if you want to build a node from scratch you need to first run [v4.2.6](https://github.com/cosmos/gaia/releases/tag/v4.2.6) until the node panics at block height [6910000](https://github.com/cosmos/gaia/blob/main/docs/migration/cosmoshub-4-delta-upgrade.md#Upgrade-will-take-place-July-12,-2021). The node should stop running after the panic, if it does not stop automatically, wait for 5-10 minutes and then kill it manually. Now install the latest version of gaia ([v5.0.2](https://github.com/cosmos/gaia/releases/tag/v5.0.2)) and then begin running the binary agian with the optional flag `--x-crisis-skip-assert-invariants`. This will begin syncing the node since the last upgrade until it is at the current height.
+The current Gaia Version of the Cosmos Hub mainnet is [v5.0.8](https://github.com/cosmos/gaia/releases/tag/v5.0.8). However if you want to build a node from scratch you need to first run [v4.2.1](https://github.com/cosmos/gaia/releases/tag/v4.2.6) until the node panics at block height [6910000](https://github.com/cosmos/gaia/blob/main/docs/migration/cosmoshub-4-delta-upgrade.md#Upgrade-will-take-place-July-12,-2021). The node should stop running after the panic, if it does not stop automatically, wait for 5-10 minutes and then kill it manually. Now install the latest version of gaia ([v5.0.2](https://github.com/cosmos/gaia/releases/tag/v5.0.2)) and then begin running the binary agian with the optional flag `--x-crisis-skip-assert-invariants`. This will begin syncing the node since the last upgrade until it is at the current height.
 
 You can skip this process if you have access to a snapshot of the blockchain after height 6910000. You can find snapshots at [cosmos.quicksync.io](https://cosmos.quicksync.io/).
 
@@ -11,7 +11,7 @@ You can skip this process if you have access to a snapshot of the blockchain aft
 **Instant Gratification Snippet**
 
 ```bash
-git clone -b v4.2.0 https://github.com/cosmos/gaia
+git clone -b v4.2.1 https://github.com/cosmos/gaia
 cd gaia
 make install
 gaiad init chooseanicehandle
@@ -28,7 +28,7 @@ panic: UPGRADE "Gravity-DEX" NEEDED at height: 6910000: v5.0.0-4760cf1f1266accec
 ```
 Then you should run the following commands:
 ```bash
-git checkout -b v5.0.2
+git checkout -b v5.0.8
 make install
 gaiad start --x-crisis-skip-assert-invariants --p2p.seeds bf8328b66dceb4987e5cd94430af66045e59899f@public-seed.cosmos.vitwit.com:26656,cfd785a4224c7940e9a10f6c1ab24c343e923bec@164.68.107.188:26656,d72b3011ed46d783e369fdf8ae2055b99a1e5074@173.249.50.25:26656,ba3bacc714817218562f743178228f23678b2873@public-seed-node.cosmoshub.certus.one:26656,3c7cad4154967a294b3ba1cc752e40e8779640ad@84.201.128.115:26656
 ```
