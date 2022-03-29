@@ -14,11 +14,11 @@ The `v7-Theta` upgrade was proposed through an [on-chain software upgrade propos
 
 You can find `v7.0.0` tagged code and binaries in the [gaia repository](https://github.com/cosmos/gaia/releases/tag/v7.0.0). The json for the on-chain proposal is [archived in this repository](upgrades/v7-Theta-proposal.json) for future reference. 
 
-We recommend that you participate in the [Theta testnet](https://github.com/cosmos/testnets/tree/master/v7-theta/public-testnet) to familiarize yourself with the upgrade process. From experience on the Theta testnet, we expect this upgrade to be much faster than the Vega upgrade due to a simpler migration than.
+We recommend that you participate in the [Theta testnet](https://github.com/cosmos/testnets/tree/master/v7-theta/public-testnet) to familiarize yourself with the upgrade process. From experience on the Theta testnet, we expect this upgrade to be much faster than the Vega upgrade due to a simpler migration.
 
 Upgrades can be a memory intensive process. Please see the guide for the [current hardware recommendations](https://hub.cosmos.network/main/hub-tutorials/join-mainnet.html#hardware). We recommend that you are prepared to upgrade on a machine with sufficient physical memory. Some node operators also choose add 8-16 GB of swap to avoid out of memory issues.
 
-You can check out the Cosmos Hub documentation for a step-by-step tutorial on how to [upgrade your node](https://hub.cosmos.network/main/hub-tutorials/upgrade-node.html).
+You can check out the Cosmos Hub documentation for a step-by-step tutorial on how to [upgrade your node](https://hub.cosmos.network/main/hub-tutorials/upgrade-node.html). Version specific upgrade notes using Cosmovisor are provided below.
 
 ### Upgrading using Cosmovisor
 
