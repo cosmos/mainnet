@@ -8,6 +8,51 @@ For a full set of instructions on boostrapping a mainnet node, see the Hub's [**
 
 However to build a node from scratch a node operator will need to first run [v4.2.6](https://github.com/cosmos/gaia/releases/tag/v4.2.6) until the node panics at block height [6910000](https://github.com/cosmos/gaia/blob/main/docs/migration/cosmoshub-4-delta-upgrade.md#Upgrade-will-take-place-July-12,-2021). The node should stop running after the panic, if it does not stop automatically, wait for 5-10 minutes and then kill it manually. Then install the latest version of gaia ([v5.0.2](https://github.com/cosmos/gaia/releases/tag/v5.0.2)) and then begin running the binary agian with the optional flag `--x-crisis-skip-assert-invariants`. This will begin syncing the node since the last upgrade until it is at the current height.
 
+## Scheduled Upgrade 🗓️ 
+
+The `v7-Theta` upgrade was proposed through an [on-chain software upgrade proposal](https://www.mintscan.io/cosmos/proposals/65) and is open to voting between 2022-03-25 and 2022-04-08. The upgrade is proposed to take place at block height **10,085,397** which should occur approximately at **April 12th, 2022 at 12:00:00 UTC.** The chain id will remain `cosmoshub-4`. 
+
+You can find `v7.0.0` tagged code and binaries in the [gaia repository](https://github.com/cosmos/gaia/releases/tag/v7.0.0). The json for the on-chain proposal is [archived in this repository](upgrades/v7-Theta-proposal.json) for future reference. 
+
+We recommend that you participate in the [Theta testnet](https://github.com/cosmos/testnets/tree/master/v7-theta/public-testnet) to familiarize yourself with the upgrade process. From experience on the Theta testnet, we expect this upgrade to be much faster than the Vega upgrade due to a simpler migration than.
+
+Upgrades can be a memory intensive process. Please see the guide for the [current hardware recommendations](https://hub.cosmos.network/main/hub-tutorials/join-mainnet.html#hardware). We recommend that you are prepared to upgrade on a machine with sufficient physical memory. Some node operators also choose add 8-16 GB of swap to avoid out of memory issues.
+
+You can check out the Cosmos Hub documentation for a step-by-step tutorial on how to [upgrade your node](https://hub.cosmos.network/main/hub-tutorials/upgrade-node.html).
+
+### Upgrading using Cosmovisor
+
+At the proposed halt height, you should expect to see a message like:
+
+```
+ERR UPGRADE "v7-Theta" NEEDED at height: 10085397
+```
+
+We recommend that you use [Cosmovisor](https://github.com/cosmos/cosmos-sdk/tree/master/cosmovisor#auto-download) for managing your gaia upgrades. You can do this in one of two ways:
+
+#### 1. Autodownload
+
+If you're using Cosmovisor's **autodownload** feature, please set the environment variable `DAEMON_ALLOW_DOWNLOAD_BINARIES=true`
+
+**IMPORTANT:** In case you're using auto-download, on Gaia v6.0.0 or v6.0.3 Cosmosvisor won't auto-download the binary unfortunately. v6.0.4 will work fine. Please refer to [this issue](https://github.com/cosmos/gaia/issues/1342) for details.
+
+#### 2. Manual
+
+If you're **manually preparing your binary**, please download v7.0.0 and move the binary to the v7-Theta upgrade directory in your cosmovisor directory
+
+```
+.
+├── current -> genesis or upgrades/<name>
+├── genesis
+│   └── bin
+│       └── gaiad
+└── upgrades
+    └── v7-Theta
+        ├── bin
+        │   └── gaiad
+        └── upgrade-info.json
+```
+
 ## Quickstart
 
 **Preresquisites**
