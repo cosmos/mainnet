@@ -8,11 +8,11 @@ For a full set of instructions on boostrapping a mainnet node, see the Hub's [**
 
 However to build a node from scratch a node operator will need to first run [v4.2.6](https://github.com/cosmos/gaia/releases/tag/v4.2.6) until the node panics at block height [6910000](https://github.com/cosmos/gaia/blob/main/docs/migration/cosmoshub-4-delta-upgrade.md#Upgrade-will-take-place-July-12,-2021). The node should stop running after the panic, if it does not stop automatically, wait for 5-10 minutes and then kill it manually. Then install the latest version of gaia ([v5.0.2](https://github.com/cosmos/gaia/releases/tag/v5.0.2)) and then begin running the binary agian with the optional flag `--x-crisis-skip-assert-invariants`. This will begin syncing the node since the last upgrade until it is at the current height.
 
-## Scheduled Upgrade 🗓️ 
+## Scheduled Upgrade 🗓️
 
-The `v7-Theta` upgrade was proposed through an [on-chain software upgrade proposal](https://www.mintscan.io/cosmos/proposals/65) and is open to voting between 2022-03-25 and 2022-04-08. The upgrade is proposed to take place at block height **10,085,397** which should occur approximately at **April 12th, 2022 at 12:00:00 UTC.** The chain id will remain `cosmoshub-4`. 
+The `v7-Theta` upgrade was proposed through an [on-chain software upgrade proposal](https://www.mintscan.io/cosmos/proposals/65) and is open to voting between 2022-03-25 and 2022-04-08. The upgrade is proposed to take place at block height **10,085,397** which should occur approximately at **April 12th, 2022 at 12:00:00 UTC.** The chain id will remain `cosmoshub-4`.
 
-You can find `v7.0.0` tagged code and binaries in the [gaia repository](https://github.com/cosmos/gaia/releases/tag/v7.0.0). The json for the on-chain proposal is [archived in this repository](upgrades/v7-Theta-proposal.json) for future reference. 
+You can find `v7.0.0` tagged code and binaries in the [gaia repository](https://github.com/cosmos/gaia/releases/tag/v7.0.0). The json for the on-chain proposal is [archived in this repository](upgrades/v7-Theta-proposal.json) for future reference.
 
 We recommend that you participate in the [Theta testnet](https://github.com/cosmos/testnets/tree/master/v7-theta/public-testnet) to familiarize yourself with the upgrade process. From experience on the Theta testnet, we expect this upgrade to be much faster than the Vega upgrade due to a simpler migration.
 
@@ -24,7 +24,7 @@ You can check out the Cosmos Hub documentation for a step-by-step tutorial on ho
 
 At the proposed halt height, you should expect to see a message like:
 
-```
+```log
 ERR UPGRADE "v7-Theta" NEEDED at height: 10085397
 ```
 
@@ -40,7 +40,7 @@ If you're using Cosmovisor's **autodownload** feature, please set the environmen
 
 If you're **manually preparing your binary**, please download v7.0.0 and move the binary to the v7-Theta upgrade directory in your cosmovisor directory
 
-```
+```ascii
 .
 ├── current -> genesis or upgrades/<name>
 ├── genesis
@@ -55,17 +55,18 @@ If you're **manually preparing your binary**, please download v7.0.0 and move th
 
 ## Quickstart
 
-**Preresquisites**
+### Preresquisites
+
 - `make` & `gcc`
 - `Go 1.16+`
 
 > **Note**: Make sure to have all prerequisites installed. See the [installation docs](https://hub.cosmos.network/main/getting-started/installation.html) for clarification and a detailed set of instructions.
 
-**Quicksync**
+#### Quicksync
 
 Quicksync.io offers several daily snapshots of the Cosmos Hub with varying levels of pruning (archive 1.4TB, default 540GB, and pruned 265GB). For downloads and installation instructions, visit the [Cosmos Quicksync guide](https://quicksync.io/networks/cosmos.html).
 
-**State Sync**
+#### State Sync
 
 To enable state sync, visit an [explorer](https://www.mintscan.io/cosmos/blocks) to get a recent block height and corresponding hash. A node operator can choose any height/hash in the current bonding period, but as the recommended snapshot period is 1000 blocks, it is advised to choose something close to current height - 1000. Set these parameters in the code snippet below `<BLOCK_HEIGHT>` and `<BLOCK_HASH>`
 
@@ -99,7 +100,7 @@ sed -i 's/rpc_servers = ""/rpc_servers = "https:\/\/rpc.cosmos.network:443,https
 gaiad start --x-crisis-skip-assert-invariants
 ```
 
-**Sync from Scratch**
+#### Sync from Scratch
 
 ```bash
 # Build gaiad binary and initialize chain
@@ -120,14 +121,17 @@ sed -i 's/persistent_peers = ""/persistent_peers = "6e08b23315a9f0e1b23c7ed84793
 
 gaiad start --x-crisis-skip-assert-invariants
 ```
+
 Now wait until the chain reaches block height 6910000. It will panic and log the following:
-```
+
+```log
 ERR UPGRADE "Gravity-DEX" NEEDED at height: 6910000: v5.0.0-4760cf1f1266accec7a107f440d46d9724c6fd08
 
 panic: UPGRADE "Gravity-DEX" NEEDED at height: 6910000: v5.0.0-4760cf1f1266accec7a107f440d46d9724c6fd08
 ```
 
 It's now time to perform the manual Delta upgrade:
+
 ```bash
 git checkout -b v5.0.2
 make install
@@ -135,9 +139,9 @@ gaiad start --x-crisis-skip-assert-invariants
 ```
 
 Once `V5` reaches the upgrade block height, the chain will halt and display the following message:
-```
-ERR UPGRADE "Vega" NEEDED at height: 8695000
 
+```log
+ERR UPGRADE "Vega" NEEDED at height: 8695000
 ```
 
 This will indicate it is time to perform the Vega upgrade. Similar with the previous upgrade, checkout `V6`, compile the new binary and restart `gaiad`
@@ -149,7 +153,6 @@ gaiad start --x-crisis-skip-assert-invariants
 ```
 
 > _NOTE_:  If the node is unable to connect to any of the seeds listed here, find additional seeds and peers in [this document](https://hackmd.io/@KFEZk8oMTz6vBlwADz0M4A/BkKEUOsZu#) maintained by community members, and at [Atlas](https://atlas.cosmos.network/nodes), which is automatically generated by crawling the network. Additionally, node operators can just copy [Quicksync's addressbook](https://quicksync.io/addrbook.cosmos.json) and move it to `$HOME/.gaia/config/addrbook.json`
-
 
 ## Upgrade to Validator Node
 
