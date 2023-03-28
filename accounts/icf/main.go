@@ -3,8 +3,8 @@ package main
 import (
 	"encoding/json"
 	"fmt"
-	"io/ioutil"
 	"math"
+	"os"
 
 	pkg "github.com/cosmos/launch/pkg"
 )
@@ -41,7 +41,7 @@ func main() {
 	if err != nil {
 		panic(err)
 	}
-	err = ioutil.WriteFile(outJSON, bz, 0o600)
+	err = os.WriteFile(outJSON, bz, 0o600)
 	if err != nil {
 		panic(err)
 	}
@@ -65,7 +65,7 @@ type MultisigAccount struct {
 
 func multisigToMap(file string) map[string]float64 {
 	// read multisig
-	bz, err := ioutil.ReadFile(multisigJSON)
+	bz, err := os.ReadFile(multisigJSON)
 	if err != nil {
 		panic(err)
 	}

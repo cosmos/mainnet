@@ -3,7 +3,7 @@ package main
 import (
 	"encoding/json"
 	"fmt"
-	"io/ioutil"
+	"os"
 
 	"github.com/cosmos/launch/pkg"
 )
@@ -46,7 +46,7 @@ type MultisigAccount struct {
 }
 
 func getMultisig(file string) MultisigAccount {
-	bz, err := ioutil.ReadFile(file)
+	bz, err := os.ReadFile(file)
 	if err != nil {
 		panic(err)
 	}
@@ -60,7 +60,7 @@ func getMultisig(file string) MultisigAccount {
 }
 
 func getAccounts(file string) []Account {
-	bz, err := ioutil.ReadFile(file)
+	bz, err := os.ReadFile(file)
 	if err != nil {
 		panic(err)
 	}

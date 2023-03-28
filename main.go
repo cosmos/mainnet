@@ -4,8 +4,8 @@ import (
 	"bytes"
 	"encoding/json"
 	"fmt"
-	"io/ioutil"
 	"math"
+	"os"
 	"path"
 	"sort"
 	"strings"
@@ -93,9 +93,18 @@ func main() {
 	// icf addresses are in bech32, fundraiser are in hex
 	contribs := make(map[string]float64)
 	{
-		accumulateBechContributors(icfJSON, contribs)
-		accumulateHexContributors(privateJSON, contribs)
-		accumulateHexContributors(publicJSON, contribs)
+		err := accumulateBechContributors(icfJSON, contribs)
+		if err != nil {
+			panic(err)
+		}
+		err = accumulateHexContributors(privateJSON, contribs)
+		if err != nil {
+			panic(err)
+		}
+		err = accumulateHexContributors(publicJSON, contribs)
+		if err != nil {
+			panic(err)
+		}
 	}
 
 	// load the aib pieces
@@ -112,7 +121,7 @@ func main() {
 	fmt.Println("TOTAL uAtoms", atomGenesisTotal)
 
 	// load gentxs
-	fs, err := ioutil.ReadDir(genTxPath)
+	fs, err := os.ReadDir(genTxPath)
 	if err != nil {
 		panic(err)
 	}
@@ -123,7 +132,7 @@ func main() {
 		if name == "README.md" {
 			continue
 		}
-		bz, err := ioutil.ReadFile(path.Join(genTxPath, name))
+		bz, err := os.ReadFile(path.Join(genTxPath, name))
 		if err != nil {
 			panic(err)
 		}
@@ -149,7 +158,7 @@ func main() {
 	if err != nil {
 		panic(err)
 	}
-	err = ioutil.WriteFile(genesisFile, buf.Bytes(), 0o600)
+	err = os.WriteFile(genesisFile, buf.Bytes(), 0o600)
 	if err != nil {
 		panic(err)
 	}
@@ -216,7 +225,7 @@ type MultisigAccount struct {
 
 // load the aib atoms and ensure there are no duplicates with the contribs
 func aibAtoms(employeesFile, multisigFile string, contribs map[string]float64) (employees []Account, multisigAcc MultisigAccount) {
-	bz, err := ioutil.ReadFile(employeesFile)
+	bz, err := os.ReadFile(employeesFile)
 	if err != nil {
 		panic(err)
 	}
@@ -225,7 +234,7 @@ func aibAtoms(employeesFile, multisigFile string, contribs map[string]float64) (
 		panic(err)
 	}
 
-	bz, err = ioutil.ReadFile(multisigFile)
+	bz, err = os.ReadFile(multisigFile)
 	if err != nil {
 		panic(err)
 	}
