@@ -52,7 +52,7 @@ func main() {
 		panic(err)
 	}
 
-	err = ioutil.WriteFile(outFile, bz, 0600)
+	err = ioutil.WriteFile(outFile, bz, 0o600)
 	if err != nil {
 		panic(err)
 	}

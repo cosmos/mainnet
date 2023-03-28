@@ -12,5 +12,3 @@ One address, which is present in both files (`df403fa10845bd5e238827bd0d937a8c52
 is modified to `40d19f92685334c8ace23f9dc8c0c85977483e26`.
 
 Run `go run main.go` to output the `contributors.json` by consolidating all the duplicate entries.
-
-

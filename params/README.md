@@ -29,7 +29,7 @@ Note that all durations are specified in nanoseconds.
 
 - `"community_tax": "0.02"`. The tax on inflation and fees levied to fund the public goods pool will be 2%,
   as specified in the Cosmos whitepaper.
-- `"base_proposer_reward": "0.01"`. 1% of inflation and fees (flat) will be allocated to the block proposer. This provides an incentive for 
+- `"base_proposer_reward": "0.01"`. 1% of inflation and fees (flat) will be allocated to the block proposer. This provides an incentive for
     validators to be good proposers by being available when it's their turn to propose, including lots of transactions in their proposed block, and
     gossiping the proposed block quickly.
 - `"bonus_proposer_reward": "0.04"`. 4% of inflation and fees (varying according to the fraction of precommits included)

@@ -1,3 +1,4 @@
+// this file generates the btc_atoms.json file
 package main
 
 import (
@@ -109,7 +110,7 @@ func getBTCData() {
 	if err != nil {
 		panic(err)
 	}
-	err = ioutil.WriteFile(btcDonationsFile, bz, 0600)
+	err = ioutil.WriteFile(btcDonationsFile, bz, 0o600)
 	if err != nil {
 		panic(err)
 	}
@@ -161,7 +162,7 @@ func writeBTCAtoms() {
 	if err != nil {
 		panic(err)
 	}
-	err = ioutil.WriteFile(btcAtomsFile, bz, 0600)
+	err = ioutil.WriteFile(btcAtomsFile, bz, 0o600)
 	if err != nil {
 		panic(err)
 	}

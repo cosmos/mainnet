@@ -8,7 +8,7 @@ curl https://raw.githubusercontent.com/cosmos/fundraiser-lib/d3671fce2b754445eef
 ```
 
 Copy the multisig piece into `multisig.json`, and add the address
-(`cosmos176m2p8l3fps3dal7h8gf9jvrv98tu3rqfdht86`). 
+(`cosmos176m2p8l3fps3dal7h8gf9jvrv98tu3rqfdht86`).
 Copy the rest to `employees.json` as a list.
 
 Run `go run main.go` to get a summary, check values are positive, check duplicates, and check the multisig

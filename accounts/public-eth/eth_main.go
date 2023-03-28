@@ -1,3 +1,4 @@
+// this file generates the eth_atoms.json file from eth_donations.json
 package main
 
 import (
@@ -68,7 +69,6 @@ func main() {
 }
 
 func getETHData() {
-
 	resp, err := http.Get(fmt.Sprintf(etherscanFmt, startBlock, endBlock, contractAddr, topic))
 	if err != nil {
 		panic(err)
@@ -118,7 +118,7 @@ func getETHData() {
 	if err != nil {
 		panic(err)
 	}
-	err = ioutil.WriteFile(ethDonationsFile, bz, 0600)
+	err = ioutil.WriteFile(ethDonationsFile, bz, 0o600)
 	if err != nil {
 		panic(err)
 	}
@@ -168,7 +168,7 @@ func writeETHAtoms() {
 	if err != nil {
 		panic(err)
 	}
-	err = ioutil.WriteFile(ethAtomsFile, bz, 0600)
+	err = ioutil.WriteFile(ethAtomsFile, bz, 0o600)
 	if err != nil {
 		panic(err)
 	}
@@ -201,7 +201,6 @@ func hexWeiToString(h string) string {
 
 // return eth and atoms from wei
 func weiStringToAmts(weiString string) (float64, float64) {
-
 	bigWei, suc := new(big.Float).SetString(weiString)
 	if !suc {
 		panic("failed to set weiString")

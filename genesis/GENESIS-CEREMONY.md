@@ -22,16 +22,15 @@ Genesis transactions will be collected on Github in this repository and checked 
 Genesis file collection will terminate on 12 March 2019 23:00 GMT. The final recommended genesis file will be published shortly after that time.
 
 By participating in this ceremony and submitting a gen-tx, you are making a commitment to your fellow Cosmonauts
-that you will be around to bring your validator online by the recommended genesis time of 13 March 2019 23:00 GMT to launch the network. Note that you can start `gaiad` 
+that you will be around to bring your validator online by the recommended genesis time of 13 March 2019 23:00 GMT to launch the network. Note that you can start `gaiad`
 with the recommended genesis file before that time and, assuming you configure it successfully, it will automatically start the peer-to-peer and consensus processes once the genesis timestamp is reached.
 
 Please keep the following things in mind.
 
-1. This process is intended for technically inclined people who have participated in Cosmos testnets and Game of Stakes. If you aren't already familiar with this process, you are advised against participating due to the risks involved. There is no need for you to participate if you feel unprepared - 
+1. This process is intended for technically inclined people who have participated in Cosmos testnets and Game of Stakes. If you aren't already familiar with this process, you are advised against participating due to the risks involved. There is no need for you to participate if you feel unprepared -
  you can create a validator or stake ATOMs any time after launch.
 2. ATOMs staked during genesis will be at risk of 5% slashing if your validator double signs. If you accidentally misconfigure your validator setup, this can easily happen, and slashed ATOMs are not expected to be recoverable by any means. Additionally, if you double-sign, your validator will be [tombstoned](https://github.com/cosmos/cosmos-sdk/blob/master/docs/spec/slashing/07_tombstone.md) and you will be required to change operator and signing keys.
 3. ATOMs staked during genesis or after will be locked up as part of the defense against long range attacks for 3 weeks. They can be re-delegated or undelegated, but will not be transferrable until a hard-fork enables transfers.
-   
 
 ## Genesis File
 
@@ -163,12 +162,10 @@ a first of its kind experiment in bootstrapping a decentralized network. Other p
 bootstrapped with the aid of a foundation or other administrator. We hope to bootstrap as a decentralized community, building on the shared experiences of many many testnets.
 
 See the [blog
-post](https://blog.cosmos.network/the-3-phases-of-the-cosmos-hub-mainnet-fdff3a68c4c0) 
+post](https://blog.cosmos.network/the-3-phases-of-the-cosmos-hub-mainnet-fdff3a68c4c0)
 for more details on the three phases of launch.
 
-
 # Disclaimer
-
 
 The Cosmos Hub is *highly* experimental software. In these early days, we can
 expect to have issues, updates, and bugs. The existing tools require advanced
