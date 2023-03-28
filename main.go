@@ -149,7 +149,7 @@ func main() {
 	if err != nil {
 		panic(err)
 	}
-	err = ioutil.WriteFile(genesisFile, buf.Bytes(), 0600)
+	err = ioutil.WriteFile(genesisFile, buf.Bytes(), 0o600)
 	if err != nil {
 		panic(err)
 	}
@@ -251,8 +251,8 @@ func aibAtoms(employeesFile, multisigFile string, contribs map[string]float64) (
 func makeGenesisAccounts(
 	contribs map[string]float64,
 	employees []Account,
-	multisig MultisigAccount) []gaia.GenesisAccount {
-
+	multisig MultisigAccount,
+) []gaia.GenesisAccount {
 	var genesisAccounts []gaia.GenesisAccount
 	{
 		// public, private, and icf contribs
@@ -331,7 +331,6 @@ func checkTotals(genesisAccounts []gaia.GenesisAccount) {
 
 // json marshal the initial app state (accounts and gentx) and add them to the template
 func makeGenesisDoc(cdc *amino.Codec, genesisAccounts []gaia.GenesisAccount, genTxs []json.RawMessage) *tmtypes.GenesisDoc {
-
 	// read the template with the params
 	genesisDoc, err := tmtypes.GenesisDocFromFile(genesisTemplate)
 	if err != nil {

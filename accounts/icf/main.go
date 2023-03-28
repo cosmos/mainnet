@@ -41,7 +41,7 @@ func main() {
 	if err != nil {
 		panic(err)
 	}
-	err = ioutil.WriteFile(outJSON, bz, 0600)
+	err = ioutil.WriteFile(outJSON, bz, 0o600)
 	if err != nil {
 		panic(err)
 	}

@@ -14,7 +14,6 @@ const (
 )
 
 func main() {
-
 	// get AiB allocations
 	employees := getAccounts(employeeJSON)
 	multisigAcc := getMultisig(multisigJSON)
