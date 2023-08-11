@@ -2,7 +2,7 @@
 
 ## Overview
 
-The current Gaia Version of the Cosmos Hub mainnet is [`v10.0.x`](https://github.com/cosmos/gaia/releases/tag/v10.0.1). To bootstrap a mainnet node, it is possible to sync from `v9.1.1` via Quicksync or via [State Sync](https://hub.cosmos.network/main/hub-tutorials/join-mainnet.html#state-sync).
+The current Gaia Version of the Cosmos Hub mainnet is [`v11.0.0`](https://github.com/cosmos/gaia/releases/tag/v11.0.0). To bootstrap a mainnet node, it is possible to sync from `v10.0.2` via Quicksync or via [State Sync](https://hub.cosmos.network/main/hub-tutorials/join-mainnet.html#state-sync).
 
 For a full set of instructions on boostrapping a mainnet node, see the Hub's [**Join the Cosmos Hub Mainnet**](https://hub.cosmos.network/main/hub-tutorials/join-mainnet.html) documentation.
 
@@ -10,9 +10,9 @@ For a full set of instructions on boostrapping a mainnet node, see the Hub's [**
 
 ## Scheduled Upgrade 🗓️ 
 
-The `v10` upgrade was proposed through an [on-chain software upgrade proposal](https://www.mintscan.io/cosmos/proposals/798) and is open to voting between 2023-06-02 and 2023-06-16. The upgrade is proposed to take place at block height **15,816,200** which should occur approximately at **June 21st, 2023.** The chain id will remain `cosmoshub-4`.
+The `v11` upgrade was proposed through an [on-chain software upgrade proposal](https://www.mintscan.io/cosmos/proposals/804) and is open to voting between 2023-07-27 and 2023-08-10. The upgrade is proposed to take place at block height **16,596,000** which should occur approximately at **August 16th, 2023.** The chain id will remain `cosmoshub-4`.
 
-You can find `v10.0.x` tagged code and binaries in the [gaia repository](https://github.com/cosmos/gaia/releases/tag/v10.0.1).
+You can find `v11.0.0` tagged code and binaries in the [gaia repository](https://github.com/cosmos/gaia/releases/tag/v11.0.0).
 
 Upgrades can be a memory intensive process. Please see the guide for the [current hardware recommendations](https://hub.cosmos.network/main/hub-tutorials/join-mainnet.html#hardware). We recommend that you are prepared to upgrade on a machine with sufficient physical memory. Some node operators also choose add 8-16 GB of swap to avoid out of memory issues.
 
@@ -20,13 +20,13 @@ You can check out the Cosmos Hub documentation for a step-by-step tutorial on ho
 
 ### Upgrading using Cosmovisor
 
-Cosmovisor instructions can be found in the [v10 upgrade instructions](https://github.com/cosmos/gaia/blob/main/docs/migration/cosmoshub-4-v10-upgrade.md).
+Cosmovisor instructions can be found in the [v11 upgrade instructions](https://github.com/cosmos/gaia/blob/main/docs/migration/cosmoshub-4-v11-upgrade.md).
 
 ## Quickstart
 
 **Preresquisites**
 - `make` & `gcc`
-- `Go 1.20+`
+- `Go 1.20.x+`
 
 > **Note**: Make sure to have all prerequisites installed. See the [installation docs](https://hub.cosmos.network/main/getting-started/installation.html) for clarification and a detailed set of instructions.
 
@@ -43,7 +43,7 @@ For reference, the list of `rpc_servers` and `persistent` peers can be found in 
 ```bash
 # Build gaiad binary and initialize chain
 cd $HOME
-git clone -b v10.0.1 https://github.com/cosmos/gaia
+git clone -b v11 https://github.com/cosmos/gaia
 cd gaiad
 make install
 gaiad init <custom moniker>
