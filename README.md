@@ -9,9 +9,7 @@ For a full set of instructions on boostrapping a mainnet node, see the Hub's [**
 ## Scheduled Upgrade 🗓️ 
 
 The `v12` upgrade was proposed through an [on-chain software upgrade proposal](https://www.mintscan.io/cosmos/proposals/821) and is open to voting between 2023-08-25 and 2023-09-08. The upgrade is proposed to take place at block height **16,985,500** which should occur approximately at **September 13th 2023.** The chain id will remain `cosmoshub-4`.
-
 You can find `v12.0.0` tagged code and binaries in the [gaia repository](https://github.com/cosmos/gaia/releases/tag/v12.0.0).
-
 Upgrades can be a memory intensive process. Please see the guide for the [current hardware recommendations](https://hub.cosmos.network/main/hub-tutorials/join-mainnet.html#hardware). We recommend that you are prepared to upgrade on a machine with sufficient physical memory. Some node operators also choose add 8-16 GB of swap to avoid out of memory issues.
 
 You can check out the Cosmos Hub documentation for a step-by-step tutorial on how to [upgrade your node](https://hub.cosmos.network/main/hub-tutorials/upgrade-node.html). Version specific upgrade notes using Cosmovisor are provided below.
