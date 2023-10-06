@@ -41,7 +41,7 @@ To enable state sync, visit an [explorer](https://www.mintscan.io/cosmos/blocks)
 For reference, the list of `rpc_servers` and `persistent` peers can be found in the [cosmos hub chain-registry repo](https://github.com/cosmos/chain-registry/blob/master/cosmoshub/chain.json).
 
 ```bash
-# Clone Gaia with only the release branch that we're using
+# Clone Gaia with only the release branch that we are using
 cd $HOME
 git clone -b v13.0.0 https://github.com/cosmos/gaia
 
