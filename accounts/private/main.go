@@ -15,7 +15,6 @@ const (
 )
 
 func main() {
-
 	seedMap := pkg.ListToMap(seedJSON)
 	earlyMap := pkg.ListToMap(earlyJSON)
 
@@ -36,7 +35,7 @@ func main() {
 	if err != nil {
 		panic(err)
 	}
-	err = ioutil.WriteFile(outputFile, bz, 0600)
+	err = ioutil.WriteFile(outputFile, bz, 0o600)
 	if err != nil {
 		panic(err)
 	}

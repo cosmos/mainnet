@@ -65,4 +65,4 @@ This will produce a file in the `~/.gaiad/config/gentx/` folder that has a name 
 
 To submit your `gentx` for inclusion in genesis, open a pull request against this repository and place the contents in a file `/gentx/<moniker>.json`.
 
-__**NOTE**__: If you would like to override the memo field use the `--ip` and `--node-id` flags for the `gaiad gentx` command above.
+____NOTE____: If you would like to override the memo field use the `--ip` and `--node-id` flags for the `gaiad gentx` command above.

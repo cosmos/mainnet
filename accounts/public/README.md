@@ -24,7 +24,6 @@ go run btc_main.go atoms
 
 ## Eth
 
-
 Fetch event data from etherscan.io and save in `eth_donations.json`
 
 ```

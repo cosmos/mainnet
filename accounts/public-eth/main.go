@@ -1,3 +1,4 @@
+// this file generates the eth_atoms.json file from eth_donations.json
 package main
 
 import (
@@ -53,7 +54,7 @@ type ETHRaw struct {
 func main() {
 	args := os.Args
 	if len(args) < 2 {
-		fmt.Println("requires 'data' or 'atoms' argument")
+		fmt.Println("requires 'data', 'atoms', or 'tally' argument")
 		os.Exit(1)
 	}
 
@@ -62,13 +63,14 @@ func main() {
 		getETHData()
 	case "atoms":
 		writeETHAtoms()
+	case "tally":
+		tallyETHDonations()
 	default:
-		fmt.Println("requires 'data' or 'atoms' argument")
+		fmt.Println("requires 'data', 'atoms', or 'tally' argument")
 	}
 }
 
 func getETHData() {
-
 	resp, err := http.Get(fmt.Sprintf(etherscanFmt, startBlock, endBlock, contractAddr, topic))
 	if err != nil {
 		panic(err)
@@ -118,7 +120,7 @@ func getETHData() {
 	if err != nil {
 		panic(err)
 	}
-	err = ioutil.WriteFile(ethDonationsFile, bz, 0600)
+	err = ioutil.WriteFile(ethDonationsFile, bz, 0o600)
 	if err != nil {
 		panic(err)
 	}
@@ -168,7 +170,7 @@ func writeETHAtoms() {
 	if err != nil {
 		panic(err)
 	}
-	err = ioutil.WriteFile(ethAtomsFile, bz, 0600)
+	err = ioutil.WriteFile(ethAtomsFile, bz, 0o600)
 	if err != nil {
 		panic(err)
 	}
@@ -201,7 +203,6 @@ func hexWeiToString(h string) string {
 
 // return eth and atoms from wei
 func weiStringToAmts(weiString string) (float64, float64) {
-
 	bigWei, suc := new(big.Float).SetString(weiString)
 	if !suc {
 		panic("failed to set weiString")
@@ -238,4 +239,32 @@ func dataToWei(h string) string {
 	}
 	msgValueHex := h[64 : 64*2]
 	return hexWeiToString(msgValueHex)
+}
+
+// tallyETHDonations tallies the total ETH donations from the eth_donations.json file
+func tallyETHDonations() {
+	bz, err := ioutil.ReadFile(ethDonationsFile)
+	if err != nil {
+		panic(err)
+	}
+
+	var contribs []ETHContribution
+	err = json.Unmarshal(bz, &contribs)
+	if err != nil {
+		panic(err)
+	}
+
+	totalWei := new(big.Int)
+	for _, contrib := range contribs {
+		wei, success := new(big.Int).SetString(contrib.Wei, 10)
+		if !success {
+			panic(fmt.Sprintf("Failed to parse Wei value: %s", contrib.Wei))
+		}
+		totalWei.Add(totalWei, wei)
+	}
+
+	totalETH := new(big.Float).Quo(new(big.Float).SetInt(totalWei), big.NewFloat(float64(weiPerETH)))
+	ethValue, _ := totalETH.Float64()
+
+	fmt.Printf("Total ETH in donations: %.18f\n", ethValue)
 }

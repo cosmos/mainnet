@@ -1,0 +1,15 @@
+go 1.22.5
+
+use .
+
+use ./accounts/aib
+
+use ./accounts/icf
+
+use ./accounts/private
+
+use ./accounts/public
+
+use ./accounts/public-btc
+
+use ./accounts/public-eth

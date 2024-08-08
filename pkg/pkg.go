@@ -107,6 +107,9 @@ func CheckMultisigAddress(k int, pubStrings []string, addr string) {
 	for _, pubString := range pubStrings {
 		// bech32 decode, then amino decode
 		_, bz, err := bech32.DecodeAndConvert(pubString)
+		if err != nil {
+			panic(fmt.Sprintf("decoding pubkey %v: %v", pubString, err))
+		}
 		var pubkey crypto.PubKey
 		err = cdc.UnmarshalBinaryBare(bz, &pubkey)
 		if err != nil {

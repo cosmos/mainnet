@@ -1,8 +1,8 @@
 # Cosmos Genesis
 
-On April 6th, 2017, the Interchain Foundation (ICF) held a public fundraiser 
+On April 6th, 2017, the Interchain Foundation (ICF) held a public fundraiser
 to raise funds for the development of the Cosmos Network and the Cosmos Project
-in general and to create an endowment for the ICF to pursue its mission of research 
+in general and to create an endowment for the ICF to pursue its mission of research
 and development for open and decentralized networks.
 
 This network launch represents a major milestone in that journey where the participants
@@ -10,12 +10,12 @@ in the fundraiser finally operate a decentralized network based on the software 
 
 This document focuses only on the way the ATOM allocation recommendations and
 the genesis state have been implemented in the Genesis Block Release Software.
-Please assure that you read [all other documentations on the software](https://cosmos.network/docs/gaia/what-is-gaia.html) 
-carefully as negligence in interacting with it could lead to an indefinite loss of your ATOMs. 
+Please assure that you read [all other documentations on the software](https://cosmos.network/docs/gaia/what-is-gaia.html)
+carefully as negligence in interacting with it could lead to an indefinite loss of your ATOMs.
 
-- [Genesis Validator Ceremony](#Genesis-Validator-Ceremony)
-- [Fundraiser Details](#Fundraiser-Details)
-- [Disclaimer](#Disclaimer)
+- [Genesis Validator Ceremony](#genesis-validator-ceremony)
+- [Fundraiser Details](#fundraiser-details)
+- [Disclaimer](#disclaimer)
 
 ## Regenerating the Genesis File
 
@@ -36,10 +36,10 @@ in the respective directory under `accounts`.
 ## Genesis Validator Ceremony
 
 A ceremony was held to determine an initial validator set for the recommended
-genesis state. The ceremony allowed anyone with a recommended allocation of ATOMs 
+genesis state. The ceremony allowed anyone with a recommended allocation of ATOMs
 to submit a signed "genesis transaction" declaring their intention to be in the initial
 validator set. The ceremony was conducted in [this very GitHub
-repository](https://github.com/cosmos/launch). 
+repository](https://github.com/cosmos/launch).
 Details about the ceremony can be found [here](GENESIS-CEREMONY.md).
 
 A total of 67 valid gentx submissions were merged into the `gentx` directory and are
@@ -63,7 +63,7 @@ Genesis Block Release Software for the initial allocation of ATOMs in the Cosmos
 For all USD/BTC and USD/ETH values mentioned above the relevant
 exchange rates as defined in the terms and conditions are decisive.
 
-According to these terms and conditions, and as described in much more detail below, 
+According to these terms and conditions, and as described in much more detail below,
 the ICF recommends a total of 236,198,958.12 ATOMs be allocated at genesis to 984
 accounts. A working copy of the recommended genesis file reflecting this total and the
 results of the fundraiser has been [available on
@@ -76,12 +76,12 @@ below:
 
 - 1,777,707 ATOMs are locked for 1 year to current and former employees, contractors, and founders of All in Bits Inc
 - 21,842,188.81 ATOMs are vesting monthly for 22 months starting 2 months after launch to All in Bits Inc
-- 20,277,188.49 ATOMs are allocated to the ICF 
+- 20,277,188.49 ATOMs are allocated to the ICF
 
-As specified in the [fundraiser 
-documents](https://github.com/cosmos/cosmos/blob/master/fundraiser/Interchain%20Cosmos%20Contribution%20Terms%20-%20FINAL.pdf), 
+As specified in the [fundraiser
+documents](https://github.com/cosmos/cosmos/blob/master/fundraiser/Interchain%20Cosmos%20Contribution%20Terms%20-%20FINAL.pdf),
 the ICF recommends the Cosmos Network be initiated with an allocation of ATOMs based on 4 categories
-of contributions to the development and launch of the Cosmos Network: Private Contributors, Public Contributors, All in Bits Inc (AiB), 
+of contributions to the development and launch of the Cosmos Network: Private Contributors, Public Contributors, All in Bits Inc (AiB),
 and the Interchain Foundation (ICF).
 
 All allocations are unrestricted except for AiB's.
@@ -97,7 +97,7 @@ at a discount from the public fundraiser's USD/ATOM rate (discounts ranged from 
 prior to the public fundraiser. The recommended allocation to strategic
 and early contributors is 16,856,718.97 ATOMs.
 
-The seed contributors contributed an amount of USD 300,000. 
+The seed contributors contributed an amount of USD 300,000.
 Their recommended allocation is 11,809,947.91 ATOMs.
 
 This is a total of 28,666,666.88 ATOMs to seed, strategic, and early financial
@@ -108,7 +108,7 @@ See [JSON](accounts/private/contributors.json).
 ## Public Contributors
 
 Public contributors consisted of public members of the Tendermint and Cosmos community
-that participated in the fundraiser on April 6th, 2017. 
+that participated in the fundraiser on April 6th, 2017.
 A total amount of 16,029,305.06 USD was contributed by 864 addresses, at a recommended rate of USD 0.10/ATOM
 (based on the equivalent BTC/USD and ETH/USD rates as defined within the terms
 and conditions).
@@ -123,11 +123,11 @@ past April 7, 2017. For instance, see the scripts in [accounts/public](accounts/
 
 ## AiB
 
-AiB is recommended 10% of the total genesis ATOM allocation for developing the open-source IP 
+AiB is recommended 10% of the total genesis ATOM allocation for developing the open-source IP
 that underlies the Cosmos Network. This equals a total of 23,619,895.81 ATOMs.
 These ATOMs are subject to the vesting scheme as defined below; they can all be used for staking and
 governance, but cannot be transferred, even if the transferability of ATOM is activated -
-their transferability "vests" over time. 
+their transferability "vests" over time.
 AiBs ATOMs are split into two sets, each subject to a different form of vesting.
 
 The first set consists of 1,777,707 ATOMs allocated to 44 addresses owned by AiB founders, contractors, and employees,
@@ -144,8 +144,8 @@ See [JSON](accounts/aib/multisig.json).
 ## ICF
 
 ICF is recommended 10% of the total genesis ATOM allocation to support its mandate of R&D for open and decentralized
-networks, with particular focus on the Cosmos Network and the Cosmos Project in general. 
-This is a total of 23,619,895.81 ATOMs. 
+networks, with particular focus on the Cosmos Network and the Cosmos Project in general.
+This is a total of 23,619,895.81 ATOMs.
 ICF ATOMs are split into three sets - all are unrestricted and not subject to a
 vesting scheme in case the transferability of ATOM is activated.
 
@@ -155,7 +155,7 @@ foundation structure, a total of 3,054,207.32 ATOMs allocated to 8 addresses. Se
 
 The second set is for the so-called Game-of-Stakes participants, according to the scoring
 criteria set out by AiB. This is a total of 288,500 ATOMs allocated to 53
-addresses. Congrats to the Game-of-Stakes participants! 
+addresses. Congrats to the Game-of-Stakes participants!
 See [JSON](accounts/icf/gos.json).
 
 The third set of ICF atoms are held in ICF multisigs. This is a total of
